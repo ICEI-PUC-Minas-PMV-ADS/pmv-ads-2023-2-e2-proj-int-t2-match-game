@@ -1,19 +1,22 @@
-# TÍTULO DO PROJETO
+# MATCH GAME
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Interativa`
 
-`SEMESTRE`
+`2° SEMESTRE`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* <html><head></head><body><a href="https://github.com/AndreeGS">André Guilherme Santos de Oliveira</a></body></html>
+* <html><head></head><body><a href="https://github.com/brunasantos-dev">Bruna Santos</a></body></html>
+* <html><head></head><body><a href="https://github.com/GabrielBruno7">Gabriel Bruno de Oliveira Souza</a></body></html>
+* <html><head></head><body><a href="https://github.com/joaoalmei">João Vitor Jorge Almeida</a></body></html>
+* <html><head></head><body><a href="https://github.com/luanagpinax">Luana Guimarães Pina</a></body></html>
+* <html><head></head><body><a href="https://github.com/taymilagres">Tayane Ferreira Milagres</a></body></html>
+
 
 ## Orientador
 
