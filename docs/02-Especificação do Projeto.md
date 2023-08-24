@@ -62,9 +62,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-02| A aplicação deve ser compatível com os principais navegadores presentes no mercado (Google Chrome, Firefox, Microsoft Edge) |  MÉDIA | 
 |RNF-03| A aplicação deve ser implementada com HTML semântico | ALTA|
 |RNF-04| A aplicação deve possuir no mínimo 60% de acessibilidade de acordo com a plataforma Lighthouse | MÉDIA |
-|RNF-05| A aplicação deve ser publicada na plataforma Vercel | ALTA |
-|RNF-06| A aplicação deve conter bom nível de contraste entre os elementos | MÉDIA 
-|RNF-07| A aplicação deverá utilizar o Framework Tailwind | MÉDIA ||
+|RNF-05| A aplicação deve ser hospedada na nuvem | ALTA |
+|RNF-06| A aplicação deve conter bom nível de contraste entre os elementos | MÉDIA |
 
 ## Restrições
 
@@ -72,8 +71,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|RE-01| O projeto deverá ser entregue até o final do semestre - 06/12/2023|
+|RE-01| O projeto deverá ser entregue até o final do semestre - 06/12/2023 |
 |RE-02| Proibida a terceirização de desenvolvimento do sistema em sua totalidade ou de módulos isolados |
+|RE-03| O código de desenvolvimento da aplicação não pode ser obtido através de sistemas de IA generativa |
+|RE-04| O código do Back-end deverá ser feito em C# |
+|RE-05| O código do Front-end deverá ser feito em HTML, CSS e JavaScript |
+|RE-06| Caso seja usado algum framework front-end, optar pelo bootstrap |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
