@@ -52,6 +52,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-07| A aplicação deve incluir uma lista de jogos marcados como "favorito" no perfil do usuário | ALTA |
 |RF-08| A aplicação deve permitir que o usuário personalize sua foto de perfil | ALTA |
 |RF-09| A aplicação deve permitir que os usuários recomendem jogos para outros usuários | ALTA |
+|RF-10| A aplicação deve incluir uma lista de jogos que os usuários recomendaram para outros usuários | MÉDIA |
 
 ### Requisitos não Funcionais
 
