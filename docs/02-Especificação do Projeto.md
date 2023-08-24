@@ -51,7 +51,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-06| A aplicação deve permitir que o usuário marque como "favorito" os jogos de sua escolha | ALTA |
 |RF-07| A aplicação deve incluir uma lista de jogos marcados como "favorito" no perfil do usuário | ALTA |
 |RF-08| A aplicação deve permitir que o usuário personalize sua foto de perfil | ALTA |
-|RF-09| A aplicação deve permitir que os usuários recomendem jogos para outros usuários | ALTA |
+|RF-09| A aplicação deve permitir que os usuários recomendem jogos para outros usuários | MÉDIA |
 |RF-10| A aplicação deve incluir uma lista de jogos que os usuários recomendaram para outros usuários | MÉDIA |
 
 ### Requisitos não Funcionais
@@ -76,7 +76,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |RE-03| O código de desenvolvimento da aplicação não pode ser obtido através de sistemas de IA generativa |
 |RE-04| O código do Back-end deverá ser feito em C# |
 |RE-05| O código do Front-end deverá ser feito em HTML, CSS e JavaScript |
-|RE-06| Caso seja usado algum framework front-end, optar pelo bootstrap |
+|RE-06| Caso seja usado algum framework front-end, optar pelo Bootstrap |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
