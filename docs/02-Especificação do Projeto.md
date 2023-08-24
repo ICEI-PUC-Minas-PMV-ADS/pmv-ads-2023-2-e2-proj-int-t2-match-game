@@ -46,11 +46,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |`PERSONA`|  `FUNCIONALIDADE` |`MOTIVO/VALOR` |
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário (Mateus) |  Quero conseguir logar na aplicação. | Para possuir minha própria conta.  |
-|Usuário (Alex) | Quero conseguir recomendar jogos. | Para que outras pessoas possam ver os jogos recomendados. |
+|Usuário<br> (Alex) | Quero conseguir recomendar jogos. | Para que outras pessoas possam ver os jogos recomendados. |
 |Usuário (Samira) | Quero conseguir me cadastrar na aplicação.| Para que eu tenha meu perfil.   |
-|Usuário (Emily) | Quero conseguir alterar minha foto de perfil.| Para que eu possa personalizar meu perfil. |
-|Usuário (Alex) |Quero conseguir marcar jogos como meus favoritos. | Para que eu me lembre de quais jogos eu deva jogar depois.  |
-|Usuário (Emily) |  Quero que ao fim das perguntas a aplicação me recomende jogos. | Para que eu possa escolher qual jogo jogar. |
+|Usuário <br>(Emily) | Quero conseguir alterar minha foto de perfil.| Para que eu possa personalizar meu perfil. |
+|Usuário <br>(Alex) |Quero conseguir marcar jogos como meus favoritos. | Para que eu me lembre de quais jogos eu deva jogar depois.  |
+|Usuário <br>(Emily) |  Quero que ao fim das perguntas a aplicação me recomende jogos. | Para que eu possa escolher qual jogo jogar. |
 |Usuário (Mateus) |  Quero conseguir ver uma lista de jogos favoritos.| Para conseguir ver quais jogos eu já favoritei.  |
 |Usuário (Samira) | Quero conseguir ver uma lista de jogos recomendados.| Para conseguir ver quais jogos eu já recomendei. |
 ## Requisitos
