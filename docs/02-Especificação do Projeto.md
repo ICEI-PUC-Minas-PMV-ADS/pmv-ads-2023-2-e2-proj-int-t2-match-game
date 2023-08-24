@@ -8,38 +8,33 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+| Isabella Santos | INFORMAÇÕES | TIPOS DE JOGOS PREFERIDOS |
+| ------------- | ----------- | --------------------------- |
+| ![Rectangle 1](https://github.com/GabrielBruno7/planty/assets/114627827/2117dcd2-5e9c-4299-b82f-331b1f24b811) | **Idade:** 12 anos <br> **Ocupação:** Ela tem interesses <br> e atividades, como  desenhar, pintar, <br> brincar ao ar livre e sonha <br> em se tornar uma veterinária no futuro. | <ul> <li> Jogos de Lógica <li> Jogos de Música e Ritmo  <li> Jogos de Memória </ul> |
+| **MOTIVAÇÕES** | **FRUSTRAÇÕES** | **HOBBIES** |
+|Isabella pode ser motivada <br> pela oportunidade de explorar<br> e expressar sua criatividade. | Restrições de tempo ou regras <br> que impedem que ela faça o que deseja. | Sempre que possível, Isabela<br> gosta de  participar de eventos<br> e convenções de jogos.|
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+| Mateus Oliveira | INFORMAÇÕES | APLICATIVOS MAIS UTILIZADOS |
+| ------------- | ----------- | --------------------------- |
+| ![Rectangle 2](https://github.com/GabrielBruno7/planty/assets/114627827/d0124e53-5e52-452a-b14c-4bb10e75747e) | **Idade:** 25 anos <br> **Ocupação:** Consultor de Marketing Digital, <br> Mateus atua como consultor de marketing <br> digital. Ele trabalha com empresas e marcas<br> para desenvolver estratégias eficazes de<br> marketing online. | <ul> <li> Jogos de Quebra-Cabeça  <li> Jogos de Estratégia <li> RPGs de mundo aberto </ul> |
+| **MOTIVAÇÕES** | **FRUSTRAÇÕES** | **HOBBIES** |
+|Mateus encontra motivação em<br> fazer parte da comunidade de<br> jogadores e desenvolvedores. | Mateus às vezes fica desapontado<br> com a falta de inovação em certos<br> gêneros de jogos. | Prática de Instrumento Musical <br> e leitura.|
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|`PERSONA`|  `FUNCIONALIDADE` |`MOTIVO/VALOR` |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
+|Usuário (Mateus) |  Quero conseguir logar na aplicação. | Para ter minha própria conta.  |
+|Usuário (Isabella) | Quero conseguir recomendar jogos. | Permitir que possam administrar contas |
+|Usuário (Isabella) | Quero conseguir me cadastrar na aplicação.| Para ter minha própria conta.  |
+|Usuário (Mateus) | Quero conseguir alterar minha foto de perfil.| Permitir que possam administrar contas |
+|Usuário (Isabella) |Quero conseguir marcar jogos como meus favoritos. | Para ter minha própria conta.  |
+|Usuário (Mateus) |  Quero que ao fim das perguntas a aplicação me recomende jogos. | Permitir que possam administrar contas |
+|Usuário (Mateus) |  Quero conseguir ver uma lista de jogos favoritos.| Para ter minha própria conta.  |
+|Usuário (Isabella) | Quero conseguir ver uma lista de jogos recomendados.| Permitir que possam administrar contas |
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
