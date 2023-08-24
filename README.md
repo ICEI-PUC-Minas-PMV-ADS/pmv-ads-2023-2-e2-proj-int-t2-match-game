@@ -4,7 +4,7 @@
 
 `Projeto: Desenvolvimento de uma Aplicação Interativa`
 
-`2° SEMESTRE`
+`2° SEMESTRE/2023`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
