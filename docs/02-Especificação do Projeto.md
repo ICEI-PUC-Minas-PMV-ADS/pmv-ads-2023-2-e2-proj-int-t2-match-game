@@ -63,7 +63,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-03| A aplicação deve ser implementada com HTML semântico | ALTA|
 |RNF-04| A aplicação deve possuir no mínimo 60% de acessibilidade de acordo com a plataforma Lighthouse | MÉDIA |
 |RNF-05| A aplicação deve ser publicada na plataforma Vercel | ALTA |
-|RNF-06| A aplicação deve conter bom nível de contraste entre os elementos | MÉDIA |
+|RNF-06| A aplicação deve conter bom nível de contraste entre os elementos | MÉDIA 
+|RNF-07| A aplicação deverá utilizar o Framework Tailwind | MÉDIA ||
 
 ## Restrições
 
