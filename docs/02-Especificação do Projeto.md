@@ -43,30 +43,26 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-01| A aplicação deve incluir uma página de login para os usuários | ALTA | 
+|RF-02| A aplicação deve incluir uma página de cadastro para os novos usuários  | ALTA |
+|RF-03| A aplicação deve possuir um sistema de escolhas para o usuário identificar seus interesses acerca dos jogos | ALTA |
+|RF-04| A aplicação deve recomendar jogos de acordo com o interesse escolhido pelos usuários | ALTA |
+|RF-05| A aplicação deve conter informações sobre os jogos recomendados aos usuários | ALTA |
+|RF-06| A aplicação deve permitir que o usuário marque como "favorito" os jogos de sua escolha | ALTA |
+|RF-07| A aplicação deve incluir uma lista de jogos marcados como "favorito" no perfil do usuário | ALTA |
+|RF-08| A aplicação deve permitir que o usuário personalize sua foto de perfil | ALTA |
+|RF-09| A aplicação deve permitir que os usuários recomendem jogos para outros usuários | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-01| A aplicação deve ser responsiva permitindo a visualização em diferentes dispositivos | ALTA | 
+|RNF-02| A aplicação deve ser compatível com os principais navegadores presentes no mercado (Google Chrome, Firefox, Microsoft Edge) |  MÉDIA | 
+|RNF-03| A aplicação deve ser implementada com HTML semântico | ALTA|
+|RNF-04| A aplicação deve possuir no mínimo 60% de acessibilidade de acordo com a plataforma Lighthouse | MÉDIA |
+|RNF-05| A aplicação deve ser publicada na plataforma vercel | ALTA |
+|RNF-06| A aplicação deve conter bom nível de contraste entre os elementos | MÉDIA |
 
 ## Restrições
 
@@ -74,8 +70,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|RE-01| O projeto deverá ser entregue até o final do semestre |
+|RE-02| Proibida a terceirização de desenvolvimento do sistema em sua totalidade ou de módulos isolados |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
