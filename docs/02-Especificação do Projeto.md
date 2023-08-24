@@ -8,17 +8,35 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-| Isabella Santos | INFORMAÇÕES | TIPOS DE JOGOS PREFERIDOS |
-| ------------- | ----------- | --------------------------- |
-| ![Rectangle 1](https://github.com/GabrielBruno7/planty/assets/114627827/2117dcd2-5e9c-4299-b82f-331b1f24b811) | **Idade:** 12 anos <br> **Ocupação:** Ela tem interesses <br> e atividades, como  desenhar, pintar, <br> brincar ao ar livre e sonha <br> em se tornar uma veterinária no futuro. | <ul> <li> Jogos de Lógica <li> Jogos de Música e Ritmo  <li> Jogos de Memória </ul> |
-| **MOTIVAÇÕES** | **FRUSTRAÇÕES** | **HOBBIES** |
-|Isabella pode ser motivada <br> pela oportunidade de explorar<br> e expressar sua criatividade. | Restrições de tempo ou regras <br> que impedem que ela faça o que deseja. | Sempre que possível, Isabela<br> gosta de  participar de eventos<br> e convenções de jogos.|
 
 | Mateus Oliveira | INFORMAÇÕES | APLICATIVOS MAIS UTILIZADOS |
 | ------------- | ----------- | --------------------------- |
-| ![Rectangle 2](https://github.com/GabrielBruno7/planty/assets/114627827/d0124e53-5e52-452a-b14c-4bb10e75747e) | **Idade:** 25 anos <br> **Ocupação:** Consultor de Marketing Digital, <br> Mateus atua como consultor de marketing <br> digital. Ele trabalha com empresas e marcas<br> para desenvolver estratégias eficazes de<br> marketing online. | <ul> <li> Jogos de Quebra-Cabeça  <li> Jogos de Estratégia <li> RPGs de mundo aberto </ul> |
+| ![Rectangle 2](https://github.com/GabrielBruno7/planty/assets/114627827/d0124e53-5e52-452a-b14c-4bb10e75747e) | **Idade:** 19 anos <br> **Ocupação:** Consultor de Marketing Digital, <br> Mateus atua como consultor de marketing <br> digital. Ele trabalha com empresas e marcas<br> para desenvolver estratégias eficazes de<br> marketing online. | <ul> <li> Aventura <li> Ação <li> Esportes </ul> |
 | **MOTIVAÇÕES** | **FRUSTRAÇÕES** | **HOBBIES** |
 |Mateus encontra motivação em<br> fazer parte da comunidade de<br> jogadores e desenvolvedores. | Mateus às vezes fica desapontado<br> com a falta de inovação em certos<br> gêneros de jogos. | Prática de Instrumento Musical <br> e leitura.|
+
+
+
+| Alex Sandro | INFORMAÇÕES | APLICATIVOS MAIS UTILIZADOS |
+| ------------- | ----------- | --------------------------- |
+| ![Rectangle 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/8870dd9a-3291-48ba-8b9c-608e43c263f6) | **Idade:** 25 anos <br> **Ocupação:** Como fotógrafo de viagens,<br> ele adora  explorar mundos virtuais e reais<br> para capturar momentos e cenários únicos. | <ul> <li> Jogos de plataforma  <li> Jogos de sobrevivência <li> Corrida </ul> |
+| **MOTIVAÇÕES** | **FRUSTRAÇÕES** | **HOBBIES** |
+|Alex é motivado pela busca <br>constante por aventura e<br> novas paisagens. Ele busca <br>capturar momentos únicos e <br>compartilhá-los com o mundo. | Alex fica frustrado quando se sente <br> limitado em sua exploração, seja por restrições <br>financeiras ou falta de tempo. |  Alex gosta de acampar e <br>praticar fotografia analógica.|
+
+
+| Emily Paz | INFORMAÇÕES | APLICATIVOS MAIS UTILIZADOS |
+| ------------- | ----------- | --------------------------- |
+| ![1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/f3fb4158-20ee-46b3-992c-9487f22ddeaf) | **Idade:** 41 anos <br> **Ocupação:** Analista de Dados | <ul> <li> Quebra-Cabeças  <li> Multijogador Online (MMO) <li> RPGs de mundo aberto </ul> |
+| **MOTIVAÇÕES** | **FRUSTRAÇÕES** | **HOBBIES** |
+|Emily é motivada pelo desejo<br> de resolver problemas<br> complexos e tomar decisões<br> estratégicas bem informadas. | Emily fica frustrada quando<br> as decisões são tomadas com base<br>  em intuição em vez de<br>  dados concretos. | Além de jogar, Emily<br> gosta de resolver quebra-cabeças.|
+
+
+| Samira Silva | INFORMAÇÕES | APLICATIVOS MAIS UTILIZADOS |
+| ------------- | ----------- | --------------------------- |
+| ![Rectangle 1111](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/108d9d4f-63f7-456c-9dff-9aeddb8ec64d) | **Idade:** 28 anos <br> **Ocupação:** Coordenadora de Eventos | <ul> <li> Multijogador  <li>Jogos de Festa <li> Simulação Social </ul> |
+| **MOTIVAÇÕES** | **FRUSTRAÇÕES** | **HOBBIES** |
+|Samira é motivada pela <br>conexão com outras pessoas. | Samira fica frustrada <br>quando os eventos não saem como planejado.  | Organizar encontros com amigos.|
+
 
 
 ## Histórias de Usuários
@@ -28,13 +46,13 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |`PERSONA`|  `FUNCIONALIDADE` |`MOTIVO/VALOR` |
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário (Mateus) |  Quero conseguir logar na aplicação. | Para possuir minha própria conta.  |
-|Usuário (Isabella) | Quero conseguir recomendar jogos. | Para que outras pessoas possam ver os jogos recomendados. |
-|Usuário (Isabella) | Quero conseguir me cadastrar na aplicação.| Para que eu tenha meu perfil.   |
-|Usuário (Mateus) | Quero conseguir alterar minha foto de perfil.| Para que eu possa personalizar meu perfil. |
-|Usuário (Isabella) |Quero conseguir marcar jogos como meus favoritos. | Para que eu me lembre de quais jogos eu deva jogar depois.  |
-|Usuário (Mateus) |  Quero que ao fim das perguntas a aplicação me recomende jogos. | Para que eu possa escolher qual jogo jogar. |
+|Usuário (Alex) | Quero conseguir recomendar jogos. | Para que outras pessoas possam ver os jogos recomendados. |
+|Usuário (Samira) | Quero conseguir me cadastrar na aplicação.| Para que eu tenha meu perfil.   |
+|Usuário (Emily) | Quero conseguir alterar minha foto de perfil.| Para que eu possa personalizar meu perfil. |
+|Usuário (Alex) |Quero conseguir marcar jogos como meus favoritos. | Para que eu me lembre de quais jogos eu deva jogar depois.  |
+|Usuário (Emily) |  Quero que ao fim das perguntas a aplicação me recomende jogos. | Para que eu possa escolher qual jogo jogar. |
 |Usuário (Mateus) |  Quero conseguir ver uma lista de jogos favoritos.| Para conseguir ver quais jogos eu já favoritei.  |
-|Usuário (Isabella) | Quero conseguir ver uma lista de jogos recomendados.| Para conseguir ver quais jogos eu já recomendei. |
+|Usuário (Samira) | Quero conseguir ver uma lista de jogos recomendados.| Para conseguir ver quais jogos eu já recomendei. |
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
