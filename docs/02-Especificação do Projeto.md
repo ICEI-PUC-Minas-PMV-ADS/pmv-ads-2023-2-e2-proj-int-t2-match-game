@@ -76,7 +76,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |RE-03| O código de desenvolvimento da aplicação não pode ser obtido através de sistemas de IA generativa |
 |RE-04| O código do Back-end deverá ser feito em C# |
 |RE-05| O código do Front-end deverá ser feito em HTML, CSS e JavaScript |
-|RE-06| Caso seja usado algum framework front-end, optar pelo Bootstrap |
+|RE-06| Caso seja usado algum framework Front-end, optar pelo Bootstrap |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
