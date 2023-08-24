@@ -72,7 +72,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|RE-01| O projeto deverá ser entregue até o final do semestre |
+|RE-01| O projeto deverá ser entregue até o final do semestre - 06/12/2023|
 |RE-02| Proibida a terceirização de desenvolvimento do sistema em sua totalidade ou de módulos isolados |
 
 
