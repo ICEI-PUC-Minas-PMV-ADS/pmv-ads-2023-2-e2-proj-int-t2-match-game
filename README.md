@@ -6,7 +6,7 @@
 
 `2° SEMESTRE/2023`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O Match Game é um site que permite que os usuários personalizem suas bibliotecas de jogos e tenham a recomendações personalizadas com base em seus gostos. Além de ampliar a descoberta de jogos, ele promove conexões entre jogadores que compartilham interesses em comum.
 
 ## Integrantes
 
