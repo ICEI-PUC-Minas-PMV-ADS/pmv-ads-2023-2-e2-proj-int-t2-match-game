@@ -1,46 +1,33 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+As redes sociais convencionais não oferecem uma maneira eficaz de conectar *gamers* apaixonados, de forma direcionada, levando em considerando seus gostos pessoais.
+
+Pensando nisso, desenvolvemos o **Match Game** para ser uma plataforma projetada exclusivamente para *gamers*, onde os usuários podem não só favoritar seus jogos preferidos - criando uma biblioteca personalizada, como também se conectar com outros *gamers* que compartilham seus interesses pelo universo de jogos.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Sabe-se que existem diversos jogos disponíveis no mercado que faz-se necessário outros *gamers* para jogar, como é o caso, por exemplo, de *League of Leagends*, *Valorant*, *Counter Strike*, e outros.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Com isso, é comum na comunidade de jogos que os usuários formem grupos, ou as conhecidas *“guildas”*, para se possam jogar juntos um determinado jogo e assim aumentar suas chances de vitória.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Atualmente, os *gamers* enfrentam um desafio: encontrar pessoas com interesses e gostos semelhantes, com quem possam compartilhar suas experiências de jogos - tudo isso através de uma plataforma exclusiva.
 
 ## Objetivos
+O objetivo geral desse projeto é desenvolver um software que facilite a interação de *gamers* com interesses parecidos.
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Os objetivos específicos desse software são:
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+- Criação de um perfil personalizado, com uma biblioteca dos jogos favoritos do usuário;
+- Recomendação de jogos que possam ser do interesse do usuário, com base nos jogos favoritados;
+- Facilitar a interação entre usuários da plataforma que tenham gostos parecidos.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O Match Game não se trata apenas de jogos, e sim sobre a interação entre os *gamers*.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Através do Match Game, os usuários podem interagir com outros *gamers* que possuam interesses semelhantes, possibilitando a geração de novas amizades e até mesmo facilitando a criação de *guildas*, em determinados jogos.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+De acordo com um [artigo publicado pela CNN Brasil](https://www.cnnbrasil.com.br/tecnologia/publico-gamer-cresce-e-3-em-cada-4-brasileiros-consomem-jogos-eletronicos/) em abril de 2022, estima-se que 74,5% dos brasileiros são adeptos a jogos *online*, sendo que a maioria deste número é representada por mulheres, que constituem 51% dessa população.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Ainda de acordo com esse mesmo artigo, a faixa etária principal dessa população é de 20 a 24 anos (25,5%), seguida por 16 a 19 anos (17,7%), mas também podemos notar jogadores entre os 35 e 39 anos (11,2%).
