@@ -2,7 +2,7 @@
 
 As redes sociais convencionais não oferecem uma maneira eficaz de conectar *gamers* apaixonados, de forma direcionada, levando em considerando seus gostos pessoais.
 
-Pensando nisso, desenvolvemos o **Match Game** para ser uma plataforma projetada exclusivamente para *gamers*, onde os usuários podem não só favoritar seus jogos preferidos - criando uma biblioteca personalizada, como também se conectar com outros *gamers* que compartilham seus interesses pelo universo de jogos.
+Pensando nisso, desenvolvemos o Match Game para ser uma plataforma projetada exclusivamente para *gamers*, onde os usuários podem não só favoritar seus jogos preferidos - criando uma biblioteca personalizada, como também se conectar com outros *gamers* que compartilham seus interesses pelo universo de jogos.
 
 ## Problema
 Sabe-se que existem diversos jogos disponíveis no mercado que faz-se necessário outros *gamers* para jogar, como é o caso, por exemplo, de *League of Leagends*, *Valorant*, *Counter Strike*, e outros.
