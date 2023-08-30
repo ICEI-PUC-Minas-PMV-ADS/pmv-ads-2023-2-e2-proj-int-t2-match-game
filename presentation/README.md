@@ -1,5 +1,6 @@
 # Apresentação da Solução
+![preview](./../docs/img/pitch.png)
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+Video de Pitch apresentando o problema, solução e propósito do projeto Match Game.
 
-
+🔗[Clique aqui para acessar](https://www.youtube.com/watch?v=Ed_O-Gde9Cg&ab_channel=BrunaSantos)
