@@ -21,7 +21,7 @@ Os objetivos específicos desse software são:
 - Facilitar a interação entre usuários da plataforma que tenham gostos parecidos.
 
 ## Sistemas Semelhantes
-Ao realizar a pesquisa de mercado para o software Match Game, notamos que não existe atualmente nenhum outro sistema parecido com o nosso proposto. Apesar disso, há algumas plataformas de jogos que possuem funcionalidades parecidas, como é o caso da conhecida plataforma Steam, onde é possível, assim como no Match Game:
+Ao realizar a pesquisa de mercado para o software Match Game, notamos que não existe atualmente nenhum outro sistema igual ao nosso proposto. Apesar disso, há algumas plataformas de jogos que possuem funcionalidades semelhantes, como é o caso da conhecida plataforma Steam, onde é possível, assim como no Match Game:
 - Ter uma biblioteca de jogos;
 - Receber recomendações de amigos;
 - Favoritar jogos favoritos;
