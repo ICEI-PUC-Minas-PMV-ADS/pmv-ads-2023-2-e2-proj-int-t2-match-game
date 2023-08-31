@@ -49,6 +49,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Usuário <br>(Emily) |  Quero que ao fim das perguntas a aplicação me recomende jogos. | Para que eu possa escolher qual jogo jogar. |
 |Usuário (Mateus) |  Quero conseguir ver uma lista de jogos favoritos.| Para conseguir ver quais jogos eu já favoritei.  |
 |Usuário (Samira) | Quero conseguir ver uma lista de jogos recomendados.| Para conseguir ver quais jogos eu já recomendei. |
+|Usuário <br>(Emily) | Quero conseguir ver informações dos jogos recomendados| Para conseguir me informar melhor sobre cada jogo. |
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
