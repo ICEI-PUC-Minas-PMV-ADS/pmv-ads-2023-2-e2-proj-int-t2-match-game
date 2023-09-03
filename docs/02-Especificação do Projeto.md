@@ -97,5 +97,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 A seguir, é possível visualizar o Diagrama de Casos de Uso de acordo com os requisitos estabelecidos. 
 
-![Image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/116499898/2b6c01ac-f48c-49b5-8d22-3aaee494ec84)
-
+![Image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/116499898/86bba040-dec0-4033-94c0-349f976dae21)
