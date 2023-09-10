@@ -58,8 +58,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |--------|-----------------------------------------|----|
-|RF-01| A aplicação deve incluir uma página de login para os usuários | ALTA | 
-|RF-02| A aplicação deve incluir uma página de cadastro para os novos usuários  | ALTA |
+|RF-01| A aplicação deve incluir uma página de cadastro para os novos usuários  | ALTA | 
+|RF-02| A aplicação deve incluir uma página de login para os usuários  | ALTA |
 |RF-03| A aplicação deve possuir um sistema de escolhas para o usuário identificar seus interesses acerca dos jogos | ALTA |
 |RF-04| A aplicação deve recomendar jogos de acordo com o interesse escolhido pelos usuários | ALTA |
 |RF-05| A aplicação deve conter informações sobre os jogos recomendados aos usuários | ALTA |
