@@ -67,27 +67,26 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 - `To Be Approved`: Quando uma tarefa está aguardando aprovação, ela é movida para esta coluna.
 -	`Done`: Nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias. <br>
   
-O quadro kanban do grupo desenvolvido na ferramenta de gerenciamento de projetos está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/475/views/1 e é apresentado, no estado atual, na Figura a seguir. <br>
+O quadro kanban do grupo desenvolvido na ferramenta de gerenciamento de projetos está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/475/views/1 e é apresentado, no estado atual, na Figura a seguir: <br>
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/ab8b0b89-d130-4785-bc69-d8b73c791844)
+
+<div align="center">
+<em>Tela do Kanban utilizada pela equipe</em>
+</div>
 
 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- **Editor de código:** Visual Studio Code e Visual Studio
+- **Ferramentas de comunicação:** Google Teams
+- **Ferramentas de desenho de tela (_wireframing_):** Figma
+- **Ferramenta de desenho de diagramas e fluxogramas:** Canva e diagrams.net
 
 O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
+sistema de versão, além de se mostrar versátil. As ferramentas de comunicação utilizadas possuem
 integração semelhante e por isso foram selecionadas. Por fim, para criar
 diagramas utilizamos essa ferramenta por melhor captar as
 necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
