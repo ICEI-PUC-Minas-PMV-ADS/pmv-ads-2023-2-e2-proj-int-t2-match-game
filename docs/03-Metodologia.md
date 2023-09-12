@@ -1,9 +1,13 @@
 
 # Metodologia
+O gerenciamento e organização do projeto, se baseia nos princípios gerais da metodologia ágil SCRUM, priorizando a comunicação e transparência entre a equipe de desenvolvimento e o usuário para maior eficiência no projeto. 
+<br>
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+A principal ferramenta a ser utilizada será o GitHub, que servirá como repositório para armazenamento do código fonte. Além disso, faremos uso dessa plataforma para gerenciar o backlog do produto e as sprints individuais utilizando o Kanban disponibilizado na aba "Projects".
+<br>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+O processo de criação de interface e dos wireframes será realizado na plataforma Figma, assim a equipe envolvida no projeto poderá trabalhar simultaneamente e compartilhar ideias de maneira eficiente.
+
 
 ## Controle de Versão
 
