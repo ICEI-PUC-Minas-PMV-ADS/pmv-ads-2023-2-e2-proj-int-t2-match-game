@@ -34,18 +34,18 @@ etiquetas:
 A equipe está organizada da seguinte maneira:
 
 **Scrum Master:** <br>
--	Bruna Santos <br>
+-	Luana Pina <br>
 
 **Product Owner:** <br>
--	André Guilherme Santos de Oliveira <br>
+-	Bruna Santos <br>
 
 **Equipe de Desenvolvimento:** <br>
 -	Gabriel Bruno de Oliveira Souza <br>
 - Tayane Ferreira Milagres <br>
 
 **Equipe de Design:** <br>
--	Luana Guimarães Pina <br>
 -	João Vitor Jorge Almeida <br>
+-	André Guilherme Santos de Oliveira <br>
 
 
 ### Processo
