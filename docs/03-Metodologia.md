@@ -37,11 +37,11 @@ A equipe está organizada da seguinte maneira:
 -	Bruna Santos <br>
 
 **Product Owner:** <br>
--	Tayane Ferreira Milagres <br>
+-	André Guilherme Santos de Oliveira <br>
 
 **Equipe de Desenvolvimento:** <br>
 -	Gabriel Bruno de Oliveira Souza <br>
-- André Guilherme Santos de Oliveira <br>
+- Tayane Ferreira Milagres <br>
 
 **Equipe de Design:** <br>
 -	Luana Guimarães Pina <br>
