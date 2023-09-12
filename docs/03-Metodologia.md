@@ -74,7 +74,7 @@ As ferramentas empregadas no projeto são:
 - **Editor de código:** Visual Studio Code e Visual Studio
 - **Ferramentas de comunicação:** Google Teams
 - **Ferramentas de desenho de tela (_wireframing_):** Figma
-- **Ferramenta de desenho de diagramas e fluxogramas:** Canva e diagrams.net
+- **Ferramenta de desenho de diagramas e fluxogramas:** Canva e Diagrams.net
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão, além de se mostrar versátil. As ferramentas de comunicação utilizadas possuem
