@@ -10,16 +10,18 @@ O diagrama de Classe pode ser visto na imagem a seguir:
 
 ![Image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/116499898/0e635b76-7e32-4a89-aec9-82566aae2c55)
 
-## Modelo ER (Projeto Conceitual)
-
-![Captura de tela 2023-09-08 113611](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/8ea6bd9b-b559-4fa0-bade-e41b97ed299d)
-
-
 ## Projeto da Base de Dados
 
-O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
- 
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
+## Modelo ER (Projeto Conceitual)
+![Captura de tela 2023-09-18 200653](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/93e47cc5-89f7-4b68-ae90-005f4b56ba97)
+
+## Modelo ER (Projeto Lógico)
+![Captura de tela 2023-09-18 200642](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/61b4eba5-c345-4c3a-a26d-e90f2ffd6f0e)
+
+## Modelo ER (Projeto Físico)
+![Captura de tela 2023-09-18 201026](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/1e752862-df12-4ef6-a571-0e4777a30936)
+
+
 
 ## Tecnologias Utilizadas
 
