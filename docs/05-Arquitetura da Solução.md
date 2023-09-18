@@ -12,13 +12,13 @@ O diagrama de Classe pode ser visto na imagem a seguir:
 
 ## Projeto da Base de Dados
 
-## Modelo ER (Projeto Conceitual)
+## (Modelo Conceitual)
 ![Captura de tela 2023-09-18 200653](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/93e47cc5-89f7-4b68-ae90-005f4b56ba97)
 
-## Modelo ER (Projeto Lógico)
+## (Modelo Lógico)
 ![Captura de tela 2023-09-18 200642](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/61b4eba5-c345-4c3a-a26d-e90f2ffd6f0e)
 
-## Modelo ER (Projeto Físico)
+## (Modelo Físico)
 ![Captura de tela 2023-09-18 201026](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/1e752862-df12-4ef6-a571-0e4777a30936)
 
 
