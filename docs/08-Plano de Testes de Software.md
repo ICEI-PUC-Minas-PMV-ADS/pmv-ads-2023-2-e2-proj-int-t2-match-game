@@ -55,13 +55,13 @@
 | **Caso de Teste** 	| **CT-09 – Recomendação de jogos feitas de um usuário para o outro**	|
 |Requisito Associado | RF-09	- A aplicação deve permitir que os usuários recomendem jogos para outros usuários. |
 | Objetivo do Teste 	| Permitir que o usuário recomende jogos para outro usuário. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site #<br> - Estar logado ou criar uma conta <br> - Clicar no botão "Perfil"<br> - Clicar em "Look at this"<br> - Selecionar os jogos recomendados pelo usuário para que esteja visível em seu perfil <br> - Clicar em "Enviar".
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site #<br> - Estar logado ou criar uma conta <br> - Clicar no botão "Perfil"<br> - Clicar em "Look at this"<br> - O usuário deve selecionar os jogos de sua escolha para que esteja visível em seu perfil como recomendados <br> - Clicar em "Enviar".
 |Critério de Êxito | - Usuário conseguiu fazer a recomendação de jogos para outros usuários em seu perfil. |
 |:---:	|:---:	|
 | **Caso de Teste**	| **CT-10 – Lista de recomendação de jogos feitas de um usuário para o outro**	|
 |Requisito Associado | RF-10	- A aplicação deve incluir uma lista de jogos que os usuários recomendaram para outros usuários |
 | Objetivo do Teste 	| Permitir que o usuário recomende jogos para outro usuário em lista. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site #<br> - Estar logado ou criar uma conta <br> - Clicar no botão "Perfil"<br> - Clicar em "Look at this"<br> - Selecionar os jogos recomendados pelo usuário para que esteja visível em seu perfil <br> - Clicar em "Enviar".
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site #<br> - Estar logado ou criar uma conta <br> - Clicar no botão "Perfil"<br> - Clicar em "Look at this"<br> - O usuário deve selecionar os jogos de sua escolha para que esteja visível em seu perfil como recomendados <br> - Clicar em "Enviar".
 |Critério de Êxito | - Usuário conseguiu fazer a recomendação de jogos em lista para outros usuários em seu perfil. |
 
 
