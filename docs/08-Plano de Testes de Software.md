@@ -45,7 +45,6 @@
 | Objetivo do Teste 	| Verificar se a lista de favoritos do usuário consta em seu perfil. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site #<br> - Estar logado ou criar uma conta <br> - Clicar no botão "Perfil"<br> - Visualizar os jogos favoritados.<br>
 |Critério de Êxito | - Lista de favoritos exibido no perfil do usuário. |
-
 |:---:	|:---:	|
 | **Caso de Teste**	| **CT-08 – Personalização de foto de perfil do usuário**	|
 |Requisito Associado | RF-08	- A aplicação deve permitir que o usuário personalize sua foto de perfil. |
