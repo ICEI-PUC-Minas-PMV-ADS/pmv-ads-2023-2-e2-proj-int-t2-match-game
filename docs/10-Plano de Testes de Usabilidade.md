@@ -10,7 +10,7 @@ Será realizado o seguinte roteiro:
 - Eles exploram a plataforma por alguns minutos.
 - São solicitados a listar quaisquer problemas que encontrem na interface ou no design.
 
-**2. Criação e ou acesso da conta**
+**2. Criação e/ou acesso da conta**
 
 - Os participantes tentam criar uma nova conta usando um e-mail e senha fornecidos.
 - Eles selecionam a opção para acessar uma conta já existente.
