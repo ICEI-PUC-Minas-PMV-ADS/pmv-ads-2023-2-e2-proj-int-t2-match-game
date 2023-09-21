@@ -16,7 +16,7 @@
 | **Caso de Teste** 	| **CT-03 – Recuperação de senha**	|
 |Requisito Associado | RF-02	- A aplicação deve incluir uma página de login para os usuários. |
 | Objetivo do Teste 	| Verificar se o usuário consegue recuperar o acesso a conta uma vez que ja esteja cadastrado no sistema e tenha esquecido sua senha. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site #<br> - Clicar no botão "Cadastro/Login" <br> - Clicar em "Esqueceu sua senha?"<br> - Preencher o campo de e-mail <br> - Clicar em "Enviar código por email"<br> - Preencher o código de verificação que foi enviado para o email<br> - Cadastrar nova senha. |
+| Passos 	|- Clicar no botão "Cadastro/Login" <br> - Clicar em "Esqueceu sua senha?"<br> - Preencher o campo de e-mail <br> - Clicar em "Enviar código por email"<br> - Preencher o código de verificação que foi enviado para o email<br> - Cadastrar nova senha. |
 |Critério de Êxito | - A recuperação de senha foi realizada. |
 |:---:	|:---:	|
 | **Caso de Teste** 	| **CT-04 – Sistema de escolha de jogos pelo usuário**	|
