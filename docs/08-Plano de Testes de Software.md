@@ -1,13 +1,10 @@
 # Plano de Testes de Software
-
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
-
  
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - A aplicação deve incluir uma página de cadastro para os novos usuários. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site #<br> - Clicar em "Cadastro/Login" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, senha, confirmação de senha) <br> - Clicar em "Registrar" |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site #<br> - Clicar em "Cadastro/Login" <br> - Preencher os campos obrigatórios (e-mail, nome completo, data de nascimento, senha, confirmação de senha) <br> - Clicar em "Registrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |:---:	|:---:	|
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
@@ -65,13 +62,3 @@
 |Critério de Êxito | - Usuário conseguiu fazer a recomendação de jogos em lista para outros usuários em seu perfil. |
 
 
-
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
