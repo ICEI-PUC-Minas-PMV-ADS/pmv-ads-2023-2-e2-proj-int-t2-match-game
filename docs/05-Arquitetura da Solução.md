@@ -6,9 +6,9 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-O diagrama de Classe pode ser visto na imagem a seguir:
+O Diagrama de Classe pode ser visto na imagem a seguir:
 
-![Image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/116499898/0e635b76-7e32-4a89-aec9-82566aae2c55)
+![Image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/116499898/95c047b1-2f1a-4180-a90a-2c821fd35992)
 
 ## Projeto da Base de Dados
 
