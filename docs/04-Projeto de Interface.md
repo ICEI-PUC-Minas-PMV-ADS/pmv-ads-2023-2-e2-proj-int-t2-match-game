@@ -9,7 +9,8 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Diagrama de Fluxo
 
-![Match Game 1 0 (sem jogo)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127165847/ecb1e94f-2b40-4dcc-8249-9d98ca225ac0)
+!![Fluxograma ATUALIZAÇÃO](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127165847/ba820adb-cfae-4a30-a3a4-095aa2c38511)
+
 
 ## Wireframes
 
