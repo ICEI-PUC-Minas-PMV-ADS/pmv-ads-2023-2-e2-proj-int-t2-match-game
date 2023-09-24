@@ -1,9 +1,9 @@
 
 # Metodologia
-O gerenciamento e organização do projeto, se baseia nos princípios gerais da metodologia ágil SCRUM, priorizando a comunicação e transparência entre a equipe de desenvolvimento e o usuário para maior eficiência no projeto. 
+O gerenciamento e organização do projeto se baseia nos princípios gerais da metodologia ágil SCRUM, priorizando a comunicação e transparência entre a equipe de desenvolvimento e o usuário para maior eficiência no projeto. 
 <br>
 
-A principal ferramenta a ser utilizada será o GitHub, que servirá como repositório para armazenamento do código fonte. Além disso, faremos uso dessa plataforma para gerenciar o backlog do produto e as sprints individuais utilizando o Kanban disponibilizado na aba "Projects".
+A principal ferramenta a ser utilizada será o GitHub, que servirá como repositório para armazenamento do código fonte. Além disso, faremos uso dessa plataforma para gerenciar o backlog do produto e as sprints individuais, utilizando o Kanban disponibilizado na aba "Projects".
 <br>
 
 O processo de criação de interface e dos wireframes será realizado na plataforma Figma, assim a equipe envolvida no projeto poderá trabalhar simultaneamente e compartilhar ideias de maneira eficiente.
@@ -12,7 +12,7 @@ O processo de criação de interface e dos wireframes será realizado na platafo
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
+[Git](https://git-scm.com/), sendo que o [GitHub](https://github.com)
 foi utilizado para hospedagem do repositório.
 
 O projeto segue a seguinte convenção para o nome de branches:
@@ -50,7 +50,7 @@ A equipe está organizada da seguinte maneira:
 
 ### Processo
 
-Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub Project. As etapas são classificadas em:
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub Projects. As etapas são classificadas em:
 
 -	`Product Backlog`: Recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista.
 -	`To Do`: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando.
