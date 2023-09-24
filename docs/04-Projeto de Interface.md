@@ -7,7 +7,7 @@ A interface deve atender à todos os critérios dos requisitos funcionais e não
 
 ## Diagrama de Fluxo
 O diagrama apresentado na figura abaixo mostra o fluxo de interação do usuário pelas telas do Match Game. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue.
-!![Fluxograma ATUALIZAÇÃO](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127165847/ba820adb-cfae-4a30-a3a4-095aa2c38511)
+![Fluxograma ATUALIZAÇÃO](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127165847/ba820adb-cfae-4a30-a3a4-095aa2c38511)
 
 _Diagrama de Fluxo_
 
