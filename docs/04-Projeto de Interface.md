@@ -13,7 +13,7 @@ _Diagrama de Fluxo_
 
 
 ## Wireframes
-Levando em consideração o fluxo do usuário, e os requisitos funcionais e não funcionais do sistema, apresentaremos a seguir todas as telas que irão compor o Match Game. A estrutura principal do sistema, apresentada na figura abaixo, foi desenvolvida utilizando a metodologia de mobile first.
+Levando em consideração o fluxo do usuário, e os requisitos funcionais e não funcionais do sistema, apresentaremos a seguir todas as telas que irão compor o Match Game. Os wireframes do sistema, apresentados nas seções abaixo, foram desenvolvidos utilizando a metodologia de mobile first.
 
 ## Homepage
 
