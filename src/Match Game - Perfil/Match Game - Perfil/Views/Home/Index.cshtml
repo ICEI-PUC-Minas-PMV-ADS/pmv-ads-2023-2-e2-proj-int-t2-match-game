@@ -1,0 +1,70 @@
+﻿@model UserName
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Meu Perfil</h1>
+    <p>
+        Confira abaixo a todas as informações
+        do seu perfil e personalize-o.
+    </p>
+</div>
+
+
+<main>
+<div class="container text-center">
+    <div class="row justify-content-md-center">
+        <div class="card" style="width: 18rem; padding:0px; border-radius:20px;">
+
+            <div class="profile-image" style="background-color: #eaeaea; background-image: url(/avatar.jpg); background-position: center;  background-repeat: no-repeat; background-size: cover; height:250px; width:auto; border-radius:20px 20px 0px 0px;">
+                <img src=""/>
+                    <div class="update-image" style="margin-top:200px;">
+                        <a href="#" class="card-text" style="text-decoration:none; font-size:14px;"><p id="alterarImg" onclick()>Alterar imagem do perfil</p></a>
+                </div>
+            </div>
+
+
+            <div class="card-body" style="background-color: #FFFFFF; border-radius:20px; padding: 30px;">
+                <h4 class="card-title">@Model.Name</h4>
+                    <a href="#" class="card-text" id="alterarUser" style="text-decoration:none; font-size:14px;">Alterar nome do perfil</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <dialog>
+        <h4 class="text-center p-sm-4">Alterar Foto de Perfil</h4>
+        <form method="post" action="/Profile/UploadProfilePicture" enctype="multipart/form-data">
+
+            <label class="fotoUpload" for="imgInput" tabindex="0">
+                <span class="imgUpload">
+                    <i class="fa-solid fa-cloud-arrow-up uploadIcon" style="color: #696969;"></i>
+                    Faça o Upload do Seu Arquivo
+                </span>
+            </label>
+            <input type="file" name="profilePicture" accept=".jpg,.png,.jpeg" id="imgInput">
+
+
+        </form>
+        <div class="modalButtons text-center pt-sm-5">
+            <button type="submit" class="btn btn-secondary btnAlterarFoto">ALTERAR FOTO DE PERFIL</button>
+            <button type="button" class="btn btn-secondary btnCancelar" id="btnCancelar">CANCELAR</button>
+        </div>
+    </dialog>
+
+    <dialog id="modalNome">
+        <h4 class="text-center p-sm-4">Alterar Nome de Usuário</h4>
+        <div class="text-center editUser">
+            <input type="text" placeholder="Insira seu novo nome de usuário" id="inputNomeDeUsuario" />
+        </div>
+
+        <div class="modalButtons text-center pt-sm-4">
+            <button type="submit" class="btn btn-secondary btnAltNomeUsuario" id="btnAlterarNome">ALTERAR NOME DE USUÁRIO</button>
+            <button type="button" class="btn btn-secondary btnCancelar" id="btnCancelarNome">CANCELAR</button>
+        </div>
+    </dialog>
+
+</main>
+<script src="https://kit.fontawesome.com/fe8eb85698.js" crossorigin="anonymous"></script>
+<script src="~/js/site.js"></script>
