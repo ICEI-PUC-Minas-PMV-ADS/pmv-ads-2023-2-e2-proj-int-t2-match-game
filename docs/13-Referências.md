@@ -5,5 +5,4 @@ TADEU, Vinícius. Público gamer cresce e 3 em cada 4 brasileiros consomem jogos
 TESTE PUSH GABRIEL
 doi p
 
-att pick pocket
-
+att 
