@@ -47,16 +47,23 @@ Será realizado o seguinte roteiro:
 
 **8. Feedback**
 
-- Os participantes compartilham sua opinião geral sobre a usabilidade da plataforma pelo site [TypeForm](https://cj8dzqvv1ns.typeform.com/to/IfCHD9BF). 
+- Os participantes compartilham sua opinião geral sobre a usabilidade da plataforma pelo site [TypeForm](https://cj8dzqvv1ns.typeform.com/to/IfCHD9BF).
+
 ![Captura de tela 2023-10-07 165623](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/d8e4a8de-ffa3-4d4e-aa22-4be4dc6ce30c)
-Printscreen da página inicial do TypeForm.
+<div align="center">Figura 1: Printscreen da página inicial do questionário no site TypeForm. </div>
+<br>
 
-Os usuários poderão pontuar numa escala de 0 a 10 seu grau de dificuldade e eficiência da plataforma em dez questões.
+- Os usuários poderão pontuar numa escala de 0 a 10 seu grau de dificuldade e eficiência da plataforma em dez questões.
+
 ![Captura de tela 2023-10-07 165658](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/1623e46e-8dd2-4b6d-a9c7-5c113439b59d)
-Printscreen de uma das questões do TypeForm.
+<div align="center">Figura 2: Printscreen de uma das avaliações do questionário no site TypeForm. </div>
+<br>
 
-O penúltimo slide do questionário deixa aberto ao usuário sugerir melhorias e deixar comentários gerais sobre a sua experiência na plataforma Match Game.
+- O penúltimo slide do questionário deixa aberto ao usuário sugerir melhorias e deixar comentários gerais sobre a sua experiência na plataforma Match Game.
+ <br>
+
 ![Captura de tela 2023-10-07 170039](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/e5f58c89-fb21-42ca-9564-4bbd30e34ac2)
+<div align="center">Figura 3: Printscreen da página de sugestões livre para o usuário no questionário no site TypeForm. </div>
 
 
  # Seleção dos participantes
