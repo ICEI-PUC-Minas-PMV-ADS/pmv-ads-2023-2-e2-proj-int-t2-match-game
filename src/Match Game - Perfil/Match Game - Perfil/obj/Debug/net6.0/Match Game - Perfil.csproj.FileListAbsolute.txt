@@ -28,3 +28,13 @@ C:\Users\luana_ea3gy04\source\repos\Match Game - Perfil\Match Game - Perfil\obj\
 C:\Users\luana_ea3gy04\source\repos\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.pdb
 C:\Users\luana_ea3gy04\source\repos\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.genruntimeconfig.cache
 C:\Users\luana_ea3gy04\source\repos\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\ref\Match Game - Perfil.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.RazorAssemblyInfo.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.RazorAssemblyInfo.cs
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\refint\Match Game - Perfil.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.pdb

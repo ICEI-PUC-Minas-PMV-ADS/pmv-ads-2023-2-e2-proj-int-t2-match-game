@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QVr6BG9yrPIpez7PCqNZFU8903S3CTp/tp+2+FxabeSsPfx8DHNMqB+gHvSnwdnQ4RL/8/6fpf+LSx8LmtCD9w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andre\\source\\repos\\MatchGame\\MatchGame\\MatchGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
+  ],
+  "logs": []
+}
