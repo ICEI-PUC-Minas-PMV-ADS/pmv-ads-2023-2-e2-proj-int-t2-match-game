@@ -18,7 +18,9 @@ foi utilizado para hospedagem do repositório.
 O projeto segue a seguinte convenção para o nome de branches:
 
 - `main`: versão estável já testada do software
-- `dev`: versão de desenvolvimento do software
+- `dev`: versão de desenvolvimento do software (Total)
+- `Back-Dev`: versão de desenvolvimento do software (Front-End)
+- `Front-Dev`: versão de desenvolvimento do software (Back-End)
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
