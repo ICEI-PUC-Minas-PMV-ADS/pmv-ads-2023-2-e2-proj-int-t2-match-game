@@ -1,3 +1,6 @@
+using MatchGame.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace MatchGame
 {
     public class Program
@@ -6,6 +9,11 @@ namespace MatchGame
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddDbContext<DataContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
+                    
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 

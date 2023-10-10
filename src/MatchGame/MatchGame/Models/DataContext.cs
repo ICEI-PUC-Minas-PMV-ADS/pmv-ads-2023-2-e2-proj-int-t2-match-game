@@ -4,7 +4,7 @@ namespace MatchGame.Models
 {
     public class DataContext: DbContext
     {
-        public DataContext(DbContextOptions<DbContext>options): base(options)
+        public DataContext(DbContextOptions<DataContext>options): base(options)
         {
         
         
@@ -12,6 +12,9 @@ namespace MatchGame.Models
         
         
         }
+
+
+        public  DbSet<User> Users { get; set; }
 
 
     }
