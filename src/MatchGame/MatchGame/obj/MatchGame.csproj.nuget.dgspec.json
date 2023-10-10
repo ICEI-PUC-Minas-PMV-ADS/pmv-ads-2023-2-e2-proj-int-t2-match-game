@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\source\\repos\\MatchGame\\MatchGame\\MatchGame.csproj": {}
+    "C:\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\MatchGame\\MatchGame\\MatchGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\source\\repos\\MatchGame\\MatchGame\\MatchGame.csproj": {
+    "C:\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\MatchGame\\MatchGame\\MatchGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\MatchGame\\MatchGame\\MatchGame.csproj",
+        "projectUniqueName": "C:\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\MatchGame\\MatchGame\\MatchGame.csproj",
         "projectName": "MatchGame",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\MatchGame\\MatchGame\\MatchGame.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\MatchGame\\MatchGame\\obj\\",
+        "projectPath": "C:\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\MatchGame\\MatchGame\\MatchGame.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\MatchGame\\MatchGame\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +44,24 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.4, )"
@@ -64,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
