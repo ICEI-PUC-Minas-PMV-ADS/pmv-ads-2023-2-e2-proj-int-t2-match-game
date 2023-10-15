@@ -11,5 +11,6 @@
     <WebStackScaffolding_DbContextTypeFullName>Match_Game.Models.DataContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game\Match Game\Properties\PublishProfiles\matchgame - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

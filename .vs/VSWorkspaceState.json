@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\Match Game",
+    "\\src\\Match Game\\Match Game"
   ],
-  "SelectedNode": "\\src\\README.md",
+  "SelectedNode": "\\src\\Match Game\\Match Game.sln",
   "PreviewInSolutionExplorer": false
 }
