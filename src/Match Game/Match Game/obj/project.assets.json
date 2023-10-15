@@ -11105,11 +11105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\source\\repos\\Match Game\\Match Game\\Match Game.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj",
       "projectName": "Match Game",
-      "projectPath": "C:\\Users\\andre\\source\\repos\\Match Game\\Match Game\\Match Game.csproj",
+      "projectPath": "C:\\Users\\andre\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\source\\repos\\Match Game\\Match Game\\obj\\",
+      "outputPath": "C:\\Users\\andre\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
