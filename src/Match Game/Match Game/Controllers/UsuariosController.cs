@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Match_Game.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Razor;
 
 namespace Match_Game.Controllers
 {
@@ -26,6 +29,59 @@ namespace Match_Game.Controllers
                           Problem("Entity set 'DataContext.Usuarios'  is null.");
         }
 
+        public async Task<IActionResult> Login(Usuario usuario)
+        {
+            var dados = await _context.Usuarios
+                .FindAsync(usuario.ID_User);
+
+            if (dados == null)
+            {
+                ViewBag.Massage = "Usuários e/ou senha invalidos!";
+                return View();
+            }
+
+            bool senhaOk = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
+
+            if (senhaOk)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, dados.Nome ),
+                    new Claim(ClaimTypes.Email, dados.Email),
+                    new Claim(ClaimTypes.NameIdentifier,dados.ID_User.ToString()),
+                };
+
+                var usuarioIdentify = new ClaimsIdentity(claims, "login");
+                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentify);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(0.30),
+                    IsPersistent = true,
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+                Redirect("/");
+            }
+            else
+            {
+                ViewBag.Massage = "Usuários e/ou senha invalidos!";
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "Usuarios");
+        }
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {

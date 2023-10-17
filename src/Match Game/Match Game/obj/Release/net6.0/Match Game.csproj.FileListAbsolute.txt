@@ -276,3 +276,4 @@ C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-ga
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game\Match Game\obj\Release\net6.0\Match Game.pdb
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game\Match Game\obj\Release\net6.0\Match Game.genruntimeconfig.cache
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game\Match Game\obj\Release\net6.0\ref\Match Game.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game\Match Game\bin\Release\net6.0\System.Web.Razor.dll
