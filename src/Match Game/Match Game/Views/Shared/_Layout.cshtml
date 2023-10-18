@@ -26,22 +26,6 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
-
-                    <ul class="navbar-nav">
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            <li class="nav-item">
-                                Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Logout">Sair</a>
-                            </li>
-                        }
-                        else
-                        {
-                            <li class="nav-item"> 
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Login">Entrar</a>
-                            </li>
-                        }
-
-                    </ul>
                 </div>
             </div>
         </nav>

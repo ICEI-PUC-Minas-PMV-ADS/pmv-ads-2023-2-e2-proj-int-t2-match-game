@@ -9,8 +9,6 @@
 
         public int ID_User { get; set; }
 
-        public byte[] Foto { get; set; }
-
 
 
     }
