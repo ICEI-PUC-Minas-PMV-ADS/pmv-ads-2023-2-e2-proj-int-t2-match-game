@@ -53,7 +53,7 @@ Será realizado o seguinte roteiro:
 <div align="center">Figura 1: Printscreen da página inicial do questionário na plataforma TypeForm. </div>
 <br>
 
-- Os usuários poderão pontuar numa escala de 0 a 5 em escala likert seu grau de dificuldade e eficiência da plataforma em dez questões.
+- Os usuários poderão pontuar numa escala de 1 a 5 em escala likert seu grau de dificuldade e eficiência da plataforma em dez questões.
 
 ![Captura de tela 2023-10-19 155221](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/7fa5c1db-31b6-4451-a311-d6494b75cf6b)
 <div align="center">Figura 2: Printscreen de uma das avaliações do questionário na plataforma TypeForm. </div>
