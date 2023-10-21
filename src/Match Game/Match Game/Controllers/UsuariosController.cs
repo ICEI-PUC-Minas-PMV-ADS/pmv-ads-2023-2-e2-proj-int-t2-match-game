@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Match_Game.Models;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
+using BCrypt;
 
 namespace Match_Game.Controllers
 {
@@ -24,6 +27,67 @@ namespace Match_Game.Controllers
               return _context.Usuarios != null ? 
                           View(await _context.Usuarios.ToListAsync()) :
                           Problem("Entity set 'DataContext.Usuarios'  is null.");
+        }
+
+        //Onde Criamos a view Login
+        public IActionResult login()
+        {
+            return View();
+        }
+
+
+        //Onde implementamos as validações e requisições
+        [HttpPost]
+        public async Task<IActionResult> login(Usuario usuario)
+        {
+            var dados = await _context.Usuarios
+                .Where(u => u.Email == usuario.Email)
+                .FirstOrDefaultAsync();
+
+            if (dados == null)
+            {
+                ViewBag.Message = "Email e/ou senha inválidos";
+                return View();
+            }
+
+            bool senhaOk = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
+
+            if (senhaOk)
+            {
+                var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Email, dados.Email),
+            new Claim(ClaimTypes.Name, dados.Nome)
+
+        };
+
+                var usuarioIdentity = new ClaimsIdentity(claims, "login");
+
+                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                    IsPersistent = true,
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                return Redirect("/");
+            }
+            else
+            {
+                ViewBag.Message = "Email e/ou senha inválidos";
+                return View();
+            }
+        }
+
+        //Quando o usuário apertar em sair vai para 
+        public async Task <IActionResult> Logout() 
+        { 
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "Usuarios");
         }
 
         // GET: Usuarios/Details/5
@@ -59,6 +123,7 @@ namespace Match_Game.Controllers
         {
             if (ModelState.IsValid)
             {
+                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -98,6 +163,7 @@ namespace Match_Game.Controllers
             {
                 try
                 {
+                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }

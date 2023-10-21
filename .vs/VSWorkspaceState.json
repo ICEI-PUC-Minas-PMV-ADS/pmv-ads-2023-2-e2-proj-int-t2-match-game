@@ -3,7 +3,8 @@
     "",
     "\\src",
     "\\src\\Match Game",
-    "\\src\\Match Game\\Match Game"
+    "\\src\\Match Game\\Match Game",
+    "\\src\\Match Game\\Match Game\\Controllers"
   ],
   "SelectedNode": "\\src\\Match Game\\Match Game.sln",
   "PreviewInSolutionExplorer": false
