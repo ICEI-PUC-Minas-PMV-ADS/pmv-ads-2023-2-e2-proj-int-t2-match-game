@@ -3,10 +3,10 @@ O padrão de layout a ser utilizado pelo site tem como referência a estrutura p
 
 O template criado está disponível no site GitHub e é composto pelos seguintes layouts:
 - Tela inicial
-- Área de Cadastro;
-- Área de Login;
-- Área de Cadastro de nova senha;
-- Perfil de Usuário;
+- Área de cadastro;
+- Área de login;
+- Área de cadastro de nova senha;
+- Perfil de usuário;
 - Área de upload de foto de perfil;
 - Jogos recomendados pelo sistema;
 - Jogos recomendados pelo usuário;
