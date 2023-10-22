@@ -86,3 +86,5 @@ _Desenvolvido por Luana Pina_
 
 _Desenvolvido por Tayane Milagres_
 
+## Wireframes 
+A criação de todos os wireframes e telas de fidelidade foram criadas na plataforma figma. Confira a [Match Game](https://www.figma.com/file/75Oet8utr6LtMAOQ8aPNNx/Projeto---Match-Game?type=design&node-id=0%3A1&mode=design&t=XA0ong2Voeh7TOHs-1). 
