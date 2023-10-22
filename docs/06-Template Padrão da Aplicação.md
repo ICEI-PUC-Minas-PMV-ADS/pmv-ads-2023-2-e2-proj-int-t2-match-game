@@ -1,5 +1,5 @@
 # Template Padrão da Aplicação
-O padrão de layout a ser utilizado pelo site tem como referência a estrutura principal do sistema, que foi elaborada e exibida anteriormente, no tópico de Wireframes da aba "Projeto de Interface" presente na documentação, sendo escolhida a modalidade de **Mobile First** para o desenvolvimento do desenvolvimento das telas visando a responsividade.
+O padrão de layout a ser utilizado pelo site tem como referência a estrutura principal do sistema, que foi elaborada e exibida anteriormente, no tópico de Wireframes da aba "Projeto de Interface" presente na documentação, sendo escolhida a modalidade de **Mobile First** para o design e desenvolvimento das telas visando a responsividade.
 
 O template criado está disponível no site GitHub e é composto pelos seguintes layouts:
 - Tela inicial
