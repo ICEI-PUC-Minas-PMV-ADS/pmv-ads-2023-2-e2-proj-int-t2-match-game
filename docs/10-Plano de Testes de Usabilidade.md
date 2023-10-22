@@ -12,9 +12,9 @@ Será realizado o seguinte roteiro:
 
 **2. Criação e/ou acesso da conta**
 
-- Os participantes tentam criar uma nova conta usando um e-mail e senha fornecidos.
-- Eles selecionam a opção para acessar uma conta já existente.
-- São convidados a registrar qualquer dificuldade que encontrem durante esse processo.
+- Os participantes tentam criar uma nova conta usando um e-mail e senha de sua escolha.
+- Eles selecionam a opção para acessar uma conta já existente depois do cadastro.
+- Registraremos qualquer dificuldade que encontrem durante esse processo.
 
 **3. Favoritar jogos**
 
@@ -27,7 +27,7 @@ Será realizado o seguinte roteiro:
 - Os participantes acessam a página de perfil.
 - Tentam alterar a imagem do perfil.
 - Tentam alterar o nome e o tema do perfil.
-- Avaliam se as opções de personalização são de fácil utilização.
+- Avaliam se as opções de personalização são de fácil utilização e possíveis de serem realizadas.
 
 **5. Receber recomendações de jogos**
 
