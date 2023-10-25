@@ -1122,3 +1122,4 @@ C:\Users\luana_ea3gy04\Source\Repos\pmv-ads-2023-2-e2-proj-int-t2-match-game\src
 C:\Users\luana_ea3gy04\Source\Repos\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game\Match Game\bin\Release\net6.0\refs\WindowsBase.dll
 C:\Users\luana_ea3gy04\Source\Repos\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game\Match Game\bin\Release\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\luana_ea3gy04\Source\Repos\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game\Match Game\bin\Release\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+C:\Users\luana_ea3gy04\Source\Repos\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game\Match Game\obj\Release\net6.0\Match Game.MvcApplicationPartsAssemblyInfo.cs
