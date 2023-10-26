@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Match Game\\Models",
-    "\\Match Game\\Views"
+    "\\Match Game",
+    "\\Match Game\\Controllers",
+    "\\Match Game\\Views",
+    "\\Match Game\\Views\\Shared"
   ],
+  "SelectedNode": "\\Match Game.sln",
   "PreviewInSolutionExplorer": false
 }

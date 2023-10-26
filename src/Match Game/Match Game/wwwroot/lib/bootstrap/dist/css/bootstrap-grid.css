@@ -16,6 +16,7 @@
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
@@ -51,6 +52,7 @@
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) * -.5);
   margin-left: calc(var(--bs-gutter-x) * -.5);
+  justify-content: center;
 }
 .row > * {
   box-sizing: border-box;

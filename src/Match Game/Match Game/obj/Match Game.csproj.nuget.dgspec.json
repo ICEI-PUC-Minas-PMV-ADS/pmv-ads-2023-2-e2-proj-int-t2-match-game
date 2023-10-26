@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luana_ea3gy04\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj": {}
+    "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luana_ea3gy04\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj": {
+    "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luana_ea3gy04\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj",
+        "projectUniqueName": "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj",
         "projectName": "Match Game",
-        "projectPath": "C:\\Users\\luana_ea3gy04\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj",
+        "projectPath": "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj",
         "packagesPath": "C:\\Users\\luana_ea3gy04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luana_ea3gy04\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\obj\\",
+        "outputPath": "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luana_ea3gy04\\AppData\\Roaming\\NuGet\\NuGet.Config",

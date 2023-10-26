@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VPcNCh2fyM2Ers8zjgGgydk1K/ATr6DTyqJb+aKzmlDG1LWW8GnJWxG5fmI39mpl1r14BlvNkRC4FwrAVDk5MA==",
+  "dgSpecHash": "WOKqiUhJ3/gZ3NMBwFbORhqkt+awEkxSKXumi+z4+vR0bOj2LG5U5r/XFL0kGNWIuYYo2uXc5wGvpxW0d4+Vmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luana_ea3gy04\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj",
+  "projectFilePath": "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game\\Match Game\\Match Game.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luana_ea3gy04\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\luana_ea3gy04\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
