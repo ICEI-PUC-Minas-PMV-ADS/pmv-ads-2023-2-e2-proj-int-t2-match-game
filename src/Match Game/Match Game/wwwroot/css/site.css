@@ -105,7 +105,7 @@ p, label {
 }
 
 .navIcon {
-    padding-left: 20% !important;
+    padding-left: 22% !important;
     cursor: pointer;
 }
 
@@ -121,6 +121,8 @@ p, label {
 
 .nav-link {
     padding-top: 0%;
+    font-family: 'Jost';
+
 }
 
 /* Footer */
