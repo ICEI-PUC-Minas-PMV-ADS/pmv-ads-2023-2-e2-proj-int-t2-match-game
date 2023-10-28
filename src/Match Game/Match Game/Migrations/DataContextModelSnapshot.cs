@@ -75,6 +75,9 @@ namespace Match_Game.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<byte[]>("FotoUsuario")
+                        .HasColumnType("varbinary(max)");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

@@ -114,16 +114,36 @@ namespace Match_Game.Controllers
             return View();
         }
 
+        public FileContentResult getImg(int id)
+        {
+            byte[] byteArray = _context.Usuarios.Find(id).FotoUsuario;
+            return byteArray != null
+                ? new FileContentResult(byteArray, "image/jpeg")
+                : null;
+        }
+
         // POST: Usuarios/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nome,Data_Nascimento,Email,Senha,ID_User")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Nome,Data_Nascimento,Email,Senha,ID_User,FotoUsuario")] Usuario usuario, IFormFile FotoUsuario)
         {
+
             if (ModelState.IsValid)
             {
-                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+                if (FotoUsuario.Headers != null && FotoUsuario.Length > 0)
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await FotoUsuario.CopyToAsync(target: memoryStream);
+                        byte[] data = memoryStream.ToArray();
+                        usuario.FotoUsuario = memoryStream.ToArray();
+                    }
+                }
+
+
+
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -224,5 +244,7 @@ namespace Match_Game.Controllers
         {
           return (_context.Usuarios?.Any(e => e.ID_User == id)).GetValueOrDefault();
         }
+
+       
     }
 }
