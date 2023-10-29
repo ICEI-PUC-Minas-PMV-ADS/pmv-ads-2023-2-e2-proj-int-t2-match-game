@@ -21,7 +21,7 @@ namespace Match_Game_Oficial.Models
         public async Task<List<Game>> GetGamesAsync()
         {
             // Realize a consulta dentro de um método assíncrono
-            var games = await igdb.QueryAsync<Game>(IGDBClient.Endpoints.Games, query: "fields id,name, first_release_date, storyline; limit 20;");
+            var games = await igdb.QueryAsync<Game>(IGDBClient.Endpoints.Games, query: "fields id,name, first_release_date, storyline; limit 50;");
             var gameList = games.ToList();
 
             return gameList;

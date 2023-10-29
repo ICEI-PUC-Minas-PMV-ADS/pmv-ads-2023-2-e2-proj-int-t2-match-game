@@ -4,45 +4,57 @@
     ViewData["Title"] = "ListarJogos";
 }
 
+<style>
+    .card:hover {
+        box-shadow: -1px 9px 40px -12px #808080;
+    }
+</style>
+
+
 <h1>ListarJogos</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Storyline)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstReleaseDate)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Storyline)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstReleaseDate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="row">
+    
+    @foreach (var item in Model) {
+                <div class="card" style="width:20em;margin:10px;">
+                    <img src="" class="card-img-top" />
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </h3>
+                        </div>
+                        <div class="card_text">
+                            <p>
+                                @Html.DisplayFor(modelItem => item.Storyline)
+                                @Html.DisplayFor(modelItem => item.FirstReleaseDate)
 
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            
+    }
+</div>
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript">
+    $('.card').hover(
+        function () {
+            $(this).animate({
+                marginTop: "=1%",
+                marginBo5ttom: "+=1%"
+            }, 200)
+        },
+        function () {
+            $(this).animate({
+                marginTop: "+=1%",
+                marginBo5ttom: "-=1%"
+            })
+        }
+    )
+</script>
