@@ -1136,3 +1136,6 @@ D:\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Of
 D:\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.pdb
 D:\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.genruntimeconfig.cache
 D:\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\ref\Match Game Oficial.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\bin\Debug\net6.0\IGDB.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\bin\Debug\net6.0\IGDB.DotNet.Models.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\bin\Debug\net6.0\RestEase.dll

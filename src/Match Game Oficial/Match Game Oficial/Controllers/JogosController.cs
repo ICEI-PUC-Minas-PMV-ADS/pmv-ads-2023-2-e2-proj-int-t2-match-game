@@ -6,25 +6,54 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Match_Game_Oficial.Models;
+using System.Net.Http;
+using IGDB;
+using IGDB.Models;
+using System.Threading.Tasks;
 
 namespace Match_Game_Oficial.Controllers
 {
     public class JogosController : Controller
     {
         private readonly DataContext _context;
+        private readonly IGDBClass igdbClass;
 
-        public JogosController(DataContext context)
+
+        public JogosController(IGDBClass igdbClass, DataContext context)
         {
+            this.igdbClass = igdbClass;
             _context = context;
         }
 
         // GET: Jogos
         public async Task<IActionResult> Index()
         {
-              return _context.Jogos != null ? 
-                          View(await _context.Jogos.ToListAsync()) :
-                          Problem("Entity set 'DataContext.Jogos'  is null.");
+            return _context.Jogos != null ?
+                        View(await _context.Jogos.ToListAsync()) :
+                        Problem("Entity set 'DataContext.Jogos'  is null.");
         }
+
+        // IGDB
+        // Outros métodos do controlador
+
+        public async Task<ActionResult> ListarJogos()
+        {
+            var games = await igdbClass.GetGamesAsync();
+
+            // Mapeie os objetos Game para objetos GameViewModel
+            var gameViewModels = games.Select(game => new GameView
+            {
+                Id = game.Id,
+                Name = game.Name,
+                FirstReleaseDate = game.FirstReleaseDate,
+                Storyline = game.Storyline
+            }).ToList();
+
+            return View(gameViewModels);
+        }
+
+
+
 
         // GET: Jogos/Details/5
         public async Task<IActionResult> Details(int? id)

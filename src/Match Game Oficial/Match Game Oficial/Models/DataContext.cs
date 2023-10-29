@@ -13,6 +13,8 @@ namespace Match_Game_Oficial.Models
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Jogo> Jogos { get; set; }
         public DbSet<Genero> Generos { get; set; }
+
+        public DbSet<GameView> Igdb {  get; set; } 
     } 
 
 }
