@@ -1,3 +1,4 @@
+/*
 using Match_Game_Oficial.Models;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
@@ -142,5 +143,5 @@ namespace Match_Game_Oficial.Controllers
 
 
 }
-
+*/
 
