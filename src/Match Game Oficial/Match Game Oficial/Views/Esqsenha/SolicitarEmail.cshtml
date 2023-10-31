@@ -1,0 +1,16 @@
+﻿@model Match_Game_Oficial.Models.Esqsenha
+
+@{
+    ViewData["Title"] = "SolicitarEmail";
+}
+
+<h1>SolicitarEmail</h1>
+
+@using (Html.BeginForm("EnviarEmail", "SeuControlador", FormMethod.Post))
+{
+    @Html.LabelFor(model => model.Email)
+    @Html.TextBoxFor(model => model.Email)
+    @Html.ValidationMessageFor(model => model.Email)
+
+    <input type="submit" value="Enviar Email" />
+}

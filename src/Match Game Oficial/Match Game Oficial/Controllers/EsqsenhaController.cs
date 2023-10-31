@@ -3,11 +3,14 @@ using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 
 namespace Match_Game_Oficial.Controllers
 {
     public class EsqsenhaController : Controller
     {
+        private readonly DataContext _context;
+
         private const string CodigoDeVerificacaoChave = "CodigoDeVerificacao"; // Chave para armazenar o código na sessão
 
         // Ação para solicitar o email
@@ -20,30 +23,38 @@ namespace Match_Game_Oficial.Controllers
         [HttpPost]
         public IActionResult EnviarEmail(Esqsenha model)
         {
-            if (ModelState.IsValid)
+            string email = HttpContext.Request.Form["Email"];
+
+            // Valide o email
+            if (!IsValidEmail(email))
+            {
+                ModelState.AddModelError("Email", "O endereço de email não é válido.");
+                return View("SolicitarEmail");
+            }
+            else
             {
                 // Gere um código de verificação
                 string codigoDeVerificacao = GerarCodigoDeVerificacao();
 
                 // Envie o email com o código
-                EnviarEmailComCodigo(model.Email, codigoDeVerificacao);
+                EnviarEmailComCodigo(email, codigoDeVerificacao);
 
-                // Armazene o código de verificação na sessao
+                // Armazene o código de verificacao na sessao
                 HttpContext.Session.SetString(CodigoDeVerificacaoChave, codigoDeVerificacao);
 
                 // Redirecione para a página de inserção do código
                 return RedirectToAction("InserirCodigo");
             }
-
-            return View("SolicitarEmail", model);
         }
 
         private string GerarCodigoDeVerificacao()
         {
+            Random random = new();
+            int codigo = random.Next(10000, 99999);
             // Lógica para gerar um código de verificacao
-            return "123456"; // Substitua isso pela lógica real
+            return codigo.ToString(); // Substitua isso pela lógica real
         }
-
+        
         private void EnviarEmailComCodigo(string email, string codigo)
         {
             var message = new MimeMessage();
@@ -107,7 +118,28 @@ namespace Match_Game_Oficial.Controllers
         {
             return View();
         }
+
+        public async Task<IActionResult> IsValidEmail(string email)
+        {
+            var emailUser = await _context.Usuarios
+                .Where(u => u.Email == email)
+                .FirstOrDefaultAsync();
+
+            if (emailUser != null)
+            {
+                
+            }
+            else
+            {
+                // O email não existe no banco de dados
+                // Trate essa situação de acordo com suas necessidades
+            }
+
+            return View(); // Retorne uma visão adequada
+        }
+
     }
+
 
 }
 
