@@ -1,8 +1,4 @@
-﻿
-
-<link rel="stylesheet" href="wwwroot\css\site.css" />
-
-@model IEnumerable<Match_Game_Oficial.Models.GameView>
+﻿@model IEnumerable<Match_Game_Oficial.Models.GameView>
 
 @{
     ViewData["Title"] = "ListarJogos";
@@ -14,19 +10,15 @@
     }
 </style>
 
-<section class="headJgRecomendados">
-    <h1 class="text-center tituloJogosRecomVoce">JOGOS RECOMENDADOS PARA VOCÊ</h1>
-    <p class="text-center conteudoJgRecomenVoce">Confira abaixo a lista dos jogos que foram recomendados para você.</p>
-</section>
-<main>
-    <div class="row" style="margin-left: 5%; margin-right: 5%;">
-        @foreach (var item in Model)
-        {
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                <div class="card">
-                    <img src="" class="card-img-top"/>
+
+<h1>ListarJogos</h1>
+
+<div class="row">
+    
+    @foreach (var item in Model) {
+                <div class="card" style="width:20em;margin:10px;">
+                    <img src="" class="card-img-top" />
                     <div class="card-body">
-                        <i class="fa-regular fa-heart favoritos position-absolute top-60 end-0" style="color: #8952ff;" title="Favoritar"></i>
                         <div class="card-title">
                             <h3>
                                 @Html.DisplayFor(modelItem => item.Name)
@@ -36,20 +28,18 @@
                             <p>
                                 @Html.DisplayFor(modelItem => item.Storyline)
                                 @Html.DisplayFor(modelItem => item.FirstReleaseDate)
+
                             </p>
                         </div>
-                        <div class="text-center">
-                            <a href="#" class="btn btnSaibaMais"> SAIBA MAIS</a>
-                        </div>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
                     </div>
                 </div>
-            </div>
-        }
-    </div>
-</main>
+            
+    }
+</div>
 
 
-<script src="https://kit.fontawesome.com/fe8eb85698.js" crossorigin="anonymous"></script>
+
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/jquery/dist/jquery.js"></script>
 <script type="text/javascript">
