@@ -4,6 +4,9 @@ using MimeKit;
 using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using System.Net;
+
 
 namespace Match_Game_Oficial.Controllers
 {
@@ -11,8 +14,20 @@ namespace Match_Game_Oficial.Controllers
     {
         private readonly DataContext _context;
 
+        private readonly SmtpSettings _smtpSettings;
+
         private const string CodigoDeVerificacaoChave = "CodigoDeVerificacao"; // Chave para armazenar o código na sessão
 
+
+      
+
+        //COnfiguração do SMTP
+        public EsqsenhaController(IOptions<SmtpSettings> smtpSettings, DataContext context)
+        {
+            _smtpSettings = smtpSettings.Value;
+
+            _context = context;
+        }
         // Ação para solicitar o email
         public IActionResult SolicitarEmail()
         {
@@ -21,44 +36,49 @@ namespace Match_Game_Oficial.Controllers
 
         // Ação para enviar o email com o código de verificação
         [HttpPost]
-        public IActionResult EnviarEmail(Esqsenha model)
+        public async Task<IActionResult> EnviarEmail(Esqsenha model)
         {
             string email = HttpContext.Request.Form["Email"];
 
             // Valide o email
-            if (!IsValidEmail(email))
+            bool emailIsValid = await IsValidEmail(email);
+
+            if (!emailIsValid)
             {
                 ModelState.AddModelError("Email", "O endereço de email não é válido.");
                 return View("SolicitarEmail");
             }
             else
             {
-                // Gere um código de verificação
+                // Chamada do método para gerar código de verificação
                 string codigoDeVerificacao = GerarCodigoDeVerificacao();
 
-                // Envie o email com o código
-                EnviarEmailComCodigo(email, codigoDeVerificacao);
+                // Chamada do método para enviar o email com o código
+                EnviarEmailComCodigo(email, codigoDeVerificacao, _smtpSettings);
 
-                // Armazene o código de verificacao na sessao
+                // Armazene o código de verificação na sessão
                 HttpContext.Session.SetString(CodigoDeVerificacaoChave, codigoDeVerificacao);
 
-                // Redirecione para a página de inserção do código
-                return RedirectToAction("InserirCodigo");
+                // Redirecionamento para a página de inserção do código
+                return View("InserirCodigo");
             }
         }
 
+        //Método para gerar um código aleatório
         private string GerarCodigoDeVerificacao()
         {
             Random random = new();
-            int codigo = random.Next(10000, 99999);
-            // Lógica para gerar um código de verificacao
-            return codigo.ToString(); // Substitua isso pela lógica real
+            int codigo = random.Next(10000, 100000);
+            
+            return codigo.ToString("D5"); 
         }
-        
-        private void EnviarEmailComCodigo(string email, string codigo)
+
+        //Método que envia um email para o usuário com o SMTP
+         private async Task EnviarEmailComCodigo(string email, string codigo, SmtpSettings smtpSettings)
         {
+            //Aqui é onde ocorre a montagem do email
             var message = new MimeMessage();
-            message.From.Add(new MailboxAddress("Seu Nome", "seuemail@example.com"));
+            message.From.Add(new MailboxAddress("Match Game", smtpSettings.SmtpUsername));
             message.To.Add(new MailboxAddress("Nome do Destinatário", email));
             message.Subject = "Código de Verificação";
 
@@ -71,12 +91,13 @@ namespace Match_Game_Oficial.Controllers
 
             using (var client = new SmtpClient())
             {
-                client.Connect("smtp.example.com", 587, false); // Substitua com as informações do seu servidor SMTP
-                client.Authenticate("seuemail@example.com", "suasenha"); // Substitua com suas credenciais de email
-                client.Send(message);
-                client.Disconnect(true);
+                await client.ConnectAsync(smtpSettings.SmtpServer, smtpSettings.SmtpPort, true); // Usando configurações do appsettings.json
+                await client.AuthenticateAsync(smtpSettings.SmtpUsername, smtpSettings.SmtpPassword); // Usando configurações do appsettings.json
+                await client.SendAsync(message);
+                await client.DisconnectAsync(true);
             }
         }
+
 
         // Ação para inserir o código de verificação
         public IActionResult InserirCodigo()
@@ -86,7 +107,7 @@ namespace Match_Game_Oficial.Controllers
 
         // Ação para redefinir a senha
         [HttpPost]
-        public IActionResult RedefinirSenha(Esqsenha model)
+        public async Task <IActionResult> RedefinirSenha(Esqsenha model)
         {
             if (ModelState.IsValid)
             {
@@ -99,11 +120,18 @@ namespace Match_Game_Oficial.Controllers
                     return View(model);
                 }
 
-                // Implemente a lógica para redefinir a senha do usuário
-                // Substitua o exemplo abaixo pela lógica real
-                // Exemplo: Atualizar a senha no banco de dados
+                //Aqui, estamos resgatando o usuário que tenha o email fornecido
+                var usuario = _context.Usuarios.FirstOrDefault(u => u.Email == model.Email);
 
-                // Limpe o código de verificacao da sessao
+                //Definindo a nova senha
+                usuario.Senha = model.NovaSenha;
+
+                //Enviando para o Bando de Dados
+                _context.Update(usuario);
+                await _context.SaveChangesAsync();
+
+
+                // Limpando o código de verificacao da sessao
                 HttpContext.Session.Remove(CodigoDeVerificacaoChave);
 
                 // Redirecione para a página de confirmação de senha
@@ -119,24 +147,17 @@ namespace Match_Game_Oficial.Controllers
             return View();
         }
 
-        public async Task<IActionResult> IsValidEmail(string email)
+
+        //Método que válida se o email existe no Banco de Dados
+        public async Task<bool> IsValidEmail(string email)
         {
             var emailUser = await _context.Usuarios
                 .Where(u => u.Email == email)
                 .FirstOrDefaultAsync();
 
-            if (emailUser != null)
-            {
-                
-            }
-            else
-            {
-                // O email não existe no banco de dados
-                // Trate essa situação de acordo com suas necessidades
-            }
-
-            return View(); // Retorne uma visão adequada
+            return emailUser != null;
         }
+
 
     }
 
