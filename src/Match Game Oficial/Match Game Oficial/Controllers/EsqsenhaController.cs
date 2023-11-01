@@ -1,12 +1,15 @@
 using Match_Game_Oficial.Models;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
-using MailKit.Net.Smtp;
+//using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using System.Net.Mail;
+using System.Net.Mime;
+using System.Threading;
+using System.ComponentModel;
 using System.Net;
-
 
 namespace Match_Game_Oficial.Controllers
 {
@@ -67,7 +70,7 @@ namespace Match_Game_Oficial.Controllers
         //Método para gerar um código aleatório
         private string GerarCodigoDeVerificacao()
         {
-            Random random = new();
+            Random random = new Random();
             int codigo = random.Next(10000, 100000);
             
             return codigo.ToString("D5"); 
@@ -76,26 +79,25 @@ namespace Match_Game_Oficial.Controllers
         //Método que envia um email para o usuário com o SMTP
          private async Task EnviarEmailComCodigo(string email, string codigo, SmtpSettings smtpSettings)
         {
-            //Aqui é onde ocorre a montagem do email
-            var message = new MimeMessage();
-            message.From.Add(new MailboxAddress("Match Game", smtpSettings.SmtpUsername));
-            message.To.Add(new MailboxAddress("Nome do Destinatário", email));
-            message.Subject = "Código de Verificação";
+            string fromMail = smtpSettings.SmtpUsername;
+            string fromPassword = smtpSettings.SmtpPassword;
 
-            var text = new TextPart("plain")
+            MailMessage message = new MailMessage();
+            message.From = new MailAddress(smtpSettings.SmtpUsername);
+
+            message.Subject = "Código de Verificação";            
+            message.To.Add(new MailAddress(email));
+            message.Body = $"<p>Seu código é: {codigo}<p>";
+            message.IsBodyHtml = true;
+
+            var smtpClient = new SmtpClient ("smtp.gmail.com")
             {
-                Text = $"Seu código de verificação: {codigo}"
+                Port = smtpSettings.SmtpPort,
+                Credentials = new NetworkCredential(fromMail, fromPassword),
+                EnableSsl = true,
             };
 
-            message.Body = text;
-
-            using (var client = new SmtpClient())
-            {
-                await client.ConnectAsync(smtpSettings.SmtpServer, smtpSettings.SmtpPort, true); // Usando configurações do appsettings.json
-                await client.AuthenticateAsync(smtpSettings.SmtpUsername, smtpSettings.SmtpPassword); // Usando configurações do appsettings.json
-                await client.SendAsync(message);
-                await client.DisconnectAsync(true);
-            }
+                smtpClient.Send(message);         
         }
 
 

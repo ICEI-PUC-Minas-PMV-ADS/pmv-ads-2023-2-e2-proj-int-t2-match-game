@@ -14,7 +14,7 @@ namespace Match_Game_Oficial.Models
             // Inicialize o cliente IGDB no construtor
             igdb = new IGDBClient(
                 "5mkw3nhbkgynl2ce8v0if2hgtq6wvc",
-               "feh5a7mdwa4cl9xx97ejxh5fh8duvd"
+               "66qmils2xavm9oyzc647txur7nveew"
             );
         }
 

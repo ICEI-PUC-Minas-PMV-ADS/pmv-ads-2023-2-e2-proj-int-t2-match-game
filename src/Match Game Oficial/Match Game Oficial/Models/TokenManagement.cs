@@ -9,7 +9,7 @@ class CustomTokenStore : ITokenStore
     {
 
         // Get token from database, etc.
-        var tokenValue =  "9vs4soz4pr6ppkdki3zo1bgpoe0zka";
+        var tokenValue = "Bearer y17uussmnevjz6ylt0vfh8aoxb93pj";
 
         var token = new TwitchAccessToken { AccessToken = tokenValue };  
 
