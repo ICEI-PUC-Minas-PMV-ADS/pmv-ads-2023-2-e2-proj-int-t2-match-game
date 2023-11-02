@@ -6,11 +6,17 @@
 
 <h1>Inserir Código de Verificação</h1>
 
-@using (Html.BeginForm("RedefinirSenha", "EsqsenhaController", FormMethod.Post))
+@using (Html.BeginForm("VerificaCodigo", "EsqsenhaController", FormMethod.Post))
 {
     @Html.LabelFor(model => model.Codigo)
     @Html.TextBoxFor(model => model.Codigo)
     @Html.ValidationMessageFor(model => model.Codigo)
+
+
+    @Html.LabelFor(model => model.NovaSenha)
+    @Html.TextBoxFor(model => model.NovaSenha)
+    @Html.ValidationMessageFor(model => model.NovaSenha)
+
 
     <input type="submit" value="Redefinir Senha" />
 }

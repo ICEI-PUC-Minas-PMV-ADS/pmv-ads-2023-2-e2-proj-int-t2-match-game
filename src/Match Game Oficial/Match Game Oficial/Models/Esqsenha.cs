@@ -10,8 +10,9 @@ namespace Match_Game_Oficial.Models
 		public string Email { get; set; }
 		public string Codigo { get; set; }
 		public string NovaSenha { get; set; }
-		public string ConfirmacaoSenha { get; set; }
-	}
+	
+
+    }
 }
 
 
