@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap');
+
 html {
   font-size: 14px;
 }
@@ -15,4 +17,203 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+/* Lista de Jogos */
+.headJgRecomendados {
+    margin-top: 4%;
+    margin-bottom: 4%
+}
+
+
+.tituloJogosRecomVoce {
+    color: #6014EC;
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+
+.conteudoJgRecomenVoce {
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+}
+
+/* Cards */
+
+.card-title > h3 {
+    font-family: 'Poppins';
+    color: #059CAD;
+    margin-top: 8%;
+    font-size: 1.5vw;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 1px 5px 12px 2px rgb(219, 219, 219);
+    margin-bottom: 4%;
+}
+
+.card > img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+/* Favoritos Icon */
+
+.fa-heart {
+    font-size: 22px;
+    margin-right: 4%;
+    cursor: pointer;
+}
+
+/* btn Saiba Mias */
+.btnSaibaMais {
+    color: #ffffff;
+    background: #6014EC;
+    border-radius: 14px;
+    font-family: 'Poppins';
+    width: 80%;
+    font-weight: 500;
+}
+
+.btnSaibaMais:hover {
+    background: #3230C3;
+    color: #ffffff;
+    border: solid 2px #ffff;
+
+}
+
+/* Modal */
+
+dialog {
+    background: #ffffff;
+    width: 60%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: -3px 9px 27px 4px rgba(83,86,86,0.75);
+}
+
+dialog::backdrop {
+    background-color: rgba(50, 48, 195, 0.4);
+
+}
+
+dialog > button {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #6014EC;
+    color: #ffffff;
+    font-family: 'Poppins';
+    width: 40%;
+    height: 5vh;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 4%;
+}
+
+dialog > button:hover {
+    background: #3230C3;
+    color: #ffffff;
+    border: solid 2px #ffff;
+}
+
+dialog > h2 {
+    color: #6014EC;
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-top: 5%;
+}
+
+.conteudoModal{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+dialog > .conteudoModal > h3 {
+    color: #059CAD;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    padding-top: 2%;
+}
+
+dialog > .conteudoModal > p {
+        font-size: 1rem;
+        font-family: 'Poppins';
+        color: #818181;
+}
+
+/* Media Querie */
+
+/* Mobile */
+@media screen and (max-width: 375px) {
+    .card-title > h3 {
+        font-size: 7vw;
+    }
+
+    .tituloJogosRecomVoce {
+        font-size: 1.7rem;
+    }
+
+    .conteudoJgRecomenVoce {
+        font-size: 1rem;
+    }
+
+    dialog {
+        width: 80%;
+    } 
+
+    dialog > h2 {
+        font-size: 1.6rem;
+        padding-bottom: 5%;
+    }
+
+    
+}
+
+@media screen and (min-width: 375px) and (max-width:575px) {
+    .card-title > h3 {
+        font-size: 7vw;
+    }
+
+    .tituloJogosRecomVoce {
+        font-size: 2rem;
+    }
+
+    .conteudoJgRecomenVoce {
+        font-size: 1rem;
+    }
+
+    dialog {
+        width: 80%;
+    }
+
+    dialog > h2 {
+        font-size: 1.6rem;
+        padding-bottom: 5%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 577px) and (max-width:767px) {
+    .card-title > h3 {
+        font-size: 3vw;
+    }
+
+    dialog {
+        width: 80%;
+    }
+
+    dialog > h2 {
+            font-size: 1.6rem;
+            padding-bottom: 5%;
+    }
 }
