@@ -23,13 +23,12 @@ namespace Match_Game_Oficial.Controllers
         private const string CodigoDeVerificacaoChave = "CodigoDeVerificacao"; // Chave para armazenar o código na sessão
 
 
-      
+        private string email;
 
         //COnfiguração do SMTP
         public EsqsenhaController( DataContext context)
         {
             
-
             _context = context;
         }
         // Ação para solicitar o email
@@ -42,7 +41,7 @@ namespace Match_Game_Oficial.Controllers
         [HttpPost]
         public async Task<IActionResult> EnviarEmail(Esqsenha model)
         {
-            string email = HttpContext.Request.Form["Email"];
+            email = HttpContext.Request.Form["Email"];
 
             // Valide o email
             bool emailIsValid = await IsValidEmail(email);
@@ -56,9 +55,7 @@ namespace Match_Game_Oficial.Controllers
             {
                 // Chamada do método para gerar código de verificação
                 string codigoDeVerificacao = GerarCodigoDeVerificacao();
-
                 Console.WriteLine(codigoDeVerificacao);
-
 
                 // Chamada do método para enviar o email com o código
                 EnviarEmailComCodigo(email, codigoDeVerificacao);
@@ -114,27 +111,48 @@ namespace Match_Game_Oficial.Controllers
         }
 
         [HttpPost]
-        public async Task VerificaCodigo(Esqsenha model)
+        public async Task<IActionResult> VerificaCodigo(Esqsenha model)
         {
-            string codigo = HttpContext.Request.Form["Codigo"];
-
+            string codigo = model.Codigo;
 
             if (codigo == HttpContext.Session.GetString(CodigoDeVerificacaoChave))
             {
-                Console.WriteLine("Seu codigo está correto");
+                Console.WriteLine("Está Correto");
+
+                //Aqui, estamos resgatando o usuário que tenha o email fornecido
+                var usuario = _context.Usuarios.First(u => u.Email == email);
+
+
+                //Definindo a nova senha
+                usuario.Senha = model.NovaSenha;
+
+                //Enviando para o Bando de Dados
+                _context.Update(usuario);
+                await _context.SaveChangesAsync();
+
+
+                // Limpando o código de verificacao da sessao
+                HttpContext.Session.Remove(CodigoDeVerificacaoChave);
+
+                // Redirecione para a página de confirmação de senha
+                return View("Login", "Usuarios");
             }
             else
             {
-                Console.WriteLine("Esta errado");
-            }
+                Console.WriteLine("Seu código está correto");
+                ModelState.AddModelError("Codigo", "Código de verificação incorreto");
 
+                // Código correto, redirecione para a página de redefinição de senha
+                return View(model);
+                
+            }
         }
 
-        
 
 
-//Método que válida se o email existe no Banco de Dados
-public async Task<bool> IsValidEmail(string email)
+
+        //Método que válida se o email existe no Banco de Dados
+        public async Task<bool> IsValidEmail(string email)
         {
             var emailUser = await _context.Usuarios
                 .Where(u => u.Email == email)
