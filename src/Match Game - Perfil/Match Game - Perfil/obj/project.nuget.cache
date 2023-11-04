@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "y13OeAXHqz/Sfa0nPvyiLR6AZBce/5uBsxzVonmp49E1b5kaOxke4phBm9hQwEGyULcUf4HiB6mL3ZlkjicgHw==",
+  "dgSpecHash": "qpa7mKsS7WuQhbne/jDxZbY34lq6aNxPv2EfOeZofO8W0Dq8OhmFFGfeqQ5yQ6P6DDgjp28RWX44IgyLrMALCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luana_ea3gy04\\source\\repos\\Match Game - Perfil\\Match Game - Perfil\\Match Game - Perfil.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\ADS\\MatchGame- certo\\src\\Match Game - Perfil\\Match Game - Perfil\\Match Game - Perfil.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tayan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\tayan\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\tayan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\tayan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.24\\microsoft.netcore.app.host.win-x64.6.0.24.nupkg.sha512"
+  ],
   "logs": []
 }

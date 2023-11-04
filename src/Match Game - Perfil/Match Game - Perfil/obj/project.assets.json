@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\luana_ea3gy04\\.nuget\\packages\\": {}
+    "C:\\Users\\tayan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luana_ea3gy04\\source\\repos\\Match Game - Perfil\\Match Game - Perfil\\Match Game - Perfil.csproj",
+      "projectUniqueName": "D:\\ADS\\MatchGame- certo\\src\\Match Game - Perfil\\Match Game - Perfil\\Match Game - Perfil.csproj",
       "projectName": "Match Game - Perfil",
-      "projectPath": "C:\\Users\\luana_ea3gy04\\source\\repos\\Match Game - Perfil\\Match Game - Perfil\\Match Game - Perfil.csproj",
-      "packagesPath": "C:\\Users\\luana_ea3gy04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luana_ea3gy04\\source\\repos\\Match Game - Perfil\\Match Game - Perfil\\obj\\",
+      "projectPath": "D:\\ADS\\MatchGame- certo\\src\\Match Game - Perfil\\Match Game - Perfil\\Match Game - Perfil.csproj",
+      "packagesPath": "C:\\Users\\tayan\\.nuget\\packages\\",
+      "outputPath": "D:\\ADS\\MatchGame- certo\\src\\Match Game - Perfil\\Match Game - Perfil\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\luana_ea3gy04\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +33,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.310\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -56,6 +63,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.24, 6.0.24]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.24, 6.0.24]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.24, 6.0.24]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.24, 6.0.24]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -64,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.310\\RuntimeIdentifierGraph.json"
       }
     }
   }

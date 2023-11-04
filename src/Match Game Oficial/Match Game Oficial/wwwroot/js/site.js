@@ -15,13 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
             var releaseDate = button.getAttribute('data-release-date');
             var storyline = button.getAttribute('data-storyline');
 
-            document.getElementById('modalFirstReleaseDate').textContent = releaseDate; //Atualiza o contéudo do paragrafo com id=modalFirstReleaseDate de acordo com o valor do releaseDate do game da API(Data de Lançamento)
+            document.getElementById('modalFirstReleaseDate').textContent = releaseDate; //Atualiza o contéudo do paragrafo com id=modalFirstReleaseDate de acordo com o valor do releaseDate do game da API (Data de Lançamento)
             document.getElementById('modalStoryline').textContent = storyline;  //Atualiza o contéudo do paragrafo com id=modalStoryline de acordo com o valor do storyline do game da API (Resumo)
 
             modal.showModal();
         });
     });
 });
+
 
 
 

@@ -28,3 +28,34 @@ C:\Users\luana_ea3gy04\source\repos\Match Game - Perfil\Match Game - Perfil\obj\
 C:\Users\luana_ea3gy04\source\repos\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.pdb
 C:\Users\luana_ea3gy04\source\repos\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.genruntimeconfig.cache
 C:\Users\luana_ea3gy04\source\repos\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\ref\Match Game - Perfil.dll
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\bin\Debug\net6.0\appsettings.Development.json
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\bin\Debug\net6.0\appsettings.json
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\bin\Debug\net6.0\Match Game - Perfil.staticwebassets.runtime.json
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\bin\Debug\net6.0\Match Game - Perfil.exe
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\bin\Debug\net6.0\Match Game - Perfil.deps.json
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\bin\Debug\net6.0\Match Game - Perfil.runtimeconfig.json
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\bin\Debug\net6.0\Match Game - Perfil.dll
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\bin\Debug\net6.0\Match Game - Perfil.pdb
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.csproj.AssemblyReference.cache
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.GeneratedMSBuildEditorConfig.editorconfig
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.AssemblyInfoInputs.cache
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.AssemblyInfo.cs
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.csproj.CoreCompileInputs.cache
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.MvcApplicationPartsAssemblyInfo.cache
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.RazorAssemblyInfo.cache
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.RazorAssemblyInfo.cs
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\staticwebassets\msbuild.Match Game - Perfil.Microsoft.AspNetCore.StaticWebAssets.props
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\staticwebassets\msbuild.build.Match Game - Perfil.props
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Match Game - Perfil.props
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Match Game - Perfil.props
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\staticwebassets.pack.json
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\staticwebassets.build.json
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\staticwebassets.development.json
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\scopedcss\bundle\Match Game - Perfil.styles.css
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\scopedcss\projectbundle\Match Game - Perfil.bundle.scp.css
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.dll
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\refint\Match Game - Perfil.dll
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.pdb
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\Match Game - Perfil.genruntimeconfig.cache
+D:\ADS\MatchGame- certo\src\Match Game - Perfil\Match Game - Perfil\obj\Debug\net6.0\ref\Match Game - Perfil.dll

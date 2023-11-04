@@ -5,12 +5,32 @@
       "PackagePath": "staticwebassets\\Match Game Oficial.bundle.scp.css"
     },
     {
+      "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\img\\favoritos.png",
+      "PackagePath": "staticwebassets\\img\\favoritos.png"
+    },
+    {
+      "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\img\\para-voce.png",
+      "PackagePath": "staticwebassets\\img\\para-voce.png"
+    },
+    {
+      "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\img\\perfil.png",
+      "PackagePath": "staticwebassets\\img\\perfil.png"
     },
     {
       "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\js\\site.js",

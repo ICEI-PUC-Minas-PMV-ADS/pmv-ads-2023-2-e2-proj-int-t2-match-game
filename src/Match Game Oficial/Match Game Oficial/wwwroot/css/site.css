@@ -19,6 +19,63 @@ body {
   margin-bottom: 60px;
 }
 
+/* Header nav */
+
+.bg-white {
+    padding: 0px;
+    background-image: linear-gradient(to right, #000000 0%, #3531CB 25%) !important;
+}
+
+.navbar-brand {
+    padding: 0px;
+    padding-left: -1px;
+}
+
+.logo {
+    height: 11vh;
+}
+
+
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgba(53,50,202,1) 0%, rgba(39,37,131,1) 93%) !important;
+    ////background: linear-gradient(90deg, rgba(45,41,184,1) 8%, rgba(23,21,125,1) 98%, rgba(4,2,79,1) 100%) !important;
+    ////background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 6%, rgba(53,49,203,1) 8%, rgba(23,21,125,1) 98%, rgba(4,2,79,1) 100%) !important;
+}
+
+.navIcon {
+    padding-left: 30% !important;
+    cursor: pointer;
+}
+
+.navIcon-fav {
+    padding-left: 24% !important;
+    cursor: pointer;
+}
+
+.navIcon-perfil {
+    padding-left: 19% !important;
+    cursor: pointer;
+}
+
+.nav-link {
+    padding-top: 0%;
+    font-family: 'Jost';
+}
+
+/* Footer */
+.footer {
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+
 /* Lista de Jogos */
 .headJgRecomendados {
     margin-top: 4%;
