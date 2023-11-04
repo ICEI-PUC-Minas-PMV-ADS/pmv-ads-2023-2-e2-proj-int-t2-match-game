@@ -22,14 +22,16 @@
 }
 
 <main>
-    <div class="row" style="margin-left: 5%; margin-right: 5%;">
+    <div class="row mb-5" style="margin-left: 5%; margin-right: 5%;">
         @foreach (var item in Model)
         {
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
                 <div class="card">
                     <img src="" class="card-img-top" />
                     <div class="card-body">
-                        <i class="fa-regular fa-heart favoritos position-absolute top-60 end-0" style="color: #8952ff;" title="Favoritar"></i>
+                        <div id="favoritos" data-item-id="@item.Id">
+                            <i id="favIcon" class="fa-regular fa-heart favoritos position-absolute top-60 end-0" style="color: #8952ff;" title="Favoritar"></i>
+                        </div>
                         <div class="card-title">
                             <h3>
                                 @Html.DisplayFor(modelItem => item.Name)

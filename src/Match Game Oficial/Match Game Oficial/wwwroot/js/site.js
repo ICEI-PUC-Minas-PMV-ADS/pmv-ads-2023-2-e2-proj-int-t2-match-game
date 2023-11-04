@@ -23,6 +23,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+/* Favoritos */
+
+const favoritos = document.getElementById('favoritos')
+const favIcon = document.getElementById('favIcon')
+
+let favorito = true;
+
+favoritos.addEventListener('click', function () {
+    if (favorito) {
+        favIcon.className = "fa-solid fa-heart favoritos position-absolute top-60 end-0"
+    }
+
+    else {
+        favIcon.className = "fa-regular fa-heart favoritos position-absolute top-60 end-0"
+    }
+
+    favorito = !favorito;
+});
 
 
 
