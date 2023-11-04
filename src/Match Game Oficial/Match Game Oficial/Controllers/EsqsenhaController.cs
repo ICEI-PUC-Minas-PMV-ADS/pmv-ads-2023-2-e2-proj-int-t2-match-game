@@ -21,9 +21,9 @@ namespace Match_Game_Oficial.Controllers
      
 
         private const string CodigoDeVerificacaoChave = "CodigoDeVerificacao"; // Chave para armazenar o código na sessão
+        private const string EmailParaVerificação = "email"; // Chave para armazenar o código na sessão
 
 
-        private string email;
 
         //COnfiguração do SMTP
         public EsqsenhaController( DataContext context)
@@ -41,7 +41,7 @@ namespace Match_Game_Oficial.Controllers
         [HttpPost]
         public async Task<IActionResult> EnviarEmail(Esqsenha model)
         {
-            email = HttpContext.Request.Form["Email"];
+            string email = HttpContext.Request.Form["Email"];
 
             // Valide o email
             bool emailIsValid = await IsValidEmail(email);
@@ -64,6 +64,7 @@ namespace Match_Game_Oficial.Controllers
 
                 // Armazene o código de verificação na sessão
                 HttpContext.Session.SetString(CodigoDeVerificacaoChave, codigoDeVerificacao);
+                HttpContext.Session.SetString(EmailParaVerificação, email);
 
                 // Redirecionamento para a página de inserção do código
                 return View("InserirCodigo");
@@ -114,40 +115,58 @@ namespace Match_Game_Oficial.Controllers
         public async Task<IActionResult> VerificaCodigo(Esqsenha model)
         {
             string codigo = model.Codigo;
+            string NovaSenha = model.NovaSenha;
+            string emailUser = HttpContext.Session.GetString(EmailParaVerificação);
 
             if (codigo == HttpContext.Session.GetString(CodigoDeVerificacaoChave))
             {
-                Console.WriteLine("Está Correto");
+                Console.WriteLine(" O código Está Correto");
+                Console.WriteLine();
 
-                //Aqui, estamos resgatando o usuário que tenha o email fornecido
-                var usuario = _context.Usuarios.First(u => u.Email == email);
+                var dados = await BuscarUsuariosPorEmail(emailUser);
 
+                Console.WriteLine(emailUser);
+                Console.WriteLine(dados);
+                if (dados.Count == 0)
+                {
+                   
+                    Console.WriteLine("Algo Deu errado no banco de dados");
+                    return RedirectToAction ("InserirCodigo", "Esqsenha");
 
-                //Definindo a nova senha
-                usuario.Senha = model.NovaSenha;
+                }
+                else
+                {
+                    Console.WriteLine("Deu certo o banco de ddados");
+                    var primeiroUsuario = dados[0];
+                    primeiroUsuario.Senha = BCrypt.Net.BCrypt.HashPassword(NovaSenha);
 
-                //Enviando para o Bando de Dados
-                _context.Update(usuario);
-                await _context.SaveChangesAsync();
+                    _context.Update(primeiroUsuario);
+                    await _context.SaveChangesAsync();
+                 
+                    HttpContext.Session.Remove(CodigoDeVerificacaoChave);
 
-
-                // Limpando o código de verificacao da sessao
-                HttpContext.Session.Remove(CodigoDeVerificacaoChave);
-
-                // Redirecione para a página de confirmação de senha
-                return View("Login", "Usuarios");
+                    return RedirectToAction("Login", "Usuarios");
+                }
+                         
             }
             else
             {
-                Console.WriteLine("Seu código está correto");
+                Console.WriteLine("Seu código está Incorreto");
                 ModelState.AddModelError("Codigo", "Código de verificação incorreto");
 
-                // Código correto, redirecione para a página de redefinição de senha
-                return View(model);
+                return RedirectToAction("InserirCodigo","Esqsenha");
                 
             }
         }
 
+        public async Task<List<Usuario>> BuscarUsuariosPorEmail(string email)
+        {
+            var usuarios = await _context.Usuarios
+                .Where(u => u.Email == email)
+                .ToListAsync();
+
+            return usuarios;
+        }
 
 
 
