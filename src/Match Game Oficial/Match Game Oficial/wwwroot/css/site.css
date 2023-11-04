@@ -16,3 +16,62 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; 
+}
+
+    .item:hover {
+        transform: scale(1.05);
+    }
+
+.game-name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.platforms {
+    font-size: 14px;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+i {
+    margin-right: 5px;
+}
