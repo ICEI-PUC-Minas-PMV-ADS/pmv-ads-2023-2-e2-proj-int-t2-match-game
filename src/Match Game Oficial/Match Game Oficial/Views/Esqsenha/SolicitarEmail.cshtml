@@ -6,14 +6,13 @@
 
 <h1>Enviar Email com Código de Verificação</h1>
 
-@using (Html.BeginForm("EnviarEmail", "Esqsenha", FormMethod.Post))
-{
+<form asp-controller="Esqsenha" asp-action="EnviarEmail" method="post">
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"> Supunhetamos email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
 
-    @Html.LabelFor(model => model.Email)
-    @Html.TextBoxFor(model => model.Email)
-    @Html.ValidationMessageFor(model => model.Email)
+    <button type="submit" class="btn btn-primary">Enviar Código de Verificação</button>
+</form>
 
-   
-
-    <input type="submit" value="Enviar Código de Verificação" />
-}

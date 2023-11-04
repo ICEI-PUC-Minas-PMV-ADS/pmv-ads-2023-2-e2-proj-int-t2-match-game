@@ -11354,19 +11354,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andre\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
+      "projectUniqueName": "D:\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
       "projectName": "Match Game Oficial",
-      "projectPath": "C:\\Users\\andre\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\obj\\",
+      "projectPath": "D:\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "D:\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11472,7 +11472,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

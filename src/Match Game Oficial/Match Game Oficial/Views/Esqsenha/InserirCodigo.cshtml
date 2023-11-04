@@ -6,15 +6,19 @@
 
 <h1>Inserir Código de Verificação</h1>
 
-@using (Html.BeginForm("VerificaCodigo", "Esqsenha"))
-{
-    @Html.LabelFor(model => model.Codigo)
-    @Html.TextBoxFor(model => model.Codigo)
-    @Html.ValidationMessageFor(model => model.Codigo)
+<form asp-controller="Esqsenha" asp-action="VerificaCodigo" method="post">
+    <div class="form-group">
+        <label asp-for="Codigo" class="control-label">Supunhetamos código</label>
+        <input asp-for="Codigo" class="form-control" />
+        <span asp-validation-for="Codigo" class="text-danger"></span>
+    </div>
 
-    @Html.LabelFor(model => model.NovaSenha)
-    @Html.TextBoxFor(model => model.NovaSenha)
-    @Html.ValidationMessageFor(model => model.NovaSenha)
+    <div class="form-group">
+        <label asp-for="NovaSenha" class="control-label">Supunhetamos senha</label>
+        <input asp-for="NovaSenha" class="form-control" />
+        <span asp-validation-for="NovaSenha" class="text-danger"></span>
+    </div>
 
-    <input type="submit" value="Redefinir Senha" />
-}
+    <button type="submit" class="btn btn-primary">Redefinir Senha</button>
+</form>
+

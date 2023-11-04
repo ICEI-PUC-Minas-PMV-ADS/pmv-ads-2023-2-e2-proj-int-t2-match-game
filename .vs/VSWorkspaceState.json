@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Match Game Oficial"
+    "\\src\\Match Game Oficial",
+    "\\src\\Match Game Oficial\\Match Game Oficial",
+    "\\src\\Match Game Oficial\\Match Game Oficial\\Controllers"
   ],
-  "SelectedNode": "\\src\\Match Game Oficial\\Match Game Oficial.sln",
+  "SelectedNode": "\\src\\Match Game Oficial\\Match Game Oficial\\Controllers\\EsqsenhaController.cs",
   "PreviewInSolutionExplorer": false
 }
