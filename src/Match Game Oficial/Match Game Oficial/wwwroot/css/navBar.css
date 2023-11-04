@@ -1,0 +1,80 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* Header nav */
+
+.bg-white {
+    padding: 0px;
+    background-image: linear-gradient(to right, #000000 0%, #3531CB 25%) !important;
+}
+
+.navbar-brand {
+    padding: 0px;
+    padding-left: -1px;
+}
+
+.logo {
+    height: 11vh;
+}
+
+
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgba(53,50,202,1) 0%, rgba(39,37,131,1) 93%) !important;
+}
+
+.navIcon {
+    padding-left: 0% !important;
+    cursor: pointer;
+}
+
+.navIcon-fav {
+    padding-left: 0% !important;
+    cursor: pointer;
+}
+
+.navIcon-perfil {
+    padding-left: 0% !important;
+    cursor: pointer;
+}
+
+.nav-link {
+    padding-top: 0%;
+    font-family: 'Jost';
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Footer */
+.footer {
+    padding-top: 10px;
+    text-align: center;
+}
+
+

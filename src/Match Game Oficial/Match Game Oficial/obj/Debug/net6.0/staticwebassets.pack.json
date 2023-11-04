@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\Match Game Oficial.bundle.scp.css"
     },
     {
+      "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\ListarJogos.css",
+      "PackagePath": "staticwebassets\\css\\ListarJogos.css"
+    },
+    {
+      "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\jogos.css",
+      "PackagePath": "staticwebassets\\css\\jogos.css"
+    },
+    {
       "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\navBar.css",
+      "PackagePath": "staticwebassets\\css\\navBar.css"
     },
     {
       "Id": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\site.css",

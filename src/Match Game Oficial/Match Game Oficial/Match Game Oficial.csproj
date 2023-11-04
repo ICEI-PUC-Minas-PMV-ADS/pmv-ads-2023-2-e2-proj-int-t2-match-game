@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\header.cs" />
+    <Content Remove="wwwroot\css\Header.css" />
+    <Content Remove="wwwroot\css\headerNav.cs" />
+    <Content Remove="wwwroot\css\ListarJogos.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="IGDB" Version="3.0.0" />
     <PackageReference Include="IGDB.DotNet.Models" Version="1.0.0" />

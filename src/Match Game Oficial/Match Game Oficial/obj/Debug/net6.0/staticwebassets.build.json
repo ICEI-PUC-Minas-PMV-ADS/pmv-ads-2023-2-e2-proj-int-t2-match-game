@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CuTSnQtj/iBA3Tlocj08i4IBd16dex6ZStxUU4TbOPc=",
+  "Hash": "3TcL1SzqNo7F4/JFy13/gnc9m5ABA6fWrsJ3c14ouZI=",
   "Source": "Match Game Oficial",
   "BasePath": "_content/Match Game Oficial",
   "Mode": "Default",
@@ -51,6 +51,40 @@
       "OriginalItemSpec": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Match Game Oficial.bundle.scp.css"
     },
     {
+      "Identity": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\jogos.css",
+      "SourceId": "Match Game Oficial",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\",
+      "BasePath": "_content/Match Game Oficial",
+      "RelativePath": "css/jogos.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jogos.css"
+    },
+    {
+      "Identity": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\ListarJogos.css",
+      "SourceId": "Match Game Oficial",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\",
+      "BasePath": "_content/Match Game Oficial",
+      "RelativePath": "css/ListarJogos.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ListarJogos.css"
+    },
+    {
       "Identity": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\login.css",
       "SourceId": "Match Game Oficial",
       "SourceType": "Discovered",
@@ -66,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\navBar.css",
+      "SourceId": "Match Game Oficial",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\",
+      "BasePath": "_content/Match Game Oficial",
+      "RelativePath": "css/navBar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\navBar.css"
     },
     {
       "Identity": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\site.css",

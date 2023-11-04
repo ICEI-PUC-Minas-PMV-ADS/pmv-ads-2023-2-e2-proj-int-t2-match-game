@@ -1,4 +1,4 @@
-﻿<link rel="stylesheet" href="wwwroot\css\site.css" />
+﻿<link rel="stylesheet" href="~/css/ListarJogos.css" asp-append-version="true" />
 
 @model IEnumerable<Match_Game_Oficial.Models.GameView>
 
@@ -6,75 +6,53 @@
     ViewData["Title"] = "ListarJogos";
 }
 
-<style>
-    .card:hover {
-        box-shadow: -1px 9px 40px -12px #808080;
-    }
-</style>
+<div id="js-preloader" class="js-preloader loaded">
 
-<section class="headJgRecomendados">
-    <h1 class="text-center tituloJogosRecomVoce">JOGOS RECOMENDADOS PARA VOCÊ</h1>
-    <p class="text-center conteudoJgRecomenVoce">Confira abaixo a lista dos jogos que foram recomendados para você.</p>
-</section>
+    <div class="preloader-inner">
 
-@{
-    var i = 0;
-}
+        <span class="dot"></span>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
 
-<main>
-    <div class="row mb-5" style="margin-left: 5%; margin-right: 5%;">
-        @foreach (var item in Model)
-        {
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                <div class="card">
-                    <img src="" class="card-img-top" />
-                    <div class="card-body">
-                        <div id="favoritos" data-item-id="@item.Id">
-                            <i id="favIcon" class="fa-regular fa-heart favoritos position-absolute top-60 end-0" style="color: #8952ff;" title="Favoritar"></i>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="most-popular">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="heading-section">
+                            <h4 class="text-center">JOGOS RECOMENDADOS PARA VOCÊ</h4>
+                            <p class="text-center">Confira abaixo a lista dos jogos que foram recomendados para você.</p>
                         </div>
-                        <div class="card-title">
-                            <h3>
-                                @Html.DisplayFor(modelItem => item.Name)
-                            </h3>
+                        <div class="row gameList">
                         </div>
-                        
-                        <div class="card_text">
-                            <p>
-                                @Html.DisplayFor(modelItem => item.Storyline)
-                                @Html.DisplayFor(modelItem => item.FirstReleaseDate)
-                            </p>
+
+                        <div class="col-lg-12">
+                            <div class="main-button">
+                                <a href="javascript:void(0)">Mais Jogos</a>
+                            </div>
+
                         </div>
-                        
-                        <div class="text-center saibaMaisBtn">
-                            <button class="btn btnSaibaMais" data-name="@item.Name" data-release-date="@item.FirstReleaseDate" data-storyline="@item.Storyline"> SAIBA MAIS</button>
-                        </div>
-                        
                     </div>
                 </div>
             </div>
-        }
+        </div>
     </div>
-</main>
+</div>
 
-<dialog id="modal">
-    <h2 class="text-center">INFORMAÇÕES SOBRE O JOGO</h2>
-    <div class="conteudoModal">
-        <h3>Data de lançamento:</h3>
-        <p id="modalFirstReleaseDate"></p>
+<div class="TelaSemlogin">
+    <span>  É necessário estar Logado para acessar esta página!
+            Realize login e tente novamente.
+    </span>
+</div>
 
-        <h3>Resumo:</h3>
-        <p id="modalStoryline"></p>
-    </div>
-    <button id="btnFechar">Fechar</button>
-</dialog>
-
-
-
-
-<script src="wwwroot\js\site.js"></script>
 <script src="https://kit.fontawesome.com/fe8eb85698.js" crossorigin="anonymous"></script>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/jquery/dist/jquery.js"></script>
-
 
 
