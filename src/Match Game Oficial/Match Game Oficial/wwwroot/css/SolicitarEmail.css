@@ -57,7 +57,7 @@ p, label {
 }
 
 
-input[type="submit"] {
+.btn {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     text-transform: uppercase;

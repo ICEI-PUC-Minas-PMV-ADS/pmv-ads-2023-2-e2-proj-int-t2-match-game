@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ngXdorbq43wtEPXDitBDrEFgUxXmYuHXMIp73iQaHkI=",
+  "Hash": "L9kpHarKgh4tJ6LTNAK2nGSiv46Wx0NpYRwTFRuKz5g=",
   "Source": "Match Game Oficial",
   "BasePath": "_content/Match Game Oficial",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\s_bru\\OneDrive\\Área de Trabalho\\MATCH GAME\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Match Game Oficial.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\s_bru\\OneDrive\\Área de Trabalho\\MATCH GAME\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\InserirCodigo.css",
+      "SourceId": "Match Game Oficial",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\s_bru\\OneDrive\\Área de Trabalho\\MATCH GAME\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\",
+      "BasePath": "_content/Match Game Oficial",
+      "RelativePath": "css/InserirCodigo.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\InserirCodigo.css"
     },
     {
       "Identity": "C:\\Users\\s_bru\\OneDrive\\Área de Trabalho\\MATCH GAME\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\wwwroot\\css\\jogos.css",
