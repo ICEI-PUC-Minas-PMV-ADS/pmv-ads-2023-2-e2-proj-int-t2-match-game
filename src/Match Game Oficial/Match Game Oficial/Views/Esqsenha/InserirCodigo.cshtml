@@ -3,14 +3,37 @@
 @{
     ViewData["Title"] = "Inserir Código de Verificação";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperação de senha</title>
+    <link rel="stylesheet" href="~/css/InserirCodigo.css" asp-append-version="true" />
+</head>
+<main class="main-codigo">
+<h1>Codigo de verificação</h1>
 
-<h1>Inserir Código de Verificação</h1>
+<form asp-controller="EsqsenhaController" asp-action="RedefinirSenha" method="post">
+    <div class="form-group">
+        <label asp-for="Codigo" class="control-label">
+            Insira abaixo o código de verificação recebido em seu e-mail para que você cadastre uma nova senha.
+        </label>
 
-@using (Html.BeginForm("RedefinirSenha", "EsqsenhaController", FormMethod.Post))
-{
-    @Html.LabelFor(model => model.Codigo)
-    @Html.TextBoxFor(model => model.Codigo)
-    @Html.ValidationMessageFor(model => model.Codigo)
+        <div class="code-input-container">
+            @for (int i = 0; i < 5; i++)
+            {
+                <input asp-for="Codigo" class="code-input-number" maxlength="1" type="tel" pattern="[0-9]" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
+            }
+        </div>
 
-    <input type="submit" value="Redefinir Senha" />
-}
+        <span asp-validation-for="Codigo" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar código</button>
+</form>
+</main>
+
+
+
+

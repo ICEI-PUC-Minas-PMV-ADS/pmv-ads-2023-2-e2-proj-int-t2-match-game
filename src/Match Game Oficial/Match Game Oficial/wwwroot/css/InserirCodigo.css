@@ -52,12 +52,12 @@ p, label {
     padding-top: 10px;
 }
 
-.main-senha {
+.main-codigo {
     padding: 30px 20px;
 }
 
 
-input[type="submit"] {
+.btn {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -75,3 +75,24 @@ input[type="submit"] {
 a {
     color: black;
 }
+
+.code-input-container {   
+    margin-top: 2em;
+    display: flex;
+    
+}
+
+.code-input-number {
+    color: #FFFFFf;
+    font-weight: bolder;
+    margin: 0 5px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #8952FF;
+    width: 50%;
+    height: 5em;
+    border-radius: 15px;
+    border: none;
+
+}
+
