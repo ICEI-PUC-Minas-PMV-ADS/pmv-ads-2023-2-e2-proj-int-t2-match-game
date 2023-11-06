@@ -1,0 +1,77 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;400;500;600;700;800&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Jost", sans-serif;
+    color: #6014EC;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+p, label {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-control {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #8E8E8E;
+    padding: 10px;
+    border: 1px solid #6014EC;
+    border-radius: 15px
+}
+
+.form-group {
+    padding-top: 10px;
+}
+
+.main-senha {
+    padding: 30px 20px;
+}
+
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 15px;
+    background-color: #6014EC;
+    border-color: transparent;
+}
+
+a {
+    color: black;
+}
