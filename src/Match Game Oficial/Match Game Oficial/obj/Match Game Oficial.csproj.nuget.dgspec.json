@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s_bru\\OneDrive\\Área de Trabalho\\MATCH GAME\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj": {}
+    "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s_bru\\OneDrive\\Área de Trabalho\\MATCH GAME\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj": {
+    "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s_bru\\OneDrive\\Área de Trabalho\\MATCH GAME\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
+        "projectUniqueName": "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
         "projectName": "Match Game Oficial",
-        "projectPath": "C:\\Users\\s_bru\\OneDrive\\Área de Trabalho\\MATCH GAME\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
-        "packagesPath": "C:\\Users\\s_bru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s_bru\\OneDrive\\Área de Trabalho\\MATCH GAME\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\obj\\",
+        "projectPath": "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
+        "packagesPath": "C:\\Users\\luana_ea3gy04\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luana_ea3gy04\\source\\Repos\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\s_bru\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\luana_ea3gy04\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -125,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
