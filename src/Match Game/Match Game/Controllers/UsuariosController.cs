@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Match_Game.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Match_Game.Controllers
 {
+    //[Authorize]
     public class UsuariosController : Controller
     {
         private readonly DataContext _context;
@@ -25,6 +27,8 @@ namespace Match_Game.Controllers
                           View(await _context.Usuarios.ToListAsync()) :
                           Problem("Entity set 'DataContext.Usuarios'  is null.");
         }
+
+
 
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)

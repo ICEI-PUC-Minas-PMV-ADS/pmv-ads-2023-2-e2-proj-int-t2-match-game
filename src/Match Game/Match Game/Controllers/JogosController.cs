@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Match_Game.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Match_Game.Controllers
 {
+    //[Authorize]
     public class JogosController : Controller
     {
         private readonly DataContext _context;

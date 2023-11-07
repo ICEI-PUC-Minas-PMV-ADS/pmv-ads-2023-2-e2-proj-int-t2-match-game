@@ -32,6 +32,11 @@
                 <input asp-for="Senha" class="form-control" />
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="Perfil" class="control-label"></label>
+                <input asp-for="Perfil" class="form-control" asp-items="Html.GetEnumSelectList<Perfil>()></select>
+                <span asp-validation-for="Perfil" class="text-danger"></span>
+            </div>
             <input type="hidden" asp-for="ID_User" />
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
