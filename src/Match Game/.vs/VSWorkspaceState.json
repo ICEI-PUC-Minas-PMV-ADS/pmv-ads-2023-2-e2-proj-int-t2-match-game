@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Match Game",
-    "\\Match Game\\Controllers",
     "\\Match Game\\Views",
-    "\\Match Game\\Views\\Shared"
+    "\\Match Game\\Views\\Usuarios"
   ],
-  "SelectedNode": "\\Match Game.sln",
+  "SelectedNode": "\\Match Game\\Views\\Usuarios\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }

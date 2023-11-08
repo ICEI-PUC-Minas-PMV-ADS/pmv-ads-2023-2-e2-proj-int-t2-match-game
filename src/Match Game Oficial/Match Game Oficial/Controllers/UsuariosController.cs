@@ -112,7 +112,7 @@ namespace Match_Game_Oficial.Controllers
         {
             return View();
         }
-
+        
         public FileContentResult getImg(int id)
         {
             byte[] byteArray = _context.Usuarios.Find(id).Foto;
@@ -150,7 +150,7 @@ namespace Match_Game_Oficial.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Edit/5
+        // GET: Usuarios/Edit5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Usuarios == null)
@@ -166,7 +166,7 @@ namespace Match_Game_Oficial.Controllers
             return View(usuario);
         }
 
-        // POST: Usuarios/Edit/5
+        // POST: Usuarios/Edit5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
