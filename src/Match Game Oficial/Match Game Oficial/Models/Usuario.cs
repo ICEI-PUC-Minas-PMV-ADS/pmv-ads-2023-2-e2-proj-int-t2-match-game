@@ -27,10 +27,11 @@ namespace Match_Game_Oficial.Models
 
     }
 
-
+    
     public enum Perfil
     {
         User,
         Admin
     }
+    
 }

@@ -1,0 +1,54 @@
+﻿@model Match_Game_Oficial.Models.Jogo
+
+@{
+    ViewData["Title"] = "Favoritos";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Games</title>
+</head>
+<body>
+    <div class="favoriteGamesList" data-username="@User.Identity.Name">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const favoriteGamesListContainer = document.querySelector('.favoriteGamesList');
+            const userName = favoriteGamesListContainer.getAttribute('data-username');
+
+            // Criando a chave do Local Storage
+            const favoritosKey = `favoritos_${userName}`;
+
+            // Obtendo os jogos favoritos associados ao nome do usuário
+            const favoriteGamesList = JSON.parse(localStorage.getItem(favoritosKey)) || [];
+
+            favoriteGamesList.forEach(favoriteGame => {
+                const favoriteGameItem =
+                    `<div class="col-lg-3 col-md-6 col-sm-12">
+                                                <div class="item">
+                                                    <img src="${favoriteGame.background_image}" alt="${favoriteGame.name} image" style="width: 100%; height: auto;">
+                                                    <h4 class="game-name">${favoriteGame.name}<br></h4>
+                                                    <span class="platforms">${favoriteGame.parent_platforms}</span>
+                                                    <ul class="list-unstyled">
+                                                        <li><i class="fa fa-star"></i> <span class="rating">${favoriteGame.rating}</span></li>
+                                                        <li><i class="fa-regular fa-calendar"></i> <span class="date">${favoriteGame.released}</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>`;
+
+                favoriteGamesListContainer.insertAdjacentHTML('beforeend', favoriteGameItem);
+            });
+        });
+    </script>
+</body>
+</html>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

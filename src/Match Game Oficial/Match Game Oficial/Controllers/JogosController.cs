@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Match_Game_Oficial.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class JogosController : Controller
     {
         private readonly DataContext _context;

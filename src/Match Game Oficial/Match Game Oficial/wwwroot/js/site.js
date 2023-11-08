@@ -41,7 +41,7 @@ function loadGames(url) {
                                 <img src="${game.background_image}" alt="${game.name} image" style="width: 100%; ">
                             </div>
                             <div id="favoritos" data-item-id="@item.Id">
-                                <i id="favIcon" class="fa-regular fa-heart favoritos position-absolute  top-90 end-0 b-24" style="color: #8952ff;" title="Favoritar"></i>
+                                <i id="favIcon" class="fa-regular fa-heart favoritos position-absolute  top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favoritar"></i>
                             </div>
 
                             <h4 class="game-name">${game.name}<br>
@@ -55,34 +55,25 @@ function loadGames(url) {
                             </div>
                             <div class="text-center saibaMaisBtn">
                                   <button class="btn btnSaibaMais">SAIBA MAIS</button>
+
                             </div>
                         </div>
                     </div>
 
                 `
-                gameList.insertAdjacentHTML("beforeend", gameItemEl)
-
+                gameList.insertAdjacentHTML("beforeend", gameItemEl);
             });
 
             if (nextGameListUrl) {
                 loadMoreGamesBtn.classList.remove("hidden");
-
             } else {
                 loadMoreGamesBtn.classList.add("hidden");
             }
-
         })
-
         .catch(error => {
-            console.log("Ocorreu algum erro", error
-            );
-
-        })
-
-
+            console.log("Ocorreu algum erro", error);
+        });
 }
-
-
 
 loadGames(url);
 
@@ -91,7 +82,6 @@ loadMoreGamesBtn.addEventListener('click', () => {
         loadGames(nextGameListUrl);
     }
 });
-
 
 
 /* Modal */
