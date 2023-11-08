@@ -16,6 +16,8 @@ namespace Match_Game.Models
 
         public DbSet<Genero> Generos { get; set; }
 
+        public DbSet<Usuario> Permissao { get; set; }
+
         //Definindo Chaves primárias
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

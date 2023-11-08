@@ -10,9 +10,11 @@ using System.Net.Http;
 using IGDB;
 using IGDB.Models;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Match_Game_Oficial.Controllers
 {
+    [Authorize]
     public class JogosController : Controller
     {
         private readonly DataContext _context;

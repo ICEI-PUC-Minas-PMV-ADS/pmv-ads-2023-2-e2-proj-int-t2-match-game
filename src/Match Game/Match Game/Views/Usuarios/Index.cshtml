@@ -24,6 +24,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Senha)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Perfil)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -41,6 +44,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Senha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Perfil)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID_User">Edit</a> |

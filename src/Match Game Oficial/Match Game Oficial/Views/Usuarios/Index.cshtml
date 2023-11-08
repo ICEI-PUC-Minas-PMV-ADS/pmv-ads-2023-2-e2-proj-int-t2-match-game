@@ -1,53 +1,64 @@
-﻿@model IEnumerable<Match_Game_Oficial.Models.Usuario>
+﻿<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+@model IEnumerable<Match_Game_Oficial.Models.Usuario>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Perfil de Usuários";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Data_Nascimento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Foto)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Data_Nascimento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Foto)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<main class="main-meu-perfil">
+
+    <h1>MEU PERFIL</h1>
+
+    <p>Confira abaixo todas as informações do seu perfil e personalize-o.</p>
+
+    <div class="row box">
+        <div class="col-6 box-foto">
+
+            <div class="foto">
+                <img src="/img/avatar-foto.png"/> 
+            </div>
+
+            <div class="box-foto-info">
+                <div class="box-foto-alterar-foto">
+                    <p><a asp-area="" asp-controller="" asp-action="">Alterar foto de perfil</a></p>
+                </div>
+                <div class="box-foto-alterar-nome">
+                    <h3>
+                        Joaquim da Silva
+                    </h3>
+                    <p><a asp-area="" asp-controller="" asp-action="">Alterar nome de perfil</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-6">
+            <h2>INFORMAÇÕES PESSOAIS</h2>
+
+            <div class="box-info">
+                <div class="form-group email">
+                    <label class="control-label">E-mail Cadastrado</label>
+                    <input class="form-control" placeholder="joaquimdasilva@gmail.com" />
+                    <p><a asp-area="" asp-controller="Usuarios" asp-action="">Alterar e-mail cadastrado</a></p>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Data de nascimento</label>
+                    <input class="form-control" placeholder="10/05/2000" />
+                </div>
+
+                <div class="box-buttons">
+                    <div>
+                        <p class="btn btn-green alterar-senha"><a asp-area="" asp-controller="Esqsenha" asp-action="Solicitaremail">Alterar senha</a></p>
+                    </div>
+                    <div>
+                        <p class="btn minhas-recomendacoes"><a asp-area="" asp-controller="Jogos" asp-action="ListarJogos">Minhas Recomendações</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>

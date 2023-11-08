@@ -10,6 +10,7 @@ using System.Net.Mime;
 using System.Threading;
 using System.ComponentModel;
 using System.Net;
+using Org.BouncyCastle.Crypto.Macs;
 
 namespace Match_Game_Oficial.Controllers
 {
@@ -17,17 +18,16 @@ namespace Match_Game_Oficial.Controllers
     {
         private readonly DataContext _context;
 
-        private readonly SmtpSettings _smtpSettings;
+
 
         private const string CodigoDeVerificacaoChave = "CodigoDeVerificacao"; // Chave para armazenar o código na sessão
+        private const string EmailParaVerificação = "email"; // Chave para armazenar o código na sessão
 
 
-      
 
         //COnfiguração do SMTP
-        public EsqsenhaController(IOptions<SmtpSettings> smtpSettings, DataContext context)
+        public EsqsenhaController(DataContext context)
         {
-            _smtpSettings = smtpSettings.Value;
 
             _context = context;
         }
@@ -55,12 +55,16 @@ namespace Match_Game_Oficial.Controllers
             {
                 // Chamada do método para gerar código de verificação
                 string codigoDeVerificacao = GerarCodigoDeVerificacao();
+                Console.WriteLine(codigoDeVerificacao);
 
                 // Chamada do método para enviar o email com o código
-                EnviarEmailComCodigo(email, codigoDeVerificacao, _smtpSettings);
+                EnviarEmailComCodigo(email, codigoDeVerificacao);
+                Console.WriteLine(email);
+
 
                 // Armazene o código de verificação na sessão
                 HttpContext.Session.SetString(CodigoDeVerificacaoChave, codigoDeVerificacao);
+                HttpContext.Session.SetString(EmailParaVerificação, email);
 
                 // Redirecionamento para a página de inserção do código
                 return View("InserirCodigo");
@@ -72,32 +76,32 @@ namespace Match_Game_Oficial.Controllers
         {
             Random random = new Random();
             int codigo = random.Next(10000, 100000);
-            
-            return codigo.ToString("D5"); 
+
+            return codigo.ToString("D5");
         }
 
         //Método que envia um email para o usuário com o SMTP
-         private async Task EnviarEmailComCodigo(string email, string codigo, SmtpSettings smtpSettings)
+        private void EnviarEmailComCodigo(string email, string codigoDeVerificacao)
         {
-            string fromMail = smtpSettings.SmtpUsername;
-            string fromPassword = smtpSettings.SmtpPassword;
+            string fromMail = "matchgame02@gmail.com";
+            string fromPassword = "ynzupkoqpimoynbh";
 
             MailMessage message = new MailMessage();
-            message.From = new MailAddress(smtpSettings.SmtpUsername);
+            message.From = new MailAddress(fromMail);
 
-            message.Subject = "Código de Verificação";            
+            message.Subject = "Código de Verificação";
             message.To.Add(new MailAddress(email));
-            message.Body = $"<p>Seu código é: {codigo}<p>";
+            message.Body = $"<p>Seu código é: {codigoDeVerificacao}<p>";
             message.IsBodyHtml = true;
 
-            var smtpClient = new SmtpClient ("smtp.gmail.com")
+            var smtpClient = new SmtpClient("smtp.gmail.com")
             {
-                Port = smtpSettings.SmtpPort,
+                Port = 587,
                 Credentials = new NetworkCredential(fromMail, fromPassword),
                 EnableSsl = true,
             };
 
-                smtpClient.Send(message);         
+            smtpClient.Send(message);
         }
 
 
@@ -107,47 +111,63 @@ namespace Match_Game_Oficial.Controllers
             return View();
         }
 
-        // Ação para redefinir a senha
         [HttpPost]
-        public async Task <IActionResult> RedefinirSenha(Esqsenha model)
+        public async Task<IActionResult> VerificaCodigo(Esqsenha model)
         {
-            if (ModelState.IsValid)
-            {
-                // Verifique o código de verificação na sessão
-                string codigoDeVerificacao = HttpContext.Session.GetString(CodigoDeVerificacaoChave);
+            string codigo = model.Codigo;
+            string NovaSenha = model.NovaSenha;
+            string emailUser = HttpContext.Session.GetString(EmailParaVerificação);
 
-                if (model.Codigo != codigoDeVerificacao)
+            if (codigo == HttpContext.Session.GetString(CodigoDeVerificacaoChave))
+            {
+                Console.WriteLine(" O código Está Correto");
+                Console.WriteLine();
+
+                var dados = await BuscarUsuariosPorEmail(emailUser);
+
+                Console.WriteLine(emailUser);
+                Console.WriteLine(dados);
+                if (dados.Count == 0)
                 {
-                    ModelState.AddModelError("Codigo", "Código de verificação incorreto");
-                    return View(model);
+
+                    Console.WriteLine("Algo Deu errado no banco de dados");
+                    return RedirectToAction("InserirCodigo", "Esqsenha");
+
+                }
+                else
+                {
+                    Console.WriteLine("Deu certo o banco de ddados");
+                    var primeiroUsuario = dados[0];
+                    primeiroUsuario.Senha = BCrypt.Net.BCrypt.HashPassword(NovaSenha);
+
+                    _context.Update(primeiroUsuario);
+                    await _context.SaveChangesAsync();
+
+                    HttpContext.Session.Remove(CodigoDeVerificacaoChave);
+
+                    return RedirectToAction("Login", "Usuarios");
                 }
 
-                //Aqui, estamos resgatando o usuário que tenha o email fornecido
-                var usuario = _context.Usuarios.FirstOrDefault(u => u.Email == model.Email);
-
-                //Definindo a nova senha
-                usuario.Senha = model.NovaSenha;
-
-                //Enviando para o Bando de Dados
-                _context.Update(usuario);
-                await _context.SaveChangesAsync();
-
-
-                // Limpando o código de verificacao da sessao
-                HttpContext.Session.Remove(CodigoDeVerificacaoChave);
-
-                // Redirecione para a página de confirmação de senha
-                return RedirectToAction("ConfirmacaoSenha");
             }
+            else
+            {
+                Console.WriteLine("Seu código está Incorreto");
+                ModelState.AddModelError("Codigo", "Código de verificação incorreto");
 
-            return View(model);
+                return RedirectToAction("InserirCodigo", "Esqsenha");
+
+            }
         }
 
-        // Ação para a página de confirmação de senha
-        public IActionResult ConfirmacaoSenha()
+        public async Task<List<Usuario>> BuscarUsuariosPorEmail(string email)
         {
-            return View();
+            var usuarios = await _context.Usuarios
+                .Where(u => u.Email == email)
+                .ToListAsync();
+
+            return usuarios;
         }
+
 
 
         //Método que válida se o email existe no Banco de Dados

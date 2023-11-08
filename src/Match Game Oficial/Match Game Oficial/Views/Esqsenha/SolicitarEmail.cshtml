@@ -3,17 +3,33 @@
 @{
     ViewData["Title"] = "EnviarEmail";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperação de senha</title>
+    <link rel="stylesheet" href="~/css/SolicitarEmail.css" asp-append-version="true" />
+</head>
 
-<h1>Enviar Email com Código de Verificação</h1>
+<main class="main-senha">
+    <div>
+        <h1>Esqueceu sua senha?</h1>
+    
+        <p>Não se preocupe! Insira seu e-mail cadastrado abaixo e enviaremos um código de verificação para que você cadastre uma nova senha.</p>
+     </div>
 
-@using (Html.BeginForm("EnviarEmail", "Esqsenha", FormMethod.Post))
-{
+<form asp-controller="Esqsenha" asp-action="EnviarEmail" method="post">
+    <div class="form-group">
+            <label asp-for="Email" class="control-label">Insira seu e-mail cadastrado<span style="color: #FF0000">*</span></label>
+            <input asp-for="Email" class="form-control" placeholder="joaquimdasilva@gmail.com" required/>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
 
-    @Html.LabelFor(model => model.Email)
-    @Html.TextBoxFor(model => model.Email)
-    @Html.ValidationMessageFor(model => model.Email)
+        <button type="submit" class="btn btn-primary">Enviar código por email</button>
 
-   
-
-    <input type="submit" value="Enviar Código de Verificação" />
-}
+        <div>
+            <p>Não tem uma conta? <a asp-area="#" asp-controller="Usuarios" asp-action="create">Cadastre-se agora mesmo</a></p>
+        </div>
+</form>
+</main>
