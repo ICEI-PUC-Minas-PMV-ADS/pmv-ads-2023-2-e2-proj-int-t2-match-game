@@ -1,0 +1,50 @@
+﻿@model Match_Game_Oficial.Models.Recomendado
+
+
+
+<!-- Incluir o script JavaScript -->
+@Html.Raw(ViewData["Script"])
+
+<h2>Formulário de Interesse em Jogos</h2>
+
+@using (Html.BeginForm("Index", "Recomendados", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AnoInicial, new { @class = "control-label" })
+        @Html.EditorFor(model => model.AnoInicial, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.AnoInicial, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AnoFinal, new { @class = "control-label" })
+        @Html.EditorFor(model => model.AnoFinal, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.AnoFinal, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Plataforma, new { @class = "control-label" })
+        @Html.DropDownListFor(model => model.Plataforma, Enum.GetValues(typeof(Form_Plat)).Cast<Form_Plat>().Select(e => new SelectListItem
+    {
+    Text = e.ToString(),
+    Value = ((int)e).ToString()
+    }), new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Plataforma, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Genero, new { @class = "control-label" })
+        @Html.DropDownListFor(model => model.Genero, Enum.GetValues(typeof(Form_Gen)).Cast<Form_Gen>().Select(e => new SelectListItem
+    {
+    Text = e.ToString(),
+    Value = ((int)e).ToString()
+    }), new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Genero, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+}
+
+
+
