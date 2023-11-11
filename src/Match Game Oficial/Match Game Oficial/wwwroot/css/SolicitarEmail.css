@@ -56,6 +56,10 @@ p, label {
     padding: 30px 20px;
 }
 
+.row {
+    justify-content: center;
+}
+
 
 .btn {
     font-family: "Poppins", sans-serif;
@@ -74,4 +78,9 @@ p, label {
 
 a {
     color: black;
+}
+
+a:hover {
+    color: black;
+
 }
