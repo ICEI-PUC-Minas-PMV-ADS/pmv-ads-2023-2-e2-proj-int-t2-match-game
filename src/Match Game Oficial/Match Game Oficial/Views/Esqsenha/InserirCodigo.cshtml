@@ -11,28 +11,32 @@
     <title>Recuperação de senha</title>
     <link rel="stylesheet" href="~/css/InserirCodigo.css" asp-append-version="true" />
 </head>
+
+<body>
 <main class="main-codigo">
 <h1>Codigo de verificação</h1>
 
-<form asp-controller="EsqsenhaController" asp-action="RedefinirSenha" method="post">
+    <form asp-controller="Esqsenha" asp-action="VerificaCodigo" method="post">
     <div class="form-group">
         <label asp-for="Codigo" class="control-label">
             Insira abaixo o código de verificação recebido em seu e-mail para que você cadastre uma nova senha.
         </label>
+                <div class="form-group">
+                  
+                    <div class="code-input-container">
+                        @for (int i = 0; i < 5; i++)
+                        {
+                            <input asp-for="Codigo" class="code-input-number" maxlength="1" type="tel" pattern="[0-9]" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
+                        }
+                    </div>
 
-        <div class="code-input-container">
-            @for (int i = 0; i < 5; i++)
-            {
-                <input asp-for="Codigo" class="code-input-number" maxlength="1" type="tel" pattern="[0-9]" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
-            }
-        </div>
+                    <span asp-validation-for="Codigo" class="text-danger"></span>
+                </div>
 
-        <span asp-validation-for="Codigo" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Enviar código</button>
-</form>
+                <button type="submit" class="btn btn-primary">Enviar código</button>
+            </form>
 </main>
+</body>
 
 
 
