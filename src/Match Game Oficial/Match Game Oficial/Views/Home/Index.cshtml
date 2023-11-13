@@ -60,3 +60,121 @@
 
 
 </div>
+
+<script>
+    const APIKEY = "69f74f8a6cde46529c5d0923786cdab7";
+    const loaderEl = document.getElementById("js-preloader");
+    const gameList = document.querySelector(".gameList");
+    const loadMoreGamesBtn = document.querySelector(".main-button");
+    let nextGameListUrl = null;
+
+    const url = `https://api.rawg.io/api/games?key=${APIKEY}`;
+
+    const getPlatformStr = (platforms) => {
+        if (Array.isArray(platforms)) {
+            return platforms.map(each => each.platform.name).join(",");
+        }
+        return platforms;
+    };
+
+
+
+    function loadGames(url) {
+        loaderEl.classList.remove("loaded");
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                nextGameListUrl = data.next ? data.next : null;
+                const games = data.results;
+                loaderEl.classList.add("loaded");
+
+                games.forEach(game => {
+                    const gameItemEl =
+                        `<div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item">
+                <img src="${game.background_image}" alt="${game.name} image" style="width: 100%; height: auto;">
+
+                <h4 class="game-name " >${game.name}<br>
+
+                </h4>
+                 <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-star"></i> <span class="rating">${game.rating}</span></li>
+                    <li><i class="fa-regular fa-calendar"></i> <span class="date">${game.released}</span></li>
+                </ul>
+                <button class="btn btn-primary favorite-button">Favoritar</button>
+            </div>
+        </div>
+        `;
+                    gameList.insertAdjacentHTML("beforeend", gameItemEl);
+                });
+
+                if (nextGameListUrl) {
+                    loadMoreGamesBtn.classList.remove("hidden");
+                } else {
+                    loadMoreGamesBtn.classList.add("hidden");
+                }
+            })
+            .catch(error => {
+                console.log("Ocorreu algum erro", error);
+            });
+    }
+
+    loadGames(url);
+
+    loadMoreGamesBtn.addEventListener('click', () => {
+        if (nextGameListUrl) {
+            loadGames(nextGameListUrl);
+        }
+    });
+</script>
+
+<script>
+
+    var userName = "@User.Identity.Name";
+
+    document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('favorite-button')) {
+            // Verificar se o usuário está logado antes de prosseguir
+            if (!userName) {
+                alert("Por favor, faça login para favoritar jogos.");
+                return; // Impede a execução do restante do código
+            }
+
+            const gameContainer = event.target.closest('.item');
+            const gameName = gameContainer.querySelector('.game-name').textContent;
+
+            // Função para verificar se o jogo já está favoritado
+            function isGameAlreadyFavorited(gameName, userName) {
+                const favoritosKey = `favoritos_${userName}`;
+                let favoriteGamesList = JSON.parse(localStorage.getItem(favoritosKey)) || [];
+                return favoriteGamesList.some(game => game.name === gameName);
+            }
+
+            // Verificar se o jogo já está na lista de favoritos
+            if (isGameAlreadyFavorited(gameName, userName)) {
+                alert(`${gameName} já foi favoritado`);
+                return;
+            }
+            alert(`${gameName} foi adicionado à lista de favoritos!`);
+
+            const gameRating = gameContainer.querySelector('.rating').textContent;
+            const gameReleased = gameContainer.querySelector('.date').textContent;
+
+            const favoriteGame = {
+                name: event.target.parentNode.querySelector('.game-name').textContent,
+                released: event.target.parentNode.querySelector('.date').textContent,
+                rating: event.target.parentNode.querySelector('.rating').textContent,
+                background_image: event.target.parentNode.querySelector('img').src,
+                parent_platforms: event.target.parentNode.querySelector('.platforms').textContent,
+            };
+
+            const favoritosKey = `favoritos_${userName}`;
+
+            let favoriteGamesList = JSON.parse(localStorage.getItem(favoritosKey)) || [];
+            favoriteGamesList.push(favoriteGame);
+            localStorage.setItem(favoritosKey, JSON.stringify(favoriteGamesList));
+        }
+    });
+</script>

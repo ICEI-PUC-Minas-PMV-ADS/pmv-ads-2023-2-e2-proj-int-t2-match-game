@@ -24,12 +24,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNxc2VuaGFcU29saWNpdGFyRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ADS/MatchGame- certo/src/Match Game Oficial/Match Game Oficial/Views/Favoritos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ADS/MatchGame- certo/src/Match Game Oficial/Match Game Oficial/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ADS/MatchGame- certo/src/Match Game Oficial/Match Game Oficial/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ADS/MatchGame- certo/src/Match Game Oficial/Match Game Oficial/Views/JogosRecomendados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NSZWNvbWVuZGFkb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ADS/MatchGame- certo/src/Match Game Oficial/Match Game Oficial/Views/Jogos/Create.cshtml]
@@ -54,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ADS/MatchGame- certo/src/Match Game Oficial/Match Game Oficial/Views/Jogos/ListarJogos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcTGlzdGFySm9nb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ADS/MatchGame- certo/src/Match Game Oficial/Match Game Oficial/Views/Recomendados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ADS/MatchGame- certo/src/Match Game Oficial/Match Game Oficial/Views/Shared/Error.cshtml]
