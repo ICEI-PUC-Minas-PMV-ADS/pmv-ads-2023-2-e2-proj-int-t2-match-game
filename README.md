@@ -5,8 +5,9 @@
 `Projeto: Desenvolvimento de uma Aplicação Interativa`
 
 `2° SEMESTRE/2023`
+## Sobre o Match Game
 
-O Match Game é um site que permite que os usuários personalizem suas bibliotecas de jogos e tenham a recomendações personalizadas com base em seus gostos. Além de ampliar a descoberta de jogos, ele promove conexões entre jogadores que compartilham interesses em comum.
+O Projeto Match Game soluciona os problemas dos Gamers em relação a escolha de jogos. A aplicação tem como objetivo ajudar os jogadores a escolherem e/ou descobrirem novos jogos com base em suas escolhas de interesse pessoal sobre os games, como por exemplo: gênero, estilo dentre outros. Nosso algoritmo analisa a resposta do usuário e recomenda jogos compativeis com o seu gosto ampliando a descoberta de novos jogos. Além disso, o usuário poderá personalizar a sua biblioteca pessoal com seus jogos favoritos para que no futuro seja fácil encontra-los novamente. 
 
 ## Integrantes
 
