@@ -65,6 +65,12 @@ body {
     font-family: 'Jost';
 }
 
+li > .logout {
+    padding-top: 0%;
+    font-family: 'Jost';
+    color: #ffff;
+}
+
 .nav-item {
     display: flex;
     align-items: center;
