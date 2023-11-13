@@ -11354,40 +11354,24 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\tayan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\andre\\.nuget\\packages\\": {}
->>>>>>> 1f6ee0c0f5c0b548f6f3a2c31417525cdfcde0cc
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
       "projectName": "Match Game Oficial",
       "projectPath": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
       "packagesPath": "C:\\Users\\tayan\\.nuget\\packages\\",
       "outputPath": "D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\andre\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
-      "projectName": "Match Game Oficial",
-      "projectPath": "C:\\Users\\andre\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-match-game\\src\\Match Game Oficial\\Match Game Oficial\\obj\\",
->>>>>>> 1f6ee0c0f5c0b548f6f3a2c31417525cdfcde0cc
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\tayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 1f6ee0c0f5c0b548f6f3a2c31417525cdfcde0cc
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11513,12 +11497,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.310\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
->>>>>>> 1f6ee0c0f5c0b548f6f3a2c31417525cdfcde0cc
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache D:\\ADS\\MatchGame- certo\\src\\Match Game Oficial\\Match Game Oficial\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
