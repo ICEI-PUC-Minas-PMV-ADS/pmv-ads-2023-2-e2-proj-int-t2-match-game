@@ -13,7 +13,7 @@
 
 ## Sobre o Match Game
 
-O Projeto Match Game soluciona os problemas dos Gamers em relação a escolha de jogos. A aplicação tem como objetivo ajudar os jogadores a descobrirem novos jogos com base em suas escolhas de interesse pessoal sobre os games, como por exemplo: gênero, estilo dentre outros. Nosso algoritmo analisa a resposta do usuário e recomenda jogos compatíveis com o seu gosto, ampliando a descoberta de novos jogos. Além disso, o usuário poderá criar a sua biblioteca pessoal com seus jogos favoritos para que no futuro seja fácil encontra-los novamente. 
+O Projeto Match Game soluciona os problemas dos Gamers em relação a escolha de jogos. A aplicação tem como objetivo ajudar os jogadores a descobrirem novos jogos com base em suas escolhas de interesse pessoal sobre os games, como por exemplo: gênero, estilo dentre outros. Nosso algoritmo analisa a resposta do usuário e recomenda jogos compatíveis com o seu gosto, ampliando a descoberta de novos jogos. Além disso, o usuário poderá criar a sua biblioteca pessoal com seus jogos favoritos para que no futuro encontre-os com facilidade. 
 
 ## Integrantes
 
