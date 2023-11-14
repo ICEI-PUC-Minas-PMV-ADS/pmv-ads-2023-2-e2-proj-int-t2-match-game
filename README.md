@@ -1,10 +1,16 @@
 # MATCH GAME
 
-`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS` 
 
 `Projeto: Desenvolvimento de uma Aplicação Interativa`
 
-`2° SEMESTRE/2023`
+`2° SEMESTRE/2023` <br>
+
+<div align="center">
+  
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/fef4d44e-434a-4bb6-b062-868a5265b292)
+</div>
+
 ## Sobre o Match Game
 
 O Projeto Match Game soluciona os problemas dos Gamers em relação a escolha de jogos. A aplicação tem como objetivo ajudar os jogadores a descobrirem novos jogos com base em suas escolhas de interesse pessoal sobre os games, como por exemplo: gênero, estilo dentre outros. Nosso algoritmo analisa a resposta do usuário e recomenda jogos compativeis com o seu gosto ampliando a descoberta de novos jogos. Além disso, o usuário poderá criar a sua biblioteca pessoal com seus jogos favoritos para que no futuro seja fácil encontra-los novamente. 
