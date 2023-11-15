@@ -1,0 +1,194 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;400;500;600;700;800&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Jost", sans-serif;
+    color: #6014EC;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.6em;
+    text-align: left;
+}
+
+p, label {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-control {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #8E8E8E;
+    padding: 10px;
+    border: 1px solid #6014EC;
+    border-radius: 15px
+}
+
+.form-group {
+    padding-top: 10px;
+}
+
+.main-cadastro, .main-login, .main-meu-perfil {
+    padding: 30px 20px;
+}
+
+
+.row {
+    justify-content: center;
+}
+
+.btn, .btn-green {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 15px;
+    background-color: #6014EC;
+    border-color: transparent;
+    text-transform: uppercase;
+}
+
+    .btn a {
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center !important;
+        justify-content: center;
+    }
+
+.btn-green {
+    background-color: #059CAD !important;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #3230C3;
+}
+
+.btn-green:hover {
+    color: #ffffff;
+    background-color: #006D79 !important;
+}
+
+/* PÁGINA MEU PERFIL*/
+.box {
+    margin-top: 50px;
+}
+
+.box-info {
+    margin-top: 20px;
+}
+
+.email p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.email a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #7E7E7E !important;
+}
+
+    .email a:hover {
+        color: #282828 !important;
+    }
+
+.alterar-senha {
+    margin: 40px 0 15px 0;
+}
+
+.minhas-recomendacoes {
+    margin: 0px;
+}
+
+.box-foto {
+    padding: 0 100px;
+}
+
+.foto img {
+    max-width: 100%;
+}
+
+.box-foto-info h3 {
+    color: #000;
+}
+
+.box-foto-info h3 {
+    color: #000;
+}
+
+.box-foto-alterar-foto {
+    background-color: #8952FF;
+    border-radius: 10px 10px 0 0;
+    width: 60%;
+    margin: 0px auto;
+    margin-top: -50px;
+    position: relative;
+}
+
+    .box-foto-alterar-foto p {
+        margin: 0;
+        padding: 5px
+    }
+
+    .box-foto-alterar-foto a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.box-foto-alterar-nome {
+    border: 1px solid #8952FF;
+    border-radius: 10px;
+    padding: 30px 0px 15px;
+}
+
+.box-foto-alterar-nome {
+    background-color: #fff;
+    position: relative;
+}
+
+    .box-foto-alterar-nome a {
+        text-decoration: none;
+        color: #8952FF;
+    }
+
+
+.box-foto-alterar-foto:hover {
+    background-color: #3230C3;
+}
+
+.box-foto-alterar-nome a:hover {
+    color: #3230C3;
+}
