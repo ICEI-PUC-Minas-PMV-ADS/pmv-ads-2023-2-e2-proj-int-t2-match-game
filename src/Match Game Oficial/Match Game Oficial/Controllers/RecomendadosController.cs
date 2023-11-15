@@ -74,37 +74,54 @@ namespace Match_Game_Oficial.Controllers
             if (ModelState.IsValid)
             {
                 // Obter os valores necessários do modelo
-                var anoInicial = model.AnoInicial;
-                var anoFinal = model.AnoFinal;
+                var anoInicial = Convert.ToInt32(model.AnoInicial);
+                var anoFinal = Convert.ToInt32( model.AnoFinal);
                 var plataforma = model.Plataforma;
                 var genero = model.Genero;
 
-                // Verificar se os valores estão nos dicionários
-                if (GeneroMapping.TryGetValue(genero, out var generoMapeado) && PlataformaMapping.TryGetValue(plataforma, out var plataformaMapeada))
+                Console.WriteLine(anoFinal);
+                Console.WriteLine(anoInicial);
+
+
+                if (anoFinal > anoInicial && anoInicial < 2024 && anoFinal < 2024)
                 {
-                    // Construir a URL da API com base nos valores do modelo
-                    var apiUrl = $"https://api.rawg.io/api/games?key=69f74f8a6cde46529c5d0923786cdab7&parents_platforms={plataformaMapeada}&genres={generoMapeado}&dates={anoInicial}-01-01,{anoFinal}-06-01";
+                    Console.WriteLine("Ano Correto");
 
-                    var dados = await BuscarInfo(email);
-                    Console.WriteLine(apiUrl);
-                    Console.WriteLine(email);
 
-                    if (dados.Count > 0)
+                    // Verificar se os valores estão nos dicionários
+                    if (GeneroMapping.TryGetValue(genero, out var generoMapeado) && PlataformaMapping.TryGetValue(plataforma, out var plataformaMapeada))
                     {
-                        var primeiroUser = dados[0];
+                        // Construir a URL da API com base nos valores do modelo
+                        var apiUrl = $"https://api.rawg.io/api/games?key=69f74f8a6cde46529c5d0923786cdab7&parents_platforms={plataformaMapeada}&genres={generoMapeado}&dates={anoInicial}-01-01,{anoFinal}-06-01";
+
+                        var dados = await BuscarInfo(email);
+                        Console.WriteLine(apiUrl);
+                        Console.WriteLine(email);
+
+                        if (dados.Count > 0)
+                        {
+                            var primeiroUser = dados[0];
 
 
-                        primeiroUser.UsuarioLink = apiUrl;
+                            primeiroUser.UsuarioLink = apiUrl;
 
-                        _context.Usuarios.Update(primeiroUser);
-                        _context.SaveChanges();
+                            _context.Usuarios.Update(primeiroUser);
+                            _context.SaveChanges();
 
+                        }
+
+                        // Executar um script JavaScript para salvar no localStorage
+                        ViewData["Script"] = $"<script>alert('Seus dados foram enviados!'); window.location.href='/JogosRecomendados';</script>";
+
+                        // Retornar para a mesma view
+                        return View(model);
                     }
+                }
+                else 
+                {
+                    ViewData["Script"] = $"<script>alert('O ano inicial ou final não é válido!');</script>";
 
-                    // Executar um script JavaScript para salvar no localStorage
-                    ViewData["Script"] = $"<script>alert('Seus dados foram enviados!'); window.location.href='/JogosRecomendados';</script>";
-
-                    // Retornar para a mesma view
+                    Console.WriteLine("Ano incorreto");
                     return View(model);
                 }
             }

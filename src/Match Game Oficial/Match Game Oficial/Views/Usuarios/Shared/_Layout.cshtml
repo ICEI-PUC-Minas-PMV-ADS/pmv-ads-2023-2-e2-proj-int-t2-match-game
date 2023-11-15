@@ -20,43 +20,44 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div >
-                  
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1 d-flex justify-content-end pe-5 pt-2">
+                        <li class="nav-item">
+                            <img class="navIcon" src="/img/para-voce.png" />
+                            <a class="nav-link text-light" asp-area="" asp-controller="Jogos" asp-action="ListarJogos">Para Você</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="navIcon-fav" src="/img/favoritos.png" />
+                            <a class="nav-link text-light" asp-area="" asp-controller="Favoritos" asp-action="Index">Favoritos</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="navIcon-perfil" src="/img/perfil.png" />
+                            <a id="perfil" class="nav-link text-light" asp-area="" asp-controller="Usuarios" asp-action="Login">Perfil</a>
+                        </li>
+                    </ul>
 
-                    <ul class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav">
                         @if (User.Identity.IsAuthenticated)
                         {
                             <!--
                             <li class="nav-item">Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
                             -->
-                            <li class="nav-item">
-                                <img class="navIcon" src="/img/para-voce.png" />
-                                <a class="nav-link text-light" asp-area="" asp-controller="JogosRecomendados" asp-action="Index">Para Você</a>
-                            </li>
-                            <li class="nav-item">
-                                <img class="navIcon-fav" src="/img/favoritos.png" />
-                                <a class="nav-link text-light" asp-area="" asp-controller="Favoritos" asp-action="Index">Favoritos</a>
-                            </li>
+
 
                             <li class="nav-item logout " style="font-family: 'Jost';color: #ffff; margin-left: -34%; margin-top: 7%;">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">
                                     <img class="navSair pe-5 " style="width: 85px;" src="~/img/logout (2).png"></img>
                                     <span class="NavSair me-0 ms-1" style="margin-top: -7%; cursor: pointer; display:flex; flex-direction: column; font-family: 'Jost';color: #ffff;">Sair</span>
-                                </a>                          
+                                </a>
+                                
+                                
+                                
                             </li>
-                          
                         }
                         else
-                        {
-
-                            <li class="nav-item">
-                                <img class="navIcon-perfil" src="/img/perfil.png" />
-                                <a id = "Cadastrar" class="nav-link text-light" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>
-                            </li>
-                            <li class="nav-item">
-                                <img class="navIcon-perfil" src="/img/perfil.png" />
-                                <a id="perfil" class="nav-link text-light" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
-                            </li>
+                        {   <!--
+                            <li class="nav-item"> <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a></li>
+                            -->
                         }
                     </ul>
 

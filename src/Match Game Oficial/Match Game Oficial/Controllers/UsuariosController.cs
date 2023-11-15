@@ -86,7 +86,7 @@ namespace Match_Game_Oficial.Controllers
 
 
 
-                return Redirect("/");
+                return Redirect("/Recomendados/Index");
             }
             else
             {
