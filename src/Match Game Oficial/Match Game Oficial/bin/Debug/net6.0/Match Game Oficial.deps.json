@@ -44,6 +44,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.24",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.24",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.24",
+          "Microsoft.NET.Sdk.Razor": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
           "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "6.0.16",
           "MimeKit": "4.2.0",
@@ -1870,6 +1871,7 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
+      "Microsoft.NET.Sdk.Razor/2.2.0": {},
       "Microsoft.NET.StringTools/17.3.2": {
         "dependencies": {
           "System.Memory": "4.5.5",
@@ -5804,6 +5806,13 @@
       "sha512": "sha512-gTqzsGcmD13HgtNePPcuVHZ/NXWmyV+InJgalW/FhWpII1D7V1k0obIseGlWMeA4G+tZfeGMfXr0klnWbMR/mQ==",
       "path": "microsoft.identitymodel.tokens/6.8.0",
       "hashPath": "microsoft.identitymodel.tokens.6.8.0.nupkg.sha512"
+    },
+    "Microsoft.NET.Sdk.Razor/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qAauNXVoCM7P5jcK5L7Ajddlmsr1kk1M+4+pA1EDWGHV6bRxn/E/tykk7/smAd8gDa1xlWt1vSJ6Ilrbc9FhGg==",
+      "path": "microsoft.net.sdk.razor/2.2.0",
+      "hashPath": "microsoft.net.sdk.razor.2.2.0.nupkg.sha512"
     },
     "Microsoft.NET.StringTools/17.3.2": {
       "type": "package",

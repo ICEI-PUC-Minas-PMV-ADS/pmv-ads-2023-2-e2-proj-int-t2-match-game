@@ -1,17 +1,25 @@
-﻿@model Match_Game_Oficial.Models.Jogo
+﻿<link rel="stylesheet" href="~/css/ListarJogos.css" asp-append-version="true" />
+
+@model Match_Game_Oficial.Models.Jogo
 
 @{
     ViewData["Title"] = "Favoritos";
 }
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorite Games</title>
 </head>
 <body>
+
+    <div class="heading-section">
+        <h4 class="text-center" style="margin-top:3% !important;">JOGOS FAVORITOS</h4>
+        <p class="text-center">Confira abaixo a lista dos jogos que foram favoritados por você.</p>
+    </div>
+
     <div class="favoriteGamesList" data-username="@User.Identity.Name">
     </div>
 
@@ -28,17 +36,37 @@
 
             favoriteGamesList.forEach(favoriteGame => {
                 const favoriteGameItem =
-                    `<div class="col-lg-3 col-md-6 col-sm-12">
-                                                <div class="item">
-                                                    <img src="${favoriteGame.background_image}" alt="${favoriteGame.name} image" style="width: 100%; height: auto;">
-                                                    <h4 class="game-name">${favoriteGame.name}<br></h4>
-                                                    <span class="platforms">${favoriteGame.parent_platforms}</span>
-                                                    <ul class="list-unstyled">
-                                                        <li><i class="fa fa-star"></i> <span class="rating">${favoriteGame.rating}</span></li>
-                                                        <li><i class="fa-regular fa-calendar"></i> <span class="date">${favoriteGame.released}</span></li>
-                                                    </ul>
-                                                </div>
-                                            </div>`;
+
+             `<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="item position-relative card">
+                <div class="gameImg">
+                    <img src="${favoriteGame.background_image}" alt="${favoriteGame.name} image" style="width: 100%; height: auto;">
+                </div>
+
+                <div id="favoritos">
+                    <i id="favIcon" class="fa-solid fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito"></i>
+                </div>
+
+                <h4 class="game-name">${favoriteGame.name}<br>
+                    <span class="platforms">${favoriteGame.parent_platforms}</span>
+                </h4>
+
+                <div class="info">
+                    <ul class="list-unstyled infoGeral">
+                        <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating">${favoriteGame.rating}</span></li>
+                        <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date">${favoriteGame.released}</span></li>
+                    </ul>
+                </div>
+
+                <div class="text-center saibaMaisBtn">
+                    <button class="btn btnSaibaMais">SAIBA MAIS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
 
                 favoriteGamesListContainer.insertAdjacentHTML('beforeend', favoriteGameItem);
             });
@@ -52,3 +80,5 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+<script src="https://kit.fontawesome.com/fe8eb85698.js" crossorigin="anonymous"></script>
