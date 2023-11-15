@@ -8,6 +8,12 @@ html {
   }
 }
 
+@media (max-width: 768px) {
+    .logoutImg {
+        width: 78px !important;
+    }
+}
+
 html {
   position: relative;
   min-height: 100%;

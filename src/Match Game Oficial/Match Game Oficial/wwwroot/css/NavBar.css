@@ -1,4 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap');
 
 html {
     font-size: 14px;
@@ -45,8 +46,10 @@ body {
     background: linear-gradient(90deg, rgba(53,50,202,1) 0%, rgba(39,37,131,1) 93%) !important;
 }
 
+
 .navIcon {
     padding-left: 0% !important;
+    padding-right: 0%;
     cursor: pointer;
 }
 
@@ -71,14 +74,24 @@ li > .logout {
     color: #ffff;
 }
 
+
 .nav-item {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+
+
+
 /* Footer */
 .footer {
     padding-top: 10px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .logoutImg {
+        width: 78px !important;
+    }
 }
