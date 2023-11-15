@@ -100,6 +100,49 @@
     border: solid 2px #ffff;
 }
 
+/* MODAL */
+
+dialog {
+    width: 60vw;
+    border-radius: 20px;
+    border: none;
+    box-shadow: -4px -2px 54px -1px rgba(0,0,0,0.75);
+}
+
+dialog::backdrop {
+    background-color: #6014EC;
+    opacity: 40%;
+}
+
+.conteudo > h1 {
+    margin: 5%;
+}
+
+.secao > h4 {
+    font-family: 'Poppins';
+    color: #059CAD;
+    font-size: 1.5rem;
+}
+
+.btnFechar {
+    width: 35vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #6014EC;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.btnFechar:hover {
+    background: #3230C3;
+    color: #ffffff;
+}
+
 
 /* Media Querie */
 /* Mobile */
