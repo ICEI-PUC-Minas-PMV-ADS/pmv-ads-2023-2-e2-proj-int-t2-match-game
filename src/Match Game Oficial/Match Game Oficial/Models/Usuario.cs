@@ -23,6 +23,9 @@ namespace Match_Game_Oficial.Models
 
         public byte[]? Foto {  get; set; }
 
+        public string? UsuarioLink { get; set; } 
+
+
 
     }
 }

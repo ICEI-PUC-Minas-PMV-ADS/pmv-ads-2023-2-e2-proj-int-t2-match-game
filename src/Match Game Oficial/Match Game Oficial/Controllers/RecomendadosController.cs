@@ -1,12 +1,25 @@
 ﻿using Match_Game_Oficial.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Match_Game_Oficial.Controllers
 {
     public class RecomendadosController : Controller
     {
+        private readonly DataContext _context;
+        public const string EmailRecomendacao = "email";
+
+
+        public RecomendadosController(DataContext context)
+        {
+
+            _context = context;
+        }
+
         // Dicionários para mapear valores dos enums para os valores desejados
         private static readonly Dictionary<Form_Gen, string> GeneroMapping = new Dictionary<Form_Gen, string>
         {
@@ -52,8 +65,11 @@ namespace Match_Game_Oficial.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(Recomendado model)
+        public async Task<IActionResult> Index(Recomendado model)
+
         {
+            string email = HttpContext.Session.GetString(EmailRecomendacao);
+
             if (ModelState.IsValid)
             {
                 // Obter os valores necessários do modelo
@@ -68,8 +84,24 @@ namespace Match_Game_Oficial.Controllers
                     // Construir a URL da API com base nos valores do modelo
                     var apiUrl = $"https://api.rawg.io/api/games?key=69f74f8a6cde46529c5d0923786cdab7&parents_platforms={plataformaMapeada}&genres={generoMapeado}&dates={anoInicial}-01-01,{anoFinal}-06-01";
 
+                    var dados = await BuscarInfo(email);
+                    Console.WriteLine(apiUrl);
+                    Console.WriteLine(email);
+
+                    if (dados.Count > 0)
+                    {
+                        var primeiroUser = dados[0];
+
+
+                        primeiroUser.UsuarioLink = apiUrl;
+
+                        _context.Usuarios.Update(primeiroUser);
+                        _context.SaveChanges();
+
+                    }
+
                     // Executar um script JavaScript para salvar no localStorage
-                    ViewData["Script"] = $"<script>localStorage.setItem('apiUrl', '{apiUrl}'); alert('Seus dados foram salvos no localStorage e os dados foram enviados!'); window.location.href='/JogosRecomendados';</script>";
+                    ViewData["Script"] = $"<script>alert('Seus dados foram enviados!'); window.location.href='/JogosRecomendados';</script>";
 
                     // Retornar para a mesma view
                     return View(model);
@@ -79,5 +111,15 @@ namespace Match_Game_Oficial.Controllers
             // Se o modelo não for válido, retorne para a view com os erros de validação.
             return View(model);
         }
+
+        public async Task<List<Usuario>> BuscarInfo(string email)
+        {
+            var usuarios = await _context.Usuarios
+                .Where(u => u.Email == email)
+                .ToListAsync();
+
+            return usuarios;
+        }
+
     }
 }

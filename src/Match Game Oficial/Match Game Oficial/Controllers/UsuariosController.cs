@@ -15,9 +15,15 @@ namespace Match_Game_Oficial.Controllers
     {
         private readonly DataContext _context;
 
-        public UsuariosController(DataContext context)
+        public const string EmailRecomendacao = "email";
+        private readonly ILogger<JogosRecomendadosController> _logger;
+
+
+        public UsuariosController(DataContext context, ILogger<JogosRecomendadosController> logger)
         {
             _context = context;
+            _logger = logger;
+
         }
 
         // GET: Usuarios
@@ -52,12 +58,18 @@ namespace Match_Game_Oficial.Controllers
 
             if (senhaOk)
             {
+                string email = dados.Email;
+
+                HttpContext.Session.SetString(EmailRecomendacao, email);
+                Console.WriteLine(dados.Email);
+                _logger.LogInformation($"Email na sessão: {email}");
+
                 var claims = new List<Claim>
-            {
+                {
                 new Claim(ClaimTypes.Email, dados.Email),
                 new Claim(ClaimTypes.Name, dados.Nome)
 
-            };
+                };
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");
 
@@ -72,6 +84,8 @@ namespace Match_Game_Oficial.Controllers
 
                 await HttpContext.SignInAsync(principal, props);
 
+
+
                 return Redirect("/");
             }
             else
@@ -84,8 +98,13 @@ namespace Match_Game_Oficial.Controllers
         //Quando o usuário apertar em sair vai para 
         public async Task<IActionResult> Logout()
         {
+            string email = HttpContext.Session.GetString(EmailRecomendacao);
+            Console.WriteLine(email);
+
             await HttpContext.SignOutAsync();
             return RedirectToAction("Login", "Usuarios");
+           
+
         }
 
 
@@ -131,8 +150,10 @@ namespace Match_Game_Oficial.Controllers
 
             if (ModelState.IsValid)
             {
+                Console.WriteLine(usuario.Id) ;
                 if (file.Headers != null && file.Length > 0)
                 {
+                   
                     using (var memoryStream = new MemoryStream())
                     {
                         await file.CopyToAsync(target: memoryStream);
@@ -140,7 +161,6 @@ namespace Match_Game_Oficial.Controllers
                         usuario.Foto = memoryStream.ToArray();
                     }
                 }
-
 
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);

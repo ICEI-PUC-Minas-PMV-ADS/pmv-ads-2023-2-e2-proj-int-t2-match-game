@@ -1,3 +1,4 @@
+using Match_Game_Oficial.Controllers;
 using Match_Game_Oficial.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
 
 
 builder.Services.AddDbContext<DataContext>(options =>
@@ -31,6 +33,13 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 
 builder.Services.AddScoped<IGDBClass>();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+});
+
+builder.Services.AddLogging(builder => builder.AddConsole());
 
 builder.Services.AddSession();
 
@@ -58,5 +67,10 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "meusjogos",
+    pattern: "{controller=JogosRecomendados}/{action=MeusJogos}",
+defaults: new { controller = "JogosRecomendados", action = "MeusJogos" });
 
 app.Run();
