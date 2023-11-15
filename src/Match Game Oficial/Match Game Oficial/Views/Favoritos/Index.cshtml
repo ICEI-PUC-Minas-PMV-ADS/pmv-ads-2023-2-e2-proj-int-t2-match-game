@@ -1,6 +1,5 @@
 ﻿<link rel="stylesheet" href="~/css/ListarJogos.css" asp-append-version="true" />
 
-@model Match_Game_Oficial.Models.Jogo
 
 @{
     ViewData["Title"] = "Favoritos";
@@ -37,36 +36,41 @@
             favoriteGamesList.forEach(favoriteGame => {
                 const favoriteGameItem =
 
-             `<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="item position-relative card">
-                <div class="gameImg">
-                    <img src="${favoriteGame.background_image}" alt="${favoriteGame.name} image" style="width: 100%; height: auto;">
+                    `<div class="container">
+            <div class="row">
+                <!-- Início do loop ou repetição para cada favoriteGame -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="item position-relative card">
+                        <div class="gameImg">
+                            <img src="${favoriteGame.background_image}" alt="${favoriteGame.name} image" style="width: 100%; height: auto;">
+                        </div>
+
+                        <div id="favoritos">
+                            <i id="favIcon" class="fa-solid fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito"></i>
+                        </div>
+
+                        <h4 class="game-name">${favoriteGame.name}<br>
+                            <span class="platforms">${favoriteGame.parent_platforms}</span>
+                        </h4>
+
+                        <div class="info">
+                            <ul class="list-unstyled infoGeral">
+                                <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating">${favoriteGame.rating}</span></li>
+                                <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date">${favoriteGame.released}</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="text-center saibaMaisBtn">
+                            <button class="btn btnSaibaMais">SAIBA MAIS</button>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="favoritos">
-                    <i id="favIcon" class="fa-solid fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito"></i>
-                </div>
-
-                <h4 class="game-name">${favoriteGame.name}<br>
-                    <span class="platforms">${favoriteGame.parent_platforms}</span>
-                </h4>
-
-                <div class="info">
-                    <ul class="list-unstyled infoGeral">
-                        <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating">${favoriteGame.rating}</span></li>
-                        <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date">${favoriteGame.released}</span></li>
-                    </ul>
-                </div>
-
-                <div class="text-center saibaMaisBtn">
-                    <button class="btn btnSaibaMais">SAIBA MAIS</button>
-                </div>
+                <!-- Fim do loop ou repetição para cada favoriteGame -->
             </div>
         </div>
-    </div>
-</div>`;
+        `;
 
                 favoriteGamesListContainer.insertAdjacentHTML('beforeend', favoriteGameItem);
             });
