@@ -20,12 +20,17 @@
     </div>
 
     <div class="favoriteGamesList" data-username="@User.Identity.Name">
+        <div class="container">
+            <div class="row" id="favoriteGamesRow">
+                <!-- Conteúdo dinâmico será inserido aqui -->
+            </div>
+        </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const favoriteGamesListContainer = document.querySelector('.favoriteGamesList');
-            const userName = favoriteGamesListContainer.getAttribute('data-username');
+            const favoriteGamesListContainer = document.getElementById('favoriteGamesRow');
+            const userName = document.querySelector('.favoriteGamesList').getAttribute('data-username');
 
             // Criando a chave do Local Storage
             const favoritosKey = `favoritos_${userName}`;
@@ -35,42 +40,30 @@
 
             favoriteGamesList.forEach(favoriteGame => {
                 const favoriteGameItem =
+                    `<div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item position-relative card">
+                                <div class="gameImg">
+                                    <img src="${favoriteGame.background_image}" alt="${favoriteGame.name} image" style="width: 100%; height: auto;">
+                                </div>
 
-                    `<div class="container">
-            <div class="row">
-                <!-- Início do loop ou repetição para cada favoriteGame -->
+                                <div id="favoritos">
+                                    <i id="favIcon" class="fa-solid fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito"></i>
+                                </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="item position-relative card">
-                        <div class="gameImg">
-                            <img src="${favoriteGame.background_image}" alt="${favoriteGame.name} image" style="width: 100%; height: auto;">
-                        </div>
+                                <h4 class="game-name">${favoriteGame.name}<br>
+                                    <span class="platforms">${favoriteGame.parent_platforms}</span>
+                                </h4>
 
-                        <div id="favoritos">
-                            <i id="favIcon" class="fa-solid fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito"></i>
-                        </div>
+                                <div class="info">
+                                    <ul class="list-unstyled infoGeral">
+                                        <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating">${favoriteGame.rating}</span></li>
+                                        <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date">${favoriteGame.released}</span></li>
+                                    </ul>
+                                </div>
 
-                        <h4 class="game-name">${favoriteGame.name}<br>
-                            <span class="platforms">${favoriteGame.parent_platforms}</span>
-                        </h4>
-
-                        <div class="info">
-                            <ul class="list-unstyled infoGeral">
-                                <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating">${favoriteGame.rating}</span></li>
-                                <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date">${favoriteGame.released}</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="text-center saibaMaisBtn">
-                            <button class="btn btnSaibaMais">SAIBA MAIS</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Fim do loop ou repetição para cada favoriteGame -->
-            </div>
-        </div>
-        `;
+                                <div class="text-center saibaMaisBtn">
+                                    <button class="btn btnSaibaMais">SAIBA MAIS</button>
+                                </div>`;
 
                 favoriteGamesListContainer.insertAdjacentHTML('beforeend', favoriteGameItem);
             });
@@ -78,6 +71,7 @@
     </script>
 </body>
 </html>
+
 
 @section Scripts {
     @{
