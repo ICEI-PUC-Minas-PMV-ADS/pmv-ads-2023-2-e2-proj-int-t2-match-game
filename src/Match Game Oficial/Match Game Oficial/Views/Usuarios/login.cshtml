@@ -1,41 +1,50 @@
-﻿@model Match_Game_Oficial.Models.Usuario
+﻿<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+@model Match_Game_Oficial.Models.Usuario
 
 @{
-    ViewData["Title"] = "login";
+    ViewData["Title"] = "Login de Usuários";
 }
 
-<h1>login</h1>
+<main class="main-login">
 
-<h4>Usuario</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="login">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
-            
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Senha" class="control-label"></label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+    <h1>REALIZE SEU LOGIN</h1>
+
+    <p>Insira seus dados cadastrados para realizar seu login com sucesso.</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="login">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">Insira seu e-mail cadastrado<span style="color: #FF0000">*</span></label>
+                    <input asp-for="Email" class="form-control" placeholder="joaquimdasilva@gmail.com" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Senha" class="control-label">Insira sua senha cadastrada<span style="color: #FF0000">*</span></label>
+                    <input asp-for="Senha" class="form-control" placeholder="**********"  />
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="REALIZAR LOGIN" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div>
+        <p>Não tem uma conta? <a asp-area="" asp-controller="Usuarios" asp-action="create">Cadastre-se agora mesmo</a></p>
+        <p><a asp-area="" asp-controller="esqsenha" asp-action="solicitaremail">Esqueceu sua Senha?</a></p>
+    </div>
+
+</main>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

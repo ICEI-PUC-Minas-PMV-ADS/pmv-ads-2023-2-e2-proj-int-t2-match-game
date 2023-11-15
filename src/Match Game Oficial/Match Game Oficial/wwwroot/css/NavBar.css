@@ -45,10 +45,8 @@ body {
     background: linear-gradient(90deg, rgba(53,50,202,1) 0%, rgba(39,37,131,1) 93%) !important;
 }
 
-
 .navIcon {
     padding-left: 0% !important;
-    padding-right: 0%;
     cursor: pointer;
 }
 
@@ -73,24 +71,14 @@ li > .logout {
     color: #ffff;
 }
 
-
 .nav-item {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-
-
-
 /* Footer */
 .footer {
     padding-top: 10px;
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    .logoutImg {
-        width: 78px !important;
-    }
 }
