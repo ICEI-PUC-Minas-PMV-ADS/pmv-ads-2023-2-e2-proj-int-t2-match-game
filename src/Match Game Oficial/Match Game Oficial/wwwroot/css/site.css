@@ -8,11 +8,7 @@ html {
   }
 }
 
-@media (max-width: 768px) {
-    .logout {
-        width: 72px !important;
-    }
-}
+
 
 html {
   position: relative;
