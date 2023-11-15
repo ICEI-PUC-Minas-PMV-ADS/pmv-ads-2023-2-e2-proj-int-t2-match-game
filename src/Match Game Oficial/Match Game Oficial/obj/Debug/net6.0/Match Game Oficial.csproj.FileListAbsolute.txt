@@ -1,6 +1,3 @@
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\bin\Debug\net6.0\appsettings.json
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\bin\Debug\net6.0\Match Game Oficial.staticwebassets.runtime.json
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\bin\Debug\net6.0\Match Game Oficial.exe
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\bin\Debug\net6.0\Match Game Oficial.deps.json
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\bin\Debug\net6.0\Match Game Oficial.runtimeconfig.json
@@ -545,20 +542,6 @@ C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-ga
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.AssemblyInfoInputs.cache
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.AssemblyInfo.cs
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.csproj.CoreCompileInputs.cache
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.RazorAssemblyInfo.cache
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.RazorAssemblyInfo.cs
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\staticwebassets\msbuild.Match Game Oficial.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\staticwebassets\msbuild.build.Match Game Oficial.props
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Match Game Oficial.props
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Match Game Oficial.props
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\scopedcss\bundle\Match Game Oficial.styles.css
-C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\scopedcss\projectbundle\Match Game Oficial.bundle.scp.css
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.csproj.CopyComplete
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\Match Game Oficial.dll
 C:\Users\andre\OneDrive\Documentos\GitHub\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game Oficial\Match Game Oficial\obj\Debug\net6.0\refint\Match Game Oficial.dll

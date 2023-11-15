@@ -100,7 +100,7 @@
 
                     if (storeUrl) 
                     {
-                        const apiUrl = storeUrl;
+                        const urlgame = storeUrl;
 
                         const getPlatformStr = (platforms) => {
                             if (Array.isArray(platforms)) {
@@ -111,10 +111,10 @@
 
 
 
-                        function loadGames(apiUrl) {
+                        function loadGames(urlgame) {
                             loaderEl.classList.remove("loaded");
 
-                            fetch(apiUrl)
+                            fetch(urlgame)
                                 .then(response => response.json())
                                 .then(data => {
                                     nextGameListUrl = data.next ? data.next : null;
@@ -153,7 +153,7 @@
                                 });
                         }
 
-                        loadGames(storeUrl);
+                        loadGames(urlgame);
 
                         loadMoreGamesBtn.addEventListener('click', () => {
                             if (nextGameListUrl) {

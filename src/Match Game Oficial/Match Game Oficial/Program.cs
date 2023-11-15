@@ -32,7 +32,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Usuarios/Login/";
     });
 
-builder.Services.AddScoped<IGDBClass>();
 
 builder.Services.AddSession(options =>
 {
