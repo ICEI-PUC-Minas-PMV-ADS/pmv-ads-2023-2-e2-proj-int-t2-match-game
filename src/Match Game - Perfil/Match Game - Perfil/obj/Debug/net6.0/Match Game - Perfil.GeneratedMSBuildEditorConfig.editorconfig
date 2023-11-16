@@ -9,9 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Match_Game___Perfil
 build_property.RootNamespace = Match_Game___Perfil
+<<<<<<< HEAD
 build_property.ProjectDir = D:\ADS\MatchGame-Certo\src\Match Game - Perfil\Match Game - Perfil\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\ADS\MatchGame-Certo\src\Match Game - Perfil\Match Game - Perfil
+=======
+build_property.ProjectDir = C:\Users\s_bru\OneDrive\Área de Trabalho\Projeto puc\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\s_bru\OneDrive\Área de Trabalho\Projeto puc\pmv-ads-2023-2-e2-proj-int-t2-match-game\src\Match Game - Perfil\Match Game - Perfil
+>>>>>>> 80bc7315d98eb414169f1375a8f9a25e54fbe613
 build_property._RazorSourceGeneratorDebug = 

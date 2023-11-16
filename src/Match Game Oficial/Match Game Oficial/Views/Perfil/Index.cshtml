@@ -1,0 +1,54 @@
+﻿@model Match_Game_Oficial.Models.Usuario
+
+@{
+    ViewData["Title"] = "Detalhes do Perfil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="row" id="perfil-details">
+        <!-- Os detalhes do perfil serão adicionados aqui dinamicamente -->
+    </dl>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: "@Url.Action("DetalhesPerfil", "Perfil")",
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                console.log("Dados do perfil:", data);
+
+
+                console.log("Nome:", data.nome);
+                console.log("Email:", data.email);
+                console.log("Data de Nascimento:", data.data_Nascimento);
+                console.log("Foto:", data.foto);
+                
+                
+                
+                // Criar elementos HTML com os dados recebidos
+                var profileDetails = `
+                        <dt class="col-sm-2">Nome</dt>
+                        <dd class="col-sm-10">${data.nome}</dd>
+                        <dt class="col-sm-2">Email</dt>
+                        <dd class="col-sm-10">${data.email}</dd>
+                        <dt class="col-sm-2">Data de Nascimento</dt>
+                        <dd class="col-sm-10">${data.data_Nascimento}</dd>
+                        <dt class="col-sm-2">Foto</dt>
+                        <dd class="col-sm-10">${data.foto}</dd>
+                    `;
+
+                // Adicionar os detalhes do perfil ao elemento com id "perfil-details"
+                $("#perfil-details").html(profileDetails);
+            },
+            error: function (error) {
+                console.log("Erro ao chamar DetalhesPerfil:", error);
+            }
+        });
+    });
+</script>

@@ -12,13 +12,12 @@ Com isso, é comum na comunidade de jogos que os usuários formem grupos, ou as 
 Atualmente, os *gamers* enfrentam um desafio: encontrar pessoas com interesses e gostos semelhantes, com quem possam compartilhar suas experiências de jogos - tudo isso através de uma plataforma exclusiva.
 
 ## Objetivos
-O objetivo geral desse projeto é desenvolver um software que facilite a interação de *gamers* com interesses parecidos.
+O objetivo geral desse projeto é desenvolver um software que recomende jogos para o usuário de acordo com os seus interesses.
 
 Os objetivos específicos desse software são:
 
 - Criação de um perfil personalizado, com uma biblioteca dos jogos favoritos do usuário;
 - Recomendação de jogos que possam ser do interesse do usuário, com base nos jogos favoritados;
-- Facilitar a interação entre usuários da plataforma que tenham gostos parecidos.
 
 ## Sistemas Semelhantes
 Ao realizar a pesquisa de mercado para o software Match Game, notamos que não existe atualmente nenhum outro sistema igual ao nosso proposto. Apesar disso, há algumas plataformas de jogos que possuem funcionalidades semelhantes, como é o caso da conhecida plataforma Steam, onde é possível, assim como no Match Game:
@@ -29,9 +28,9 @@ Ao realizar a pesquisa de mercado para o software Match Game, notamos que não e
 
 ## Justificativa
 
-O Match Game não se trata apenas de jogos, e sim sobre a interação entre os *gamers*.
+O Match Game é uma aplicação que busca proporcionar ao usuário uma lista personalizada de jogos que sejam de acordo com o seu interesse, facilitando e aprimorando sua busca por jogos que o satisfaçam.
 
-Através do Match Game, os usuários podem interagir com outros *gamers* que possuam interesses semelhantes, possibilitando a geração de novas amizades e até mesmo facilitando a criação de *guildas*, em determinados jogos.
+Através do Match Game, o usuário poderá encontrar novos jogos de acordo com seu gosto.
 
 ## Público-Alvo
 
