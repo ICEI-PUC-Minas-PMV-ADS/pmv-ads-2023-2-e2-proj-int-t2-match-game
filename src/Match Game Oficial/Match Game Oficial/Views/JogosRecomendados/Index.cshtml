@@ -117,24 +117,23 @@
                                         const gameItemEl =
                                         `<div class="col-lg-3 col-md-6 col-sm-12">
                                               <div class="item position-relative card" data-game-id="${game.id}">
-                                                    <div class="gameImg">
-                                                        <img src="${game.background_image}" alt="${game.name} image" style="width: 100%;">
-                                                    </div>
+                                                   
+                                                    <img src="${game.background_image}" alt="${game.name} image" style="width: 100%;">
+                                                    
+                                                   
+                                                    <i id="favIcon" class="fa-regular fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito"></i>
+                                                    
 
-                                                    <div id="favoritos">
-                                                        <i id="favIcon" class="fa-regular fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito"></i>
-                                                    </div>
+                                                    <h4 class="game-name " >${game.name}<br></h4>
 
-                                                    <h4 class="game-name " >${game.name}<br>
-                                                        <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
-                                                    </h4>
+                                                    <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
 
-                                                    <div class="info mb-3 mt-3">
-                                                        <ul class="list-unstyled infoGeral">
-                                                            <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating dados">${game.rating}</span></li>
-                                                            <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date dados">${game.released}</span></li>
-                                                        </ul>
-                                                    </div>
+                                                    
+                                                    <ul class="list-unstyled infoGeral">
+                                                        <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating dados">${game.rating}</span></li>
+                                                        <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date dados">${game.released}</span></li>
+                                                    </ul>
+                                                   
                                                     
                                                     
                                                     
@@ -227,6 +226,5 @@
         }
     });
 </script>
-
 
 <script src="https://kit.fontawesome.com/fe8eb85698.js" crossorigin="anonymous"></script>
