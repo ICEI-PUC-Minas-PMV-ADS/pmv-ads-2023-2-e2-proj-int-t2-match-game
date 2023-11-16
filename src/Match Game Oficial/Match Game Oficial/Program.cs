@@ -72,4 +72,10 @@ app.MapControllerRoute(
     pattern: "{controller=JogosRecomendados}/{action=MeusJogos}",
 defaults: new { controller = "JogosRecomendados", action = "MeusJogos" });
 
+app.MapControllerRoute(
+    name: "meusjogos",
+    pattern: "{controller=Perfil}/{action=DetalhesPerfil}",
+defaults: new { controller = "Perfil", action = "DetalhesPerfil" });
+
+
 app.Run();
