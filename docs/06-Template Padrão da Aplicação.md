@@ -9,7 +9,6 @@ O template criado está disponível no site GitHub e é composto pelos seguintes
 - Perfil de usuário;
 - Área de upload de foto de perfil;
 - Jogos recomendados pelo sistema;
-- Jogos recomendados pelo usuário;
 - Jogos favoritados pelo usuário.
 
 Obs: A responsividade segue o padrão do CSS puro e Bootstrap.
@@ -56,13 +55,7 @@ A página apresentará jogos recomendados pelo sistema de acordo com as escolhas
 
 _Desenvolvido por Tayane Milagres_
 
-## Página de Jogos Recomendados pelo Usuário
-A página apresentará jogos recomendados pelo usuário.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/e53b5617-e542-40e8-ba19-ca2491f8b982)
-
-
-_Desenvolvido por Tayane Milagres_
 
 ## Pagina de Jogos Favoritados pelo Usuário
 A página apresentará os jogos que o usuário salvou como "Favorito".

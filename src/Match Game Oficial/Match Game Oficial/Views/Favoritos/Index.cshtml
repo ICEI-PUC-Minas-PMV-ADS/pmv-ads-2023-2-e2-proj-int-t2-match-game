@@ -41,9 +41,9 @@
             favoriteGamesList.forEach(favoriteGame => {
                 const favoriteGameItem =
                     `<div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="item position-relative card">
+                          <div class="item position-relative card" >
                                 <div class="gameImg">
-                                    <img src="${favoriteGame.background_image}" alt="${favoriteGame.name} image" style="width: 100%; height: auto;">
+                                    <img src="${favoriteGame.background_image}" alt="${favoriteGame.name} image" style="width: 100%;">
                                 </div>
 
                                 <div id="favoritos">
@@ -54,15 +54,11 @@
                                     <span class="platforms">${favoriteGame.parent_platforms}</span>
                                 </h4>
 
-                                <div class="info">
+                                <div class="info mb-3 mt-3">
                                     <ul class="list-unstyled infoGeral">
                                         <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating">${favoriteGame.rating}</span></li>
                                         <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date">${favoriteGame.released}</span></li>
                                     </ul>
-                                </div>
-
-                                <div class="text-center saibaMaisBtn">
-                                    <button class="btn btnSaibaMais">SAIBA MAIS</button>
                                 </div>`;
 
                 favoriteGamesListContainer.insertAdjacentHTML('beforeend', favoriteGameItem);

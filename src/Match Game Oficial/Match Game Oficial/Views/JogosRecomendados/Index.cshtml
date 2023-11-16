@@ -25,34 +25,6 @@
 
 </div>
 
-<dialog id="gameModal">
-    <div class="conteudo ms-3 me-3">
-        <h1 class="text-center" style="font-family: 'Jost'; font-weight: 700; color: #6014EC; font-size: 1.8em; margin-top: 2%">
-            INFORMAÇÕES
-        </h1>
-
-        <div class="secao">
-            <h4 class="me-2">Plataformas compatíveis:</h4>
-            <p id="platforms"></p>
-        </div>
-
-        <div class="secao">
-            <h4 class="me-2">Avaliações:</h4>
-            <p id="rating"></p>
-        </div>
-
-        <div class="secao">
-            <h4 class="me-2">Data de Lançamento:</h4>
-            <p id="released"></p>
-        </div>
-
-
-        <div class="text-center">
-            <button onclick="fecharModal()" class="btnFechar">FECHAR</button>
-        </div>
-
-    </div>
-</dialog>
 
 <div class="container">
     <div class="row">
@@ -79,6 +51,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
     </div>
@@ -143,7 +116,7 @@
                                     games.forEach(game => {
                                         const gameItemEl =
                                         `<div class="col-lg-3 col-md-6 col-sm-12">
-                                                <div class="item position-relative card">
+                                              <div class="item position-relative card" data-game-id="${game.id}">
                                                     <div class="gameImg">
                                                         <img src="${game.background_image}" alt="${game.name} image" style="width: 100%;">
                                                     </div>
@@ -156,15 +129,15 @@
                                                         <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
                                                     </h4>
 
-                                                    <div class="info">
+                                                    <div class="info mb-3 mt-3">
                                                         <ul class="list-unstyled infoGeral">
-                                                            <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating">${game.rating}</span></li>
-                                                            <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date">${game.released}</span></li>
+                                                            <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating dados">${game.rating}</span></li>
+                                                            <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date dados">${game.released}</span></li>
                                                         </ul>
                                                     </div>
-                                                    <div class="text-center saibaMaisBtn">
-                                                         <button class="btn btnSaibaMais">SAIBA MAIS</button>
-                                                    </div>
+                                                    
+                                                    
+                                                    
                                             </div>
                                         </div>
                                         `;
@@ -255,47 +228,5 @@
     });
 </script>
 
-<script>
-    // Modal
-    document.addEventListener('DOMContentLoaded', function () {
-
-        document.addEventListener('click', function (e) {
-            if (e.target.classList.contains('btnSaibaMais')) {
-                const gameId = e.target.closest('.item').dataset.gameId;
-                abrirModal(gameId);
-            }
-        });
-
-        function abrirModal(gameId) {
-            const modal = document.getElementById('gameModal');
-
-            // Puxando dados do jogo da API usando o gameId
-            const apiUrl = `https://api.rawg.io/api/games/${gameId}?key=69f74f8a6cde46529c5d0923786cdab7`;
-
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    // Atualização com os dados do jogo
-                    document.getElementById('platforms').textContent = `${getPlatformStr(data.platforms)}`;
-                    document.getElementById('rating').textContent = `${data.rating}`;
-                    document.getElementById('released').textContent = `${data.released}`;
-                })
-                .catch(error => {
-                    console.log("Ocorreu algum erro ao carregar dados do jogo", error);
-                });
-
-            modal.showModal();
-
-            // Evento para fechar o modal
-            modal.querySelector('button').addEventListener('click', fecharModal);
-        }
-
-        // Função para fechar o modal
-        function fecharModal() {
-            const modal = document.getElementById('gameModal');
-            modal.close();
-        }
-    });
-</script>
 
 <script src="https://kit.fontawesome.com/fe8eb85698.js" crossorigin="anonymous"></script>
