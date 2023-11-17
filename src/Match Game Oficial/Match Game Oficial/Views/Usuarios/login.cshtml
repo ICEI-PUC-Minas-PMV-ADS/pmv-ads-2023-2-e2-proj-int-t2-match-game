@@ -6,6 +6,14 @@
     ViewData["Title"] = "Login de Usuários";
 }
 
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Message
+    </div>
+}
+
 <main class="main-login">
 
     <h1>REALIZE SEU LOGIN</h1>
