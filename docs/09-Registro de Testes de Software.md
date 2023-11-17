@@ -85,3 +85,29 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-ga
 _Video 8: Teste de escolha de jogos e adição de favoritos feitas pelo usuário._
 
 <br><br>
+
+| **Caso de Teste** 	| **CT-06 – Informações sobre os jogos recomendados** 	|
+|:---:	|:---:	|
+| **Usuário**  	| As informações sobre os jogos tiveram erro em alguns links "quebrados", porém a grande maioria está atualizado e ocorreu com sucesso.	 |
+| **Quantidade de erros**  	| 2 |
+| **Avaliação:**  	| Utilizamos a API rawg.io para obter informações sobre os jogos na nossa plataforma. Esta API fornece dados abrangentes, incluindo endpoints como website, imagem de fundo, nome, ID, plataformas, entre outros, porém se encontra com algumas páginas inválidas em alguns jogos listados, estamos buscando corrigir esse erro.    |
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/044c4a51-1228-4464-9d65-89d6a408709d
+
+_Video 9: Teste de visualização de informações a respeito do jogo com link quebrado (error 404)._
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/164a69b2-de51-46d9-80e9-f7cd26f9f531
+
+_Video 10: Teste de visualização de informações a respeito do jogo com link quebrado (página inválida)._
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/12852d2a-49d2-4650-978b-1d8a0e79391e
+
+_Video 9: Teste de visualização de informações a respeito do jogo funcionando corretamente com os demais jogos._
+
+
+
