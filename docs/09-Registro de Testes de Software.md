@@ -47,3 +47,41 @@ _Video 6: Teste de login de usuário cadastrado na plataforma com email incorret
 <br><br>
 
 
+| **Caso de Teste** 	| **CT-03 – Recuperação de senha** 	|
+|:---:	|:---:	|
+| **Usuário**  	| A recuperação de senha foi realizada com sucesso. 	 |
+| **Quantidade de erros**  	| 0 |
+| **Avaliação**  	| A restauração de senha foi concluída conforme previsto. Implementamos uma API que se conecta ao endereço de e-mail associado ao usuário em nosso banco de dados. Dessa maneira, ao solicitar a alteração de senha, um código será enviado para a caixa de entrada do e-mail cadastrado, permitindo que o usuário crie uma nova senha.    |
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/3e4eef66-1a5e-4bc5-932c-76e363ac7dbb
+
+_Video 7: Teste de recuperação e cadastro de uma nova senha._
+
+<br><br>
+
+| **Caso de Teste** 	| **CT-04 – Recomendação de jogos para o usuário**	|
+|:---:	|:---:	|
+| **Usuário**  	|  O sistema de recomendação de jogos para o usuário foi realizado com sucesso. 	 |
+| **Quantidade de erros**  	| 0 |
+| **Avaliação:**  	| A recomendação de jogos para o usuário foi realizada conforme o previsto.    |
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/11ae6341-a4ba-474a-ba56-98d592900f0b
+
+_Video 8: Teste de recomendação de jogos para o usuário_
+
+<br><br>
+
+| **Caso de Teste** 	| **CT-05 – Sistema de escolha de jogos para o usuário** 	|
+|:---:	|:---:	|
+| **Usuário**  	| O sistema de escolha de jogos com adição de favoritos foi realizado com sucesso. 	 |
+| **Quantidade de erros**  	| 0 |
+| **Avaliação:**  	| O sistema de escolha jogos com adição de favoritos para o usuário foi realizado conforme o previsto.   |
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/da197504-f40f-4f50-a241-5f480809dc0b
+
+_Video 8: Teste de escolha de jogos e adição de favoritos feitas pelo usuário._
+
+<br><br>
