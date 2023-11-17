@@ -11393,23 +11393,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tayan\\.nuget\\packages\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ADS\\MatchGame-Certo\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
+      "projectUniqueName": "D:\\User\\Desktop\\Match\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
       "projectName": "Match Game Oficial",
-      "projectPath": "D:\\ADS\\MatchGame-Certo\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
-      "packagesPath": "C:\\Users\\tayan\\.nuget\\packages\\",
-      "outputPath": "D:\\ADS\\MatchGame-Certo\\src\\Match Game Oficial\\Match Game Oficial\\obj\\",
+      "projectPath": "D:\\User\\Desktop\\Match\\src\\Match Game Oficial\\Match Game Oficial\\Match Game Oficial.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\User\\Desktop\\Match\\src\\Match Game Oficial\\Match Game Oficial\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11418,8 +11418,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.311\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11540,7 +11538,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
