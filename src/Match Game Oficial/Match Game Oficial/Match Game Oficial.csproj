@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\JogosRecomendados.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="wwwroot\css\JogosRecomendados.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="IGDB" Version="3.0.0" />
     <PackageReference Include="IGDB.DotNet.Models" Version="1.0.0" />

@@ -1,18 +1,46 @@
 ﻿@model Match_Game_Oficial.Models.Esqsenha
 
 @{
-    ViewData["Title"] = "EnviarEmail";
+    ViewData["Title"] = "Recuperação de senha";
 }
 
-<h1>Enviar Email com Código de Verificação</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperação de senha</title>
+    <link rel="stylesheet" href="~/css/SolicitarEmail.css" asp-append-version="true" />
+</head>
+<body>
+    <main class="main-senha">
+        <h1>Esqueceu sua senha?</h1>
+        <div>
+            <p>
+                Não se preocupe! Insira seu e-mail cadastrado abaixo e enviaremos um
+                código de verificação para que você cadastre uma nova senha.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="EnviarEmail" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<form asp-controller="Esqsenha" asp-action="EnviarEmail" method="post">
-    <div class="form-group">
-        <label asp-for="Email" class="control-label"> Insira seu email</label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label">Insira seu e-mail cadastrado<span style="color: #FF0000">*</span></label>
+                        <input asp-for="Email" class="form-control" placeholder="joaquimdasilva@gmail.com" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
 
-    <button type="submit" class="btn btn-primary">Enviar Código de Verificação</button>
-</form>
-
+                    <div class="form-group">
+                        <input type="submit" value="Enviar código por email" class="btn btn-primary" />
+                    </div>
+                    <div>
+                        <p>Não tem uma conta? <a asp-area="#" asp-controller="Usuarios" asp-action="create">Cadastre-se agora mesmo</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
