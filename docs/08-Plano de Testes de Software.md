@@ -34,7 +34,7 @@
 | **Caso de Teste** 	| **CT-06 – Informações sobre os jogos recomendados**	|
 |Requisito Associado | RF-05 -	A aplicação deve conter informações sobre os jogos recomendados aos usuários. |
 | Objetivo do Teste 	| Verificar se o usuário consegue ter as informações sobre os jogos que lhe serão recomendados. |
-| Passos 	| - Estar logado ou criar uma conta <br> - Clicar no botão "For You" para visualizar os jogos recomendados de acordo com os interesses cadastrados na aba favoritos. <br> - Clicar sobre o nome do jogo e visualizar informações a respeito dele.
+| Passos 	| - Estar logado ou criar uma conta <br> - Clicar no botão "Para você" para visualizar os jogos recomendados de acordo com os interesses cadastrados no formulário. <br> - Clicar "saiba mais" na aba do jogo e visualizar informações a respeito dele que abrirá em uma nova guia do navegador.
 |Critério de Êxito | - As informações sobre o jogo selecionado foi visualizada. |
 |:---:	|:---:	|
 | **Caso de Teste** 	| **CT-07 – Lista de favoritos no perfil do usuário**	|
