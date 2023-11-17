@@ -52,7 +52,21 @@
     margin-left: 4%;
     margin-right: 4%;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.platforms {
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: -2%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -60,12 +74,6 @@
 }
 
 
-
-.info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .info > ul {
     display: flex;
@@ -77,13 +85,9 @@
 }
 
 .infoGeral {
-    background-color: #059CAD;
-    width: 64%;
-    height: 5vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+    margin-left: 4%;
+    
 }
 
 

@@ -49,15 +49,15 @@
                                             <i id="favIcon" class="fa-solid fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito" onclick="removeGameFromFavorites(${index})"></i>
                                         </div>
 
-                                        <h4 class="game-name">${favoriteGame.name}<br>
-                                            <span class="platforms">${favoriteGame.parent_platforms}</span>
-                                        </h4>
+                                        <h4 class="game-name">${favoriteGame.name}<br></h4>
 
-                                        <div class="info mb-3 mt-3">
-                                            <ul class="list-unstyled infoGeral">
+                                        <span class="platforms ">${favoriteGame.parent_platforms}</span>
+
+                                        <div class="info mt-2 mb-3">
+                                            <ul class="list-unstyled infoGeral" style="font-family: 'Poppins';">
                                                 <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating">${favoriteGame.rating}</span></li>
                                                 <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date">${favoriteGame.released}</span></li>
-                                            </ul>
+                                            </ul>                                      
                                         </div>`;
                     favoriteGamesListContainer.insertAdjacentHTML('beforeend', favoriteGameItem);
                 });

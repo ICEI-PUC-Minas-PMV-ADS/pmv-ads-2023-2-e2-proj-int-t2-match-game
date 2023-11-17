@@ -120,26 +120,28 @@
                                             .then(details => {
                                                 const gameItemEl =
                                                     `<div class="col-lg-3 col-md-6 col-sm-12">
-                                                      <div class="item position-relative card" data-game-id="${game.id}">
+                                                      <div class="item  card" data-game-id="${game.id}">
 
-                                                            <img src="${game.background_image}" alt="${game.name} image" style="width: 100%;">
-
-
-                                                            <i id="favIcon" class="fa-regular fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito"></i>
+                                                                <img src="${game.background_image}" alt="${game.name} image" style="width: 100%;height: 30vh;">
 
 
-                                                            <h4 class="game-name " >${game.name}<br></h4>
-
-                                                            <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
+                                                                <i id="favIcon" class="fa-regular fa-heart favoritos  top-90 end-0 b-24 favorite-button" style="color: #8952ff;margin-left: 88%;" title="Favorito"></i>
 
 
-                                                            <ul class="list-unstyled infoGeral">
+                                                            <h4 class="game-name " style="margin-top: -1%;" >${game.name}<br>
+                                                                    
+                                                            </h4>
+
+                                                                 <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
+
+
+                                                            <ul class="list-unstyled infoGeral mt-2 mb-2" style="font-family: 'Poppins'; font-size: 1rem;">
                                                                 <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating dados">${game.rating}</span></li>
                                                                 <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date dados">${game.released}</span></li>
                                                             </ul>
 
 
-                                                            <a href="${details.website} target="_blank""> Saiba-mais </a>
+                                                                <a href="${details.website} target="_blank"" class="btn btnSaibaMais mb-3 mt-1" style="display: flex; align-items: center; justify-content: center; margin: auto; margin-top: -2%;"> SAIBA MAIS </a>
 
 
 
