@@ -105,7 +105,11 @@ _Video 10: Teste de visualização de informações a respeito do jogo com link 
 
 
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/12852d2a-49d2-4650-978b-1d8a0e79391e
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/37f36717-340b-4f90-9b3a-6d877fcaad33
+
+
 
 _Video 9: Teste de visualização de informações a respeito do jogo funcionando corretamente com os demais jogos._
 
