@@ -114,32 +114,45 @@
                                     loaderEl.classList.add("loaded");
 
                                     games.forEach(game => {
-                                        const gameItemEl =
-                                        `<div class="col-lg-3 col-md-6 col-sm-12">
-                                              <div class="item card" data-game-id="${game.id}">
+                                        // Faz uma nova solicitação para obter detalhes do jogo, incluindo o link do site
+                                        fetch(`https://api.rawg.io/api/games/${game.id}?key=${APIKEY}`)
+                                            .then(response => response.json())
+                                            .then(details => {
+                                                const gameItemEl =
+                                                    `<div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <div class="item position-relative card" data-game-id="${game.id}">
 
-                                                   <img src="${game.background_image}" alt="${game.name} image" style="width: 100%;height: 30vh;">
+                                                            <img src="${game.background_image}" alt="${game.name} image" style="width: 100%;">
 
 
-                                                        <i id="favIcon" class="fa-regular fa-heart favoritos  top-90 end-0  favorite-button" style="color: #8952ff; margin-left: 88%;" title="Favorito"></i>
-                                                    
+                                                            <i id="favIcon" class="fa-regular fa-heart favoritos position-absolute top-90 end-0 b-24 favorite-button" style="color: #8952ff;" title="Favorito"></i>
 
-                                                    <h4 class="game-name " style="margin-top: -1%;">${game.name}<br>
-                                                        <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
-                                                    </h4>
 
-                                                   <ul class="list-unstyled infoGeral bt-4 mb-4" style="display: flex; align-items: center; justify-content: center; margin: auto;" >
-                                                        <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating dados">${game.rating}</span></li>
-                                                        <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date dados">${game.released}</span></li>
-                                                    </ul>
-                                                      
-                                                    
-                                            </div>
-                                        </div>
-                                        `;
-                                        gameList.insertAdjacentHTML("beforeend", gameItemEl);
+                                                            <h4 class="game-name " >${game.name}<br></h4>
+
+                                                            <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
+
+
+                                                            <ul class="list-unstyled infoGeral">
+                                                                <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating dados">${game.rating}</span></li>
+                                                                <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date dados">${game.released}</span></li>
+                                                            </ul>
+
+
+                                                            <a href="${details.website} target="_blank""> Saiba-mais </a>
+
+
+
+
+                                                    </div>
+                                                </div>
+                                                `;
+                                                gameList.insertAdjacentHTML("beforeend", gameItemEl);
+                                            })
+                                            .catch(error => {
+                                                console.log("Erro ao obter detalhes do jogo", error);
+                                            });
                                     });
-
                                     if (nextGameListUrl) {
                                         loadMoreGamesBtn.classList.remove("hidden");
                                     } else {

@@ -129,13 +129,16 @@ namespace Match_Game_Oficial.Controllers
                 Console.WriteLine(dados);
                 if (dados.Count == 0)
                 {
-                   
+                    ViewBag.Message = "Email e/ou senha inválidos";
+
+
                     Console.WriteLine("Algo Deu errado no banco de dados");
                     return RedirectToAction ("InserirCodigo", "Esqsenha");
 
                 }
                 else
                 {
+
                     Console.WriteLine("Deu certo o banco de ddados");
                     var primeiroUsuario = dados[0];
                     primeiroUsuario.Senha = BCrypt.Net.BCrypt.HashPassword(NovaSenha);
