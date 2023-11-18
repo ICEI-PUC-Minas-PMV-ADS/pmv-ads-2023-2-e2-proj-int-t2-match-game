@@ -8,48 +8,9 @@
 }
 
 
-<main class="main-meu-perfil">
+<main class="main-meu-perfil" id="perfil-details">
 
-    <h1>MEU PERFIL</h1>
-    <p>Confira abaixo todas as informações do seu perfil e personalize-o.</p>
-
-    <div class="box">
-        <div class="box-foto">
-            <div class="foto">
-                <img src="~/img/avatar-foto.png" />
-            </div>
-            <div class="box-foto-info">
-                <div class="box-foto-nome">
-                    <h3>Joaquim da Silva</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="box-info">
-            <h3>INFORMAÇÕES PESSOAIS:</h3>
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label">E-mail cadastrado<span style="color: #FF0000">*</span></label>
-                <input asp-for="Email" class="form-control" placeholder="COLOCAR AQUI O CÓDIGO DO BANCO DE DADOS" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Data_Nascimento" class="control-label">Data de nascimento<span style="color: #FF0000">*</span></label>
-                <input asp-for="Data_Nascimento" class="form-control" />
-                <span asp-validation-for="Data_Nascimento" class="text-danger"></span>
-            </div>
-            <a asp-area="" asp-controller="Esqsenha" asp-action="SolicitarEmail">
-                <button type="button" class="alterar-senha btn-green btn btn-primary">ALTERAR SENHA</button>
-            </a>
-            <a asp-area="" asp-controller="JogosRecomendados" asp-action="Index">
-                <button type="button" class="minhas-recomendacoes btn btn-primary">MINHAS RECOMENDAÇÕES</button>
-            </a>
-            <a asp-area="" asp-controller="Recomendados" asp-action="Index">
-                <button type="button" class="preferencias btn btn-primary">ALTERAR PREFERÊNCIAS</button>
-            </a>
-        </div>
-
-    </div>
+    
 </main>
 
 
@@ -68,15 +29,49 @@
 
                 // Criar elementos HTML com os dados recebidos, incluindo a foto
                 var profileDetails = `
-                        <dt class="col-sm-2">Nome</dt>
-                        <dd class="col-sm-10">${data.nome}</dd>
-                        <dt class="col-sm-2">Email</dt>
-                        <dd class="col-sm-10">${data.email}</dd>
-                        <dt class="col-sm-2">Data de Nascimento</dt>
-                        <dd class="col-sm-10">${data.data_Nascimento}</dd>
-                        <dt class="col-sm-2">Foto</dt>
-                        <dd class="col-sm-10"><img src="data:image/jpeg;base64,${data.foto}" alt="Foto do usuário"></dd>
-                    `;
+                    <h1>MEU PERFIL</h1>
+                        <p>Confira abaixo todas as informações do seu perfil e personalize-o.</p>
+
+                        <div class="box">
+                            <div class="box-foto">
+                                <div class="foto">
+                                        <img src="data:image/jpeg;base64,${data.foto}" alt="Foto do usuário">
+                                </div>
+                                <div class="box-foto-info">
+                                    <div class="box-foto-nome">
+                                            <h3>${data.nome}</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-info">
+                                <h3>INFORMAÇÕES PESSOAIS:</h3>
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group">
+                                            <h4>Email</h4>
+                                            <p>${data.email}</p>
+                                </div>
+                                <div class="form-group">
+                                       <h4>Data de Nascimento</h4>
+                                        <p>${data.data_Nascimento}</p>
+                                </div>
+                               
+                                <a asp-area="" asp-controller="Esqsenha" asp-action="SolicitarEmail">
+                                    <button type="button" class="alterar-senha btn-green btn btn-primary">ALTERAR SENHA</button>
+                                </a>
+                                <a asp-area="" asp-controller="JogosRecomendados" asp-action="Index">
+                                    <button type="button" class="minhas-recomendacoes btn btn-primary">MINHAS RECOMENDAÇÕES</button>
+                                </a>
+                                <a asp-area="" asp-controller="Recomendados" asp-action="Index">
+                                    <button type="button" class="preferencias btn btn-primary">ALTERAR PREFERÊNCIAS</button>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        
+                       
+                                            `;
 
                 // Adicionar os detalhes do perfil ao elemento com id "perfil-details"
                 $("#perfil-details").html(profileDetails);
