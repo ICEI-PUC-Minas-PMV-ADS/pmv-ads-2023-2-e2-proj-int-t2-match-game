@@ -51,7 +51,8 @@ namespace Match_Game_Oficial.Controllers
 
             if (dados == null)
             {
-                ViewBag.Message = "Email e/ou senha inválidos";
+                ModelState.AddModelError("Email", "O endereço de email não está cadastrado!");
+
                 return View();
             }
 
@@ -91,7 +92,8 @@ namespace Match_Game_Oficial.Controllers
             }
             else
             {
-                ViewBag.Message = "Email e/ou senha inválidos";
+                ModelState.AddModelError("Email", "Email ou senha incorretos!");
+
                 return View();
             }
         }

@@ -4,8 +4,13 @@
 
 
 
-<!-- Incluir o script JavaScript -->
-@Html.Raw(ViewData["Script"])
+<!-- @Html.Raw(ViewData["Script"]) -->
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger" style="text-align: center;" role="alert">
+        @ViewBag.Message
+    </div>
+}
 
 
 <main class="main-cadastro">
