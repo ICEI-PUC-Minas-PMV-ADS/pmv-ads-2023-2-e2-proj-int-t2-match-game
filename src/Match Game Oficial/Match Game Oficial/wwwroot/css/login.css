@@ -123,26 +123,16 @@ p, label {
     text-align: left;
 }
 
-.alterar-email {
-    margin-top: 10px;
-    text-align: left;
-}
-
-.alterar-email a {
-    font-size: 13px;
-    color: #7E7E7E !important;
-}
-
-    .alterar-email a:hover {
-        color: #282828 !important;
-    }
-
 .alterar-senha {
     margin: 40px 0 15px 0;
 }
 
 .minhas-recomendacoes {
     margin: 0px;
+}
+
+.preferencias {
+    margin-top: 15px;
 }
 
 .box-foto {
@@ -153,50 +143,46 @@ p, label {
     max-width: 100%;
 }
 
-.box-foto-alterar-foto {
-    background-color: #8952FF;
-    border-radius: 10px 10px 0 0;
-    width: 60%;
-    margin: 0px auto;
-    margin-top: -50px;
-    position: relative;
-}
-
-    .box-foto-alterar-foto p {
-        margin: 0;
-        padding: 5px
-    }
-
-    .box-foto-alterar-foto a {
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-.box-foto-alterar-nome {
-    border: 1px solid #8952FF;
-    border-radius: 10px;
-    padding: 30px 0px 15px;
-}
-
-.box-foto-alterar-nome {
+.box-foto-nome {
     background-color: #fff;
     position: relative;
+    margin-top: -15px;
+    border: 1px solid #8952FF;
+    border-radius: 0 0 10px 10px;
+    padding: 30px 15px 20px;
 }
 
-.box-foto-alterar-nome h3 {
+.box-foto-nome h3 {
     color: #000;
 }
 
-    .box-foto-alterar-nome a {
-        text-decoration: none;
-        color: #8952FF;
+
+/*RESPONSIVIDADE PÁGINA MEU PERFIL*/
+@media (max-width: 500px) {
+    .main-meu-perfil {
+        padding: 50px 30px;
     }
 
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
 
-.box-foto-alterar-foto:hover {
-    background-color: #3230C3;
-}
+    .box-foto {
+        width: 100%;
+    }
 
-.box-foto-alterar-nome a:hover {
-    color: #3230C3;
+    .box-info {
+        width: 100%;
+    }
+
+    .alterar-senha {
+        margin: 30px 0 15px 0;
+    }
+
+    .preferencias {
+        margin-bottom: 0px;
+    }
+
 }
