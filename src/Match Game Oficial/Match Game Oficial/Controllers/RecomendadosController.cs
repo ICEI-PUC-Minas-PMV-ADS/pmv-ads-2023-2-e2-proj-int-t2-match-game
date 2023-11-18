@@ -83,7 +83,7 @@ namespace Match_Game_Oficial.Controllers
                 Console.WriteLine(anoInicial);
 
 
-                if (anoFinal > anoInicial && anoInicial < 2024 && anoFinal < 2024)
+                if (anoFinal >= anoInicial && anoInicial < 2024 && anoFinal < 2024 )
                 {
                     Console.WriteLine("Ano Correto");
 
@@ -114,12 +114,20 @@ namespace Match_Game_Oficial.Controllers
                         ViewData["Script"] = $"<script>alert('Seus dados foram enviados!'); window.location.href='/JogosRecomendados';</script>";
 
                         // Retornar para a mesma view
-                        return View(model);
+                        return RedirectToAction("Index", "JogosRecomendados");
                     }
                 }
                 else 
                 {
+                    /*
+                    ModelState.AddModelError("Valida", "O Ano Inicial deve ser menor ou igual ao ano Final, não ultrapassando 2024!");
+                    */
+
+                    ViewBag.Message = "O Ano Inicial deve ser menor ou igual ao ano Final, não ultrapassando 2024!";
+
+                    /*
                     ViewData["Script"] = $"<script>alert('O ano inicial ou final não é válido!');</script>";
+                    */
 
                     Console.WriteLine("Ano incorreto");
                     return View(model);

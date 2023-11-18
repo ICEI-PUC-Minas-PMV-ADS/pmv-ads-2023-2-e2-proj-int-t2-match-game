@@ -67,7 +67,7 @@ namespace Match_Game_Oficial.Controllers
                 HttpContext.Session.SetString(EmailParaVerificação, email);
 
                 // Redirecionamento para a página de inserção do código
-                return View("InserirCodigo");
+                return View("~/Views/Esqsenha/InserirCodigo.cshtml", model);
             }
         }
 
@@ -113,7 +113,8 @@ namespace Match_Game_Oficial.Controllers
 
         [HttpPost]
         public async Task<IActionResult> VerificaCodigo(Esqsenha model)
-        {
+        {          
+
             string codigo = model.Codigo;
             string NovaSenha = model.NovaSenha;
             string emailUser = HttpContext.Session.GetString(EmailParaVerificação);
@@ -133,7 +134,7 @@ namespace Match_Game_Oficial.Controllers
 
 
                     Console.WriteLine("Algo Deu errado no banco de dados");
-                    return RedirectToAction ("InserirCodigo", "Esqsenha");
+                    return RedirectToAction("InserirCodigo", "Esqsenha");
 
                 }
                 else
@@ -145,21 +146,25 @@ namespace Match_Game_Oficial.Controllers
 
                     _context.Update(primeiroUsuario);
                     await _context.SaveChangesAsync();
-                 
+
                     HttpContext.Session.Remove(CodigoDeVerificacaoChave);
 
                     return RedirectToAction("Login", "Usuarios");
                 }
-                         
+
             }
             else
             {
                 Console.WriteLine("Seu código está Incorreto");
-                ModelState.AddModelError("Codigo", "Código de verificação incorreto");
+                ModelState.AddModelError("Codigo", "Seu código está incorreto!");
 
-                return RedirectToAction("InserirCodigo","Esqsenha");
-                
+                TempData["Message"] = "Seu código está incorreto!";
+
+
+                return RedirectToAction("InserirCodigo", "Esqsenha");
+
             }
+            
         }
 
         public async Task<List<Usuario>> BuscarUsuariosPorEmail(string email)

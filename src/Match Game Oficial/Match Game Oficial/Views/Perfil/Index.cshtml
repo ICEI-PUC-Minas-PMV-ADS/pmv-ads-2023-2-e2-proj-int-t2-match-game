@@ -23,15 +23,7 @@
             success: function (data) {
                 console.log("Dados do perfil:", data);
 
-
-                console.log("Nome:", data.nome);
-                console.log("Email:", data.email);
-                console.log("Data de Nascimento:", data.data_Nascimento);
-                console.log("Foto:", data.foto);
-                
-                
-                
-                // Criar elementos HTML com os dados recebidos
+                // Criar elementos HTML com os dados recebidos, incluindo a foto
                 var profileDetails = `
                         <dt class="col-sm-2">Nome</dt>
                         <dd class="col-sm-10">${data.nome}</dd>
@@ -40,7 +32,7 @@
                         <dt class="col-sm-2">Data de Nascimento</dt>
                         <dd class="col-sm-10">${data.data_Nascimento}</dd>
                         <dt class="col-sm-2">Foto</dt>
-                        <dd class="col-sm-10">${data.foto}</dd>
+                        <dd class="col-sm-10"><img src="data:image/jpeg;base64,${data.foto}" alt="Foto do usuário"></dd>
                     `;
 
                 // Adicionar os detalhes do perfil ao elemento com id "perfil-details"

@@ -51,7 +51,8 @@ namespace Match_Game_Oficial.Controllers
 
             if (dados == null)
             {
-                ViewBag.Message = "Email e/ou senha inválidos";
+                ModelState.AddModelError("Email", "O endereço de email não está cadastrado!");
+
                 return View();
             }
 
@@ -91,7 +92,8 @@ namespace Match_Game_Oficial.Controllers
             }
             else
             {
-                ViewBag.Message = "Email e/ou senha inválidos";
+                ModelState.AddModelError("Email", "Email ou senha incorretos!");
+
                 return View();
             }
         }
@@ -148,6 +150,11 @@ namespace Match_Game_Oficial.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Senha,Email,Data_Nascimento,Foto")] Usuario usuario, IFormFile file)
         {
+            if (EmailJaExiste(usuario.Email))
+            {
+                ModelState.AddModelError("Email", "Este email já está em uso.");
+                return View(usuario);
+            }
 
             if (ModelState.IsValid)
             {
@@ -169,6 +176,11 @@ namespace Match_Game_Oficial.Controllers
                 return RedirectToAction(nameof(login));
             }
             return View(usuario);
+        }
+
+        private bool EmailJaExiste(string email)
+        {
+            return _context.Usuarios.Any(u => u.Email == email);
         }
 
         // GET: Usuarios/Edit/5

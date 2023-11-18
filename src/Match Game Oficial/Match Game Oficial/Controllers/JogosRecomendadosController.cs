@@ -85,7 +85,11 @@ namespace Match_Game_Oficial.Controllers
             return usuarios;
         }
 
+        public IActionResult Jogos() 
+        {
+            return View();
 
+        }
 
     }
 }
