@@ -1,0 +1,335 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;400;500;600;700;800&display=swap');
+
+html {
+    font-size: 14px;
+    position: relative;;
+    height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Jost", sans-serif;
+    color: #6014EC;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p, label {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+}
+
+.main-home {
+    padding: 80px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    justify-content: center;
+}
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 15px;
+    background-color: #6014EC;
+    border-color: transparent;
+    text-transform: uppercase;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center !important;
+    justify-content: center;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #3230C3;
+}
+
+/* HERO SECTION */
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/img/hero-section.jpg");
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -17px;
+    border-radius: 0 0 20px 20px;
+}
+
+.hero-box {
+    width: 700px;
+    left: 10%;
+    top: 210px;
+    position: absolute;
+}
+
+.hero-title, .hero-text {
+    text-align: left;
+    color: white;
+}
+
+.hero-title {
+    font-size: 4em;
+}
+
+.hero-text {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.btn-hero {
+    width: 300px;
+}
+
+/*MATCH GAME*/
+.match-game {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+}
+
+.match-game-img {
+    position: relative;
+    display: inline-block;
+}
+
+.match-game-img:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0,0,0,0), black);
+    border-radius: 10px;
+}
+
+.match-game-img img {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+.match-game-text p {
+    text-align: left;
+    margin-top: 30px;
+}
+
+/*RECURSOS EXCLUSIVOS*/
+.recursos-exclusivos {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.box-item {
+    height: 400px;
+    width: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    border-radius: 10px;
+}
+
+.perfil {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("/img/perfil-personalizado.jpg");
+}
+
+.recomendacoes {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("/img/recomendacoes-precisas.jpg");
+}
+
+.conexoes {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("/img/conexoes-autenticas.jpg");
+}
+
+.box-text h3 {
+    color: white;
+}
+
+.box-text p {
+    color: white;
+    font-size: 14px;
+}
+
+
+/*COMECE AGORA*/
+.comece-agora {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+}
+
+.comece-agora-img {
+    position: relative;
+    display: inline-block;
+}
+
+.comece-agora-img:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0,0,0,0), black);
+    border-radius: 10px;
+}
+
+.comece-agora-img img {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+.comece-agora-text p {
+    text-align: left;
+    margin-top: 30px;
+}
+
+/*RESPONSIVIDADE*/
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-home {
+        padding: 50px 30px;
+    }
+
+    /*HERO SECTION*/
+    .hero-image {
+        height: 50vh;
+    }
+
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        margin-top: 80px;
+    }
+
+    .hero-title, .hero-text {
+        text-align: center;
+        color: white;
+    }
+
+    .hero-title {
+        font-size: 2.3em;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-top: 10px;
+        padding: 0 30px;
+    }
+
+    /*MATCH GAME*/
+    .match-game {
+        max-width: 100%;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .match-game-img img {
+        height: 350px;
+        width: 100%;
+    }
+
+    /*RECURSOS EXCLUSIVOS*/
+    .recursos-exclusivos {
+        max-width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .recursos-exclusivos h2 {
+        text-align: center;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box-item {
+        height: 350px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /*COMECE AGORA*/
+    .comece-agora {
+        max-width: 100%;
+        flex-direction: column-reverse;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .comece-agora-img img {
+        height: 350px;
+        width: 100%;
+    }
+
+}
