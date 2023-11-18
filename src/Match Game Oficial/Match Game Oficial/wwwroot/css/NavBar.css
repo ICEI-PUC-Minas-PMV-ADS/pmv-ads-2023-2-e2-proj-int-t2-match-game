@@ -58,6 +58,11 @@ body {
     cursor: pointer;
 }
 
+.navJogos {
+    padding-left: 0% !important;
+    cursor: pointer;
+}
+
 .navIcon-perfil {
     padding-left: 0% !important;
     cursor: pointer;

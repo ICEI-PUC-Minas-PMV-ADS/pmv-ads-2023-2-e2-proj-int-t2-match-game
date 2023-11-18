@@ -29,6 +29,12 @@
                             <!--
                             <li class="nav-item">Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
                             -->
+
+                            <li class="nav-item mt-1">
+                                <img class="navJogos" src="/img/Jogos.png" style="width: 32px;" />
+                                <a class="nav-link text-light" style="margin-top: -4%;" asp-area="" asp-controller="JogosRecomendados" asp-action="Jogos">Jogos</a>
+                            </li>
+
                             <li class="nav-item mt-1">
                                 <img class="navIcon" src="/img/para-voce.png" />
                                 <a class="nav-link text-light" asp-area="" asp-controller="JogosRecomendados" asp-action="Index">Para Você</a>
@@ -53,6 +59,10 @@
                         }
                         else
                         {
+                            <li class="nav-item mt-1">
+                                <img class="navJogos" src="/img/Jogos.png" style="width: 32px;"/>
+                                <a class="nav-link text-light" style="margin-top: -4%;" asp-area="" asp-controller="JogosRecomendados" asp-action="Jogos">Jogos</a>
+                            </li>
 
                             <li class="nav-item mt-1">
                                 <img class="navIcon-perfil" src="/img/perfil.png" />
