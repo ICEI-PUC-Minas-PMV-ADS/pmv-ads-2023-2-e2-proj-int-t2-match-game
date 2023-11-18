@@ -43,6 +43,9 @@ p, label {
 
 .main-home {
     padding: 80px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row {
@@ -120,6 +123,7 @@ p, label {
 
 /*MATCH GAME*/
 .match-game {
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
     gap: 70px;
@@ -157,6 +161,7 @@ p, label {
 
 /*RECURSOS EXCLUSIVOS*/
 .recursos-exclusivos {
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -168,7 +173,6 @@ p, label {
     display: flex;
     flex-direction: row;
     gap: 45px;
-    justify-content: space-between;
 }
 
 .box-item {
@@ -208,6 +212,7 @@ p, label {
 
 /*COMECE AGORA*/
 .comece-agora {
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
     gap: 70px;
