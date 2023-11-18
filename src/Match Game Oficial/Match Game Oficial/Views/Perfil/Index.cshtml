@@ -1,17 +1,62 @@
-﻿@model Match_Game_Oficial.Models.Usuario
+﻿<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+@model Match_Game_Oficial.Models.Usuario
 
 @{
     ViewData["Title"] = "Detalhes do Perfil";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div>
-    <h4>Usuario</h4>
-    <hr />
-    <dl class="row" id="perfil-details">
-        <!-- Os detalhes do perfil serão adicionados aqui dinamicamente -->
-    </dl>
-</div>
+
+<main class="main-meu-perfil">
+
+    <h1>MEU PERFIL</h1>
+    <p>Confira abaixo todas as informações do seu perfil e personalize-o.</p>
+
+    <div class="box">
+        <div class="box-foto">
+            <div class="foto">
+                <img src="~/img/avatar-foto.png" />
+            </div>
+            <div class="box-foto-info">
+                <div class="box-foto-alterar-foto">
+                    <p><a href="#">Alterar foto de perfil</a></p>
+                </div>
+                <div class="box-foto-alterar-nome">
+                    <h3>Joaquim da Silva</h3>
+                    <p><a href="#">Alterar nome de perfil</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-info">
+            <h3>INFORMAÇÕES PESSOAIS:</h3>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">E-mail cadastrado<span style="color: #FF0000">*</span></label>
+                <input asp-for="Email" class="form-control" placeholder="COLOCAR AQUI O CÓDIGO DO BANCO DE DADOS" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <p class="alterar-email"><a href="#">Alterar e-mail cadastrado</a></p>
+            <div class="form-group">
+                <label asp-for="Data_Nascimento" class="control-label">Data de nascimento<span style="color: #FF0000">*</span></label>
+                <input asp-for="Data_Nascimento" class="form-control" />
+                <span asp-validation-for="Data_Nascimento" class="text-danger"></span>
+            </div>
+            <a asp-area="" asp-controller="Esqsenha" asp-action="SolicitarEmail">
+                <button type="button" class="alterar-senha btn-green btn btn-primary">ALTERAR SENHA</button>
+            </a>
+            <a asp-area="" asp-controller="Recomendados" asp-action="Index">
+                <button type="button" class="minhas-recomendacoes btn btn-primary">MINHAS RECOMENDAÇÕES</button>
+            </a>
+        </div>
+
+    </div>
+</main>
+
+
+
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 <script>

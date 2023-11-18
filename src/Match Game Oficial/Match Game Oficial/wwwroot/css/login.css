@@ -56,7 +56,7 @@ p, label {
     padding-top: 10px;
 }
 
-.main-cadastro, .main-login, .main-meu-perfil {
+.main-cadastro, .main-login {
     padding: 30px 20px;
 }
 
@@ -102,26 +102,38 @@ p, label {
 }
 
 /* PÁGINA MEU PERFIL*/
+.main-meu-perfil {
+    padding: 30px 20px;
+}
+
+
 .box {
+    display: flex;
+    align-items: center;
     margin-top: 50px;
+    gap: 50px;
 }
 
 .box-info {
-    margin-top: 20px;
+    width: 50%;
 }
 
-.email p {
+.box-info h3 {
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.alterar-email {
     margin-top: 10px;
     text-align: left;
 }
 
-.email a {
-    text-decoration: none;
-    font-size: 12px;
+.alterar-email a {
+    font-size: 13px;
     color: #7E7E7E !important;
 }
 
-    .email a:hover {
+    .alterar-email a:hover {
         color: #282828 !important;
     }
 
@@ -134,19 +146,11 @@ p, label {
 }
 
 .box-foto {
-    padding: 0 100px;
+    width: 50%;
 }
 
 .foto img {
     max-width: 100%;
-}
-
-.box-foto-info h3 {
-    color: #000;
-}
-
-.box-foto-info h3 {
-    color: #000;
 }
 
 .box-foto-alterar-foto {
@@ -177,6 +181,10 @@ p, label {
 .box-foto-alterar-nome {
     background-color: #fff;
     position: relative;
+}
+
+.box-foto-alterar-nome h3 {
+    color: #000;
 }
 
     .box-foto-alterar-nome a {
