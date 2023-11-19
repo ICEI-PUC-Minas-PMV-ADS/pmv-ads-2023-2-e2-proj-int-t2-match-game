@@ -1,0 +1,163 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+
+/* Favoritos */
+
+.fa-heart {
+    font-size: 22px;
+    margin-right: 4%;
+    cursor: pointer;
+}
+
+.favoritos {
+    margin-top: 2%;
+}
+
+/* Heading */
+
+.heading-section > h4 {
+    font-family: 'Jost';
+    font-weight: 700;
+    color: #6014EC;
+    font-size: 1.8em;
+    margin-top: 2%
+}
+
+.heading-section > p {
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    margin-bottom: 4%;
+}
+
+
+/* Card */
+.card {
+    border-radius: 20px;
+    box-shadow: 1px 5px 12px 2px rgb(219, 219, 219);
+    margin-bottom: 4%;
+    margin-bottom: 8%;
+    
+}
+
+.gameImg > img {
+    width: 100%;
+    height: 30vh;
+}
+
+.card > h4 {
+    font-family: 'Poppins';
+    color: #059CAD;
+    margin-top: 8%;
+    font-size: 1.4vw;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.platforms {
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: -2%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+
+.info > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.infoGeral > li {
+    margin-right: 5%;
+}
+
+.infoGeral {
+    display: flex;
+    margin-left: 4%;
+    
+}
+
+
+.fa fa-star {
+    color: red;
+}
+
+.dados{
+    font-family: 'Poppins';
+    color: #000000;
+}
+/* Botão Saiba Mais */
+.btnSaibaMais {
+    color: #ffffff;
+    background: #6014EC;
+    border-radius: 14px;
+    font-family: 'Poppins';
+    width: 80%;
+    font-weight: 500;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btnSaibaMais:hover {
+    background: #3230C3;
+    color: #ffffff;
+    border: solid 2px #ffff;
+}
+
+
+
+/* Media Querie */
+/* Mobile */
+@media screen and (max-width: 375px) {
+    .card > h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:575px) {
+    .card > h4 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 575px) and (max-width:800px) {
+    .card > h4 {
+        font-size: 1.1rem;
+        
+    }
+
+    .gameImg > img {
+        width: 100%;
+        height: 22vh;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:992px) {
+    .card > h4 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1979px) and (max-width:2360px) {
+    .card {
+        height: 50vh !important;
+    }
+
+        .card > img {
+            height: 20vh !important;
+        }
+}

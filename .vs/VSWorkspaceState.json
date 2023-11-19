@@ -1,7 +1,19 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     ""
   ],
   "SelectedNode": "\\Match Game Oficial.sln",
+=======
+    "",
+    "\\src",
+    "\\src\\Match Game Oficial",
+    "\\src\\Match Game Oficial\\Match Game Oficial",
+    "\\src\\Match Game Oficial\\Match Game Oficial\\Views",
+    "\\src\\Match Game Oficial\\Match Game Oficial\\Views\\Perfil",
+    "\\src\\Match Game Oficial\\Match Game Oficial\\Views\\Usuarios"
+  ],
+  "SelectedNode": "\\src\\Match Game Oficial\\Match Game Oficial\\Views\\Perfil\\Index.cshtml",
+>>>>>>> f44c6b6da3a08eefeb15579563225c528d1bd235
   "PreviewInSolutionExplorer": false
 }

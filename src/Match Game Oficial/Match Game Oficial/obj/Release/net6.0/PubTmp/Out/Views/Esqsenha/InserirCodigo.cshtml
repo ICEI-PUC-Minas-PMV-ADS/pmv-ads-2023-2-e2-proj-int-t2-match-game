@@ -1,0 +1,37 @@
+﻿<link rel="stylesheet" href="~/css/InserirCodigo.css" asp-append-version="true" />
+
+@model Match_Game_Oficial.Models.Esqsenha
+
+@{
+    ViewData["Title"] = "Inserir Código de Verificação";
+}
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-danger" style="text-align: center;" role="alert">
+        @TempData["Message"]
+    </div>
+}
+
+
+<body>
+    <main class="main-codigo">
+        <h1>Codigo de verificação</h1>
+
+<form asp-controller="Esqsenha" asp-action="VerificaCodigo" method="post">
+    <div class="form-group">
+        <label asp-for="Codigo" class="control-label">Insira abaixo o código de verificação recebido em seu e-mail para que você cadastre uma nova senha.</label>
+        <input asp-for="Codigo" class="form-control" />
+                <span asp-validation-for="Codigo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NovaSenha" class="control-label">Insira sua nova senha</label>
+        <input asp-for="NovaSenha" class="form-control" />
+        <span asp-validation-for="NovaSenha" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Redefinir Senha</button>
+</form>
+</main>
+</body>

@@ -1,0 +1,63 @@
+﻿<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+@model Match_Game_Oficial.Models.Recomendado
+
+
+
+<!-- @Html.Raw(ViewData["Script"]) -->
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger" style="text-align: center;" role="alert">
+        @ViewBag.Message
+    </div>
+}
+
+
+<main class="main-cadastro">
+
+    <h1 style="font-size:1.8em;">QUAL TIPO DE JOGO  VOCÊ CURTE?</h1>
+    <p>Preencha os dados abaixo para obter uma lista personalizada com o seu gosto! </p>
+
+    <p></p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Index" asp-controller="Recomendados" method="post">
+                @Html.AntiForgeryToken()
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="AnoInicial" class="control-label">Ano Inicial<span style="color: #FF0000">*</span></label>
+                    <input asp-for="AnoInicial" class="form-control" />
+                    <span asp-validation-for="AnoInicial" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="AnoFinal" class="control-label">Ano Final<span style="color: #FF0000">*</span></label>
+                    <input asp-for="AnoFinal" class="form-control" />
+                    <span asp-validation-for="AnoFinal" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Plataforma" class="control-label">Plataforma<span style="color: #FF0000">*</span></label>
+                    <select asp-for="Plataforma" asp-items="Html.GetEnumSelectList<Form_Plat>()" class="form-control"></select>
+                    <span asp-validation-for="Plataforma" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Genero" class="control-label">Gênero<span style="color: #FF0000">*</span></label>
+                    <select asp-for="Genero" asp-items="Html.GetEnumSelectList<Form_Gen>()" class="form-control"></select>
+                    <span asp-validation-for="Genero" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+
+
+
