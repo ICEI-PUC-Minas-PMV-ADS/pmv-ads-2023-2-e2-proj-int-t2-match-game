@@ -42,9 +42,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |`PERSONA`|  `FUNCIONALIDADE` |`MOTIVO/VALOR` |
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário (Mateus) |  Quero conseguir logar na aplicação. | Para possuir minha própria conta.  |
-|Usuário<br> (Alex) | Quero conseguir recomendar jogos. | Para que outras pessoas possam ver os jogos recomendados. |
 |Usuário (Samira) | Quero conseguir me cadastrar na aplicação.| Para que eu tenha meu perfil.   |
-|Usuário <br>(Emily) | Quero conseguir alterar minha foto de perfil.| Para que eu possa personalizar meu perfil. |
 |Usuário <br>(Alex) |Quero conseguir marcar jogos como meus favoritos. | Para que eu me lembre de quais jogos eu deva jogar depois.  |
 |Usuário <br>(Emily) |  Quero que ao fim das perguntas a aplicação me recomende jogos. | Para que eu possa escolher qual jogo jogar. |
 |Usuário (Mateus) |  Quero conseguir ver uma lista de jogos favoritos.| Para conseguir ver quais jogos eu já favoritei.  |
@@ -64,10 +62,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-04| A aplicação deve recomendar jogos de acordo com o interesse escolhido pelos usuários | ALTA |
 |RF-05| A aplicação deve conter informações sobre os jogos recomendados aos usuários | ALTA |
 |RF-06| A aplicação deve permitir que o usuário marque como "favorito" os jogos de sua escolha | ALTA |
-|RF-07| A aplicação deve incluir uma lista de jogos marcados como "favorito" no perfil do usuário | ALTA |
-|RF-08| A aplicação deve permitir que o usuário personalize sua foto de perfil | ALTA |
-|RF-09| A aplicação deve permitir que os usuários recomendem jogos para outros usuários | MÉDIA |
-|RF-10| A aplicação deve incluir uma lista de jogos que os usuários recomendaram para outros usuários | MÉDIA |
+|RF-07| A aplicação deve incluir uma lista de jogos marcados como "favorito" | ALTA |
 
 ### Requisitos não Funcionais
 
