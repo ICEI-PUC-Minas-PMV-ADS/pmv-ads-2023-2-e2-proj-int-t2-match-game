@@ -37,6 +37,13 @@
 | Passos 	| - Estar logado ou criar uma conta <br> - Clicar no botão "Para você" para visualizar os jogos recomendados de acordo com os interesses cadastrados no formulário. <br> - Clicar "saiba mais" na aba do jogo e visualizar informações a respeito dele que abrirá em uma nova guia do navegador.
 |Critério de Êxito | - As informações sobre o jogo selecionado foi visualizada. |
 |:---:	|:---:	|
+| **Caso de Teste** 	| **CT-07 – Lista de favoritos no perfil do usuário**	|
+|Requisito Associado | RF-07 -	A aplicação deve incluir uma lista de jogos favoritados pelo usuário. |
+| Objetivo do Teste 	| Verificar se a lista de favoritos do usuário consta salvo no sistema. |
+| Passos 	| - Estar logado ou criar uma conta <br> - Clicar no botão "Favoritos"<br> - Visualizar os jogos favoritados.<br>
+|Critério de Êxito | - Lista de favoritos exibido no perfil do usuário. |
+|:---:	|:---:	|
+
 
 
 
