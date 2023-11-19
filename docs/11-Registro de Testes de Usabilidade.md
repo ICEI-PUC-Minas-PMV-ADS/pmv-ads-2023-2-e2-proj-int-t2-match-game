@@ -85,7 +85,23 @@ _Video 7:  Receber recomendações de jogos pelo desktop._
 _"Para ver as informações de cada jogo foi super fácil porque logo que aparece os jogos recomendados, tem um botão bem grande em cada jogo escrito "saiba mais" então cliquei e vi as informações sobre os jogos que eu queria, foi bem intuitivo."_
 
 <br> 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
+<br>
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+## Feedback pelo TypeForm
+
+Os usuários receberam o formulário do site TypeForm para acrescentar suas opiniões e o que gostariam como acrescentos para a Match Game, todos os comentários serão estudados e considerados para futuras melhorias.
+
+![Captura de tela 2023-11-19 163506](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/a566409e-1e60-4015-9185-e6cac2a8185f)
+
+_Imagem 1: Printscreen da página de respostas do formulário Match Game na plataforma TypeForm._
+
+## LightHouse
+
+Consideramos o LightHouse para inspeção do site no requisito funcional de acessibilidade. 
+
+Atualmente o Match Game atende 86% de acessibilidade pela inspeção do navegador Google Chrome. 
+
+![Captura de tela 2023-11-19 164703](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/6ff4dcea-4ee0-4618-8f56-c72dc440799a)
+
+_Imagem 1: Printscreen da porcentagem de acessibilidade pela extensão LightHouse._
+
