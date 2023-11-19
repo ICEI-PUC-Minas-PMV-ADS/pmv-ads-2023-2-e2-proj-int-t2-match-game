@@ -11,8 +11,13 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 
 # Instruções de acesso
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+Para utilizar o Match Game basta seguir as instruções abaixo:
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+1. Acessar o link da aplicação: <a href="https://matchgame.azurewebsites.net/"> Site Match Game</a>;
+2. Se cadastrar na plataforma;
+3. Fazer o Login com sua conta cadastrada;
+4. Responder o questionário de acordo com sua prefêrencia para jogos.
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+Após completar esses passos, o nosso algoritmo irá te recomendar jogos com base em suas escolhas e você poderá montar a sua biblioteca pessoal favoritando os jogos que preferir.
+
+_Obs: Caso já tenha uma conta cadastrada em nosso site, não é necessário efetuar o cadastro novamente._
