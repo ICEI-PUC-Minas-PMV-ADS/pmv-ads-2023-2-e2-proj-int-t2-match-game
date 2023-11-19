@@ -68,6 +68,16 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Usuarios}/{action=Create}/{id?}");
+
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Usuarios}/{action=login}/{id?}");
+
+
+app.MapControllerRoute(
     name: "meusjogos",
     pattern: "{controller=JogosRecomendados}/{action=MeusJogos}",
 defaults: new { controller = "JogosRecomendados", action = "MeusJogos" });
