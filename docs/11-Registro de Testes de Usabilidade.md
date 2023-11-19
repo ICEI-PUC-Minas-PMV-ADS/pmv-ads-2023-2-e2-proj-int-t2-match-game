@@ -29,6 +29,15 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-ga
 
 #### Relato do usuário 1: 
 _"Achei muito fácil me cadastrar no site porque tinha varios botões falando para a gente se cadastrar logo na primeira página, para fazer o login também foi tranquilo porque logo depois do cadastro o site já me mandou pra tela de login, coloquei meus dados e já em seguida o site me mandou colocar as informações dos jogos que eu gostava e ele me recomendou certinho depois. No geral achei fácil usar o site, tem muitos botões e cores chamativas que ajuda a gente a clicar no lugar certo."_
+<br><br>
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/ba96ad67-7126-4fc7-97e2-6bd3117248c0
+
+
+#### Relato do usuário 2 (acesso mobile): 
+_"Minha dificuldade está no cadastro, especificamente no campo que se faz obrigatório "Data de Nascimento"
+Não consigo preencher, digitando, a data de meu nascimento (o que faz, portanto, ter como única alternativa selecionar a data de nascimento a partir da janela de pop-up que abre). O problema é que, através dessa janela, não é possível escolher um ano específico (o que se faz necessário voltar, mês a mês, até agosto de 1996) e assim demoraria muito tempo para realizar o meu cadastro."_
+<br>
 
 ### 3. Favoritar Jogos
 
