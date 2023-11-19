@@ -97,7 +97,7 @@ _Imagem 1: Printscreen da página de respostas do formulário Match Game na plat
 
 ## LightHouse
 
-Consideramos o LightHouse para inspeção do site no requisito funcional de acessibilidade. 
+Consideramos o LightHouse para inspeção do site no requisito não funcional de acessibilidade. 
 
 Atualmente o Match Game atende 86% de acessibilidade pela inspeção do navegador Google Chrome. 
 
