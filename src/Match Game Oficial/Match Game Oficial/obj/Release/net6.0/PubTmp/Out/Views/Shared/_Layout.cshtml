@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Match Game</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navBar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Match_Game.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img class="logo" src="/img/logo.png" />
+                </a>
+                <button class="navbar-toggler pe-3" style="margin-left: 40%; margin-right: 4%;" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+
+
+                    <ul class="navbar-collapse collapse ">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <!--
+                            <li class="nav-item">Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
+                            -->
+
+                            <li class="nav-item mt-1">
+                                <img class="navJogos" src="/img/Jogos.png" style="width: 32px;" />
+                                <a class="nav-link text-light" style="margin-top: -4%;" asp-area="" asp-controller="JogosRecomendados" asp-action="Jogos">Jogos</a>
+                            </li>
+
+                            <li class="nav-item mt-1">
+                                <img class="navIcon" src="/img/para-voce.png" />
+                                <a class="nav-link text-light" asp-area="" asp-controller="JogosRecomendados" asp-action="Index">Para Você</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <img class="navIcon-fav" src="/img/favoritos.png" />
+                                <a class="nav-link text-light" asp-area="" asp-controller="Favoritos" asp-action="Index">Favoritos</a>
+                            </li>
+
+                            <li class="nav-item mt-1">
+                                <img class="navIcon-perfil" src="/img/perfil.png" />
+                                <a id="Cadastrar" class="nav-link text-light" asp-area="" asp-controller="Perfil" asp-action="Index">Perfil</a>
+                            </li>
+
+                            <li class="nav-item logout mt-1" style="font-family: 'Jost';color: #ffff; margin-left: 0%; margin-top: 0%;">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">
+                                    <img class="navSair pe-5 logoutImg " style="width: 84px;" src="~/img/logout (2).png"></img>
+                                    <span class="NavSair me-0 ms-1" style="margin-top: -7%; cursor: pointer; display:flex; flex-direction: column; font-family: 'Jost'; color: #ffff;">Sair</span>
+                                </a>
+                            </li>
+
+                        }
+                        else
+                        {
+                            <li class="nav-item mt-1">
+                                <img class="navJogos" src="/img/Jogos.png" style="width: 32px;"/>
+                                <a class="nav-link text-light" style="margin-top: -4%;" asp-area="" asp-controller="JogosRecomendados" asp-action="Jogos">Jogos</a>
+                            </li>
+
+                            <li class="nav-item mt-1">
+                                <img class="navIcon-perfil" src="/img/perfil.png" />
+                                <a id="Cadastrar" class="nav-link text-light" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>
+                            </li>
+                            <li class="nav-item mt-1 me-5">
+                                <img class="navIcon-perfil" src="/img/perfil.png" />
+                                <a id="perfil" class="nav-link text-light" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+                            </li>
+                        }
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <p>&copy; 2023 - Match Game</p>
+        </div>
+    </footer>
+
+
+    <style>
+        .navbar-collapse {
+            display: flex;
+            align-items: center;
+            justify-content: center;       
+
+        }
+
+
+    </style>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

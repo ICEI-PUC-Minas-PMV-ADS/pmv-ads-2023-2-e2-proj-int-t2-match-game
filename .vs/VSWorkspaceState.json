@@ -5,8 +5,9 @@
     "\\src\\Match Game Oficial",
     "\\src\\Match Game Oficial\\Match Game Oficial",
     "\\src\\Match Game Oficial\\Match Game Oficial\\Views",
+    "\\src\\Match Game Oficial\\Match Game Oficial\\Views\\Perfil",
     "\\src\\Match Game Oficial\\Match Game Oficial\\Views\\Usuarios"
   ],
-  "SelectedNode": "\\src\\Match Game Oficial\\Match Game Oficial\\Views\\Usuarios\\Index.cshtml",
+  "SelectedNode": "\\src\\Match Game Oficial\\Match Game Oficial\\Views\\Perfil\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,76 @@
+﻿<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="hero-image">
+    <div class="hero-box">
+        <h1 class="hero-title">JUNTE-SE À REVOLUÇÃO GAMER</h1>
+        <p class="hero-text">Dê um passo à frente na sua jornada gamer.</p>
+        <a asp-area="" asp-controller="Usuarios" asp-action="create">
+            <button type="button" class="btn-hero btn btn-primary">CADASTRE-SE AGORA MESMO</button>
+        </a>
+    </div>
+</div>
+
+<main class="main-home">
+
+
+    <div class="match-game">
+        <div class="match-game-img">
+            <img src="/img/sobre-match-game.jpg" alt="League of Legends">
+        </div>
+        <div class="match-game-text">
+            <h2>MATCH GAME</h2>
+            <p>O Match Game é uma plataforma exclusiva projetada para a comunidade gamer e une usuários com base em suas preferências exclusivas de jogos. Nosso software tem um objetivo claro - recomendar jogos que se alinhem com suas preferências.</p>
+            <a asp-area="" asp-controller="Usuarios" asp-action="create">
+                <button type="button" class="btn-hero btn btn-primary">CADASTRE-SE AGORA MESMO</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="recursos-exclusivos">
+        <h2>RECURSOS EXCLUSIVOS</h2>
+        <div class="boxes">
+            <div class="box-item perfil">
+                <div class="box-text">
+                    <h3>Perfil Personalizado</h3>
+                    <p>Crie seu próprio espaço gamer, destacando seus jogos favoritos e construindo uma biblioteca única que reflete seus gostos.</p>
+                </div>
+            </div>
+
+            <div class="box-item recomendacoes">
+                <div class="box-text">
+                    <h3>Recomendações Precisas</h3>
+                    <p>Receba sugestões de jogos personalizadas com base nos títulos que você favoritou. Deixe o Match Game encontrar os jogos perfeitos para você.</p>
+                </div>
+            </div>
+
+            <div class="box-item conexoes">
+                <div class="box-text">
+                    <h3>Conexões Autênticas</h3>
+                    <p>Mostre sua individualidade através da personalização do seu perfil. Altere sua foto e nome do perfil para o que represente quem você é.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="comece-agora">
+        <div class="comece-agora-text">
+            <h2>COMECE AGORA</h2>
+            <p>O Match Game é uma plataforma que une jogadores. Diga adeus à busca interminável pelo jogo ideal e dê as boas-vindas a recomendações personalizadas.</p>
+            <a asp-area="" asp-controller="Usuarios" asp-action="create">
+                <button type="button" class="btn-hero btn btn-primary">CADASTRE-SE AGORA MESMO</button>
+            </a>
+        </div>
+        <div class="comece-agora-img">
+            <img src="/img/comece-agora.jpg" alt="Spider-Man">
+        </div>
+    </div>
+
+</main>
+
+<script src="https://kit.fontawesome.com/fe8eb85698.js" crossorigin="anonymous"></script>

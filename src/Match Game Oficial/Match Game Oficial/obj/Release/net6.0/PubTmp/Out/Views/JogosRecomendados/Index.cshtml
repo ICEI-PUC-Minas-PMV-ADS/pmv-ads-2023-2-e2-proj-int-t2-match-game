@@ -1,0 +1,242 @@
+﻿<link rel="stylesheet" href="~/css/ListarJogos.css" asp-append-version="true" />
+
+@using System.Text.Json;
+
+
+@{
+    ViewData["Title"] = "Recomendados";
+    
+}
+
+<div id="js-preloader" class="js-preloader loaded">
+
+    <div class="preloader-inner">
+
+        <span class="dot"></span>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="most-popular">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="heading-section">
+                            <h4 class="text-center">JOGOS RECOMENDADOS PARA VOCÊ</h4>
+                            <p class="text-center">Confira abaixo a lista dos jogos que foram recomendados para você.</p>
+
+                        </div>
+                        <div class="row gameList">
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="main-button">
+                                <a href="javascript:void(0)">Mais Jogos</a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: "@Url.Action("MeusJogos", "JogosRecomendados")",
+            type: "POST",
+            success: function (data) {
+
+                console.log(data);
+
+
+                if (data && data.recomendaddo) {
+
+                    console.log(data.recomendaddo)
+                    /*
+                    var dataString = JSON.stringify(data.recomendaddo);
+
+                    console.log("Recomendado: " + dataString);
+                    */
+                    var storeUrl = data.recomendaddo;
+
+                    console.log("Recomendado:", storeUrl);
+                    console.log("Tipo de data.UsuarioLink:", typeof storeUrl);
+
+
+                    const APIKEY = "69f74f8a6cde46529c5d0923786cdab7";
+                    const loaderEl = document.getElementById("js-preloader");
+                    const gameList = document.querySelector(".gameList");
+                    const loadMoreGamesBtn = document.querySelector(".main-button");
+                    let nextGameListUrl = null;
+
+
+                    if (storeUrl) 
+                    {
+                        const urlgame = storeUrl;
+
+                        const getPlatformStr = (platforms) => {
+                            if (Array.isArray(platforms)) {
+                                return platforms.map(each => each.platform.name).join(",");
+                            }
+                            return platforms;
+                        };
+
+
+
+                        function loadGames(urlgame) {
+                            loaderEl.classList.remove("loaded");
+
+                            fetch(urlgame)
+                                .then(response => response.json())
+                                .then(data => {
+                                    nextGameListUrl = data.next ? data.next : null;
+                                    const games = data.results;
+                                    loaderEl.classList.add("loaded");
+
+                                    games.forEach(game => {
+                                        // Faz uma nova solicitação para obter detalhes do jogo, incluindo o link do site
+                                        fetch(`https://api.rawg.io/api/games/${game.id}?key=${APIKEY}`)
+                                            .then(response => response.json())
+                                            .then(details => {
+                                                const gameItemEl =
+                                                    `<div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <div class="item  card" data-game-id="${game.id}">
+
+                                                                <img src="${game.background_image}" alt="${game.name} image" style="width: 100%;height: 30vh;">
+
+
+                                                                <i id="favIcon" class="fa-regular fa-heart favoritos  top-90 end-0 b-24 favorite-button" style="color: #8952ff;margin-left: 88%;" title="Favorito"></i>
+
+
+                                                            <h4 class="game-name " style="margin-top: -1%;" >${game.name}<br>
+                                                                    
+                                                            </h4>
+
+                                                                 <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
+
+
+                                                            <ul class="list-unstyled infoGeral mt-2 mb-2" style="font-family: 'Poppins'; font-size: 1rem;">
+                                                                <li><i class="fa fa-star" style="color: #ffc800;"></i> <span class="rating dados">${game.rating}</span></li>
+                                                                <li><i class="fa-regular fa-calendar" style="color: #ffc800;"></i> <span class="date dados">${game.released}</span></li>
+                                                            </ul>
+
+
+                                                                <a href="${details.website}" target="_blank" class="btn btnSaibaMais mb-3 mt-1" style="display: flex; align-items: center; justify-content: center; margin: auto; margin-top: -2%;"> SAIBA MAIS </a>
+
+
+
+
+                                                    </div>
+                                                </div>
+                                                `;
+                                                gameList.insertAdjacentHTML("beforeend", gameItemEl);
+                                            })
+                                            .catch(error => {
+                                                console.log("Erro ao obter detalhes do jogo", error);
+                                            });
+                                    });
+                                    if (nextGameListUrl) {
+                                        loadMoreGamesBtn.classList.remove("hidden");
+                                    } else {
+                                        loadMoreGamesBtn.classList.add("hidden");
+                                    }
+                                })
+                                .catch(error => {
+                                    console.log("Ocorreu algum erro", error);
+                                });
+                        }
+
+                        loadGames(urlgame);
+
+                        loadMoreGamesBtn.addEventListener('click', () => {
+                            if (nextGameListUrl) {
+                                loadGames(nextGameListUrl);
+                            }
+                        });
+                    }
+
+                }
+                else{
+                    console.log("está faltando")
+                }
+            },
+            error: function () {
+                console.error("Erro ao chamar ação MeusJogos");
+            }
+        });
+    });
+
+  
+   
+</script>
+
+<script>
+
+    var userName = "@User.Identity.Name";
+
+    document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('favorite-button')) {
+            // Verificar se o usuário está logado antes de prosseguir
+            if (!userName) {
+                alert("Por favor, faça login para favoritar jogos.");
+                return; // Impede a execução do restante do código
+            }
+
+            const gameContainer = event.target.closest('.item');
+            const gameName = gameContainer.querySelector('.game-name').textContent;
+
+            // Função para verificar se o jogo já está favoritado
+            function isGameAlreadyFavorited(gameName, userName) {
+                const favoritosKey = `favoritos_${userName}`;
+                let favoriteGamesList = JSON.parse(localStorage.getItem(favoritosKey)) || [];
+                return favoriteGamesList.some(game => game.name === gameName);
+            }
+
+            // Verificar se o jogo já está na lista de favoritos
+            if (isGameAlreadyFavorited(gameName, userName)) {
+                alert(`${gameName} já foi favoritado`);
+                return;
+            }
+            alert(`${gameName} foi adicionado à lista de favoritos!`);
+
+            const gameRating = gameContainer.querySelector('.rating').textContent;
+            const gameReleased = gameContainer.querySelector('.date').textContent;
+
+            const favoriteGame = {
+                name: event.target.parentNode.querySelector('.game-name').textContent,
+                released: event.target.parentNode.querySelector('.date').textContent,
+                rating: event.target.parentNode.querySelector('.rating').textContent,
+                background_image: event.target.parentNode.querySelector('img').src,
+                parent_platforms: event.target.parentNode.querySelector('.platforms').textContent,
+            };
+
+            const favoritosKey = `favoritos_${userName}`;
+
+            let favoriteGamesList = JSON.parse(localStorage.getItem(favoritosKey)) || [];
+            favoriteGamesList.push(favoriteGame);
+            localStorage.setItem(favoritosKey, JSON.stringify(favoriteGamesList));
+        }
+    });
+</script>
+
+<script src="https://kit.fontawesome.com/fe8eb85698.js" crossorigin="anonymous"></script>
