@@ -5,8 +5,23 @@ Após realizar os testes de usabilidade, coletamos um relatório a partir das an
 ## Registros das evidencias dos testes, baseadas no Plano de Testes de Usabilidade:
 
 ### 1. Identificação de problemas na interface e no design do site
-(Preencher)
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/75e87992-b7d6-4c3c-9057-0724cfcef384
+
+
+#### Relato do usuário 1: 
+_"A página inicial possui uma interface bonita e informativa. Achei as informações muito precisas, proporcionando uma compreensão imediata do propósito do site."_
 <br>
+
+#### Relato do usuário 2 (acesso mobile): 
+_"A página fornece informações claras sobre o propósito do projeto. No entanto, observei algumas questões na aba de navegação, onde os botões para acessar outras páginas apresentaram dificuldades. Experimentei problemas ao clicar nos links, e o carregamento do perfil não foi bem-sucedido."_
+<br>
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/8f206716-f898-474c-80fe-766c01093d8d
+
+
 
 ### 2. Criação e/ou acesso da conta
 
