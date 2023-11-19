@@ -89,9 +89,9 @@ _Wireframe - Favoritos_
 
 ## Meu Perfil
 
-A tela "Meu Perfil" disponibilizará para o usuário logado no sistema todas as informações referente ao seu cadastro no sistema, como por exemplo: foto de perfil, nome, e-mail cadastrado, e data de nascimento. Além disso, também deverá disponibilizar acesso rápido ao usuário para realizar a alteração da foto de perfil, alteração da senha, ou acessar a área de "Minhas Recomendações".
+A tela "Meu Perfil" disponibilizará para o usuário logado no sistema todas as informações referente ao seu cadastro no sistema, como por exemplo: foto de perfil, nome, e-mail cadastrado, e data de nascimento. Além disso, também deverá disponibilizar acesso rápido ao usuário para realizar a alteração da senha de perfil e acessar a área de "Minhas Recomendações".
 
-![Meu Perfil](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107009327/b7190ac9-a5fc-40c5-b8d3-3c0ed683ba7d)
+![Meu Perfil](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107009327/a21bea9d-75a8-4e40-97d6-c05bf2f81fc8)
 
 _Wireframe - Meu Perfil_
 
