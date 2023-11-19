@@ -31,13 +31,17 @@ O Projeto Match Game soluciona os problemas dos Gamers em relação a escolha de
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Para utilizar o Match Game basta seguir as instruções abaixo:
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+1. Acessar o link da aplicação: <a href="https://matchgame.azurewebsites.net/"> Site Match Game</a>;
+2. Se cadastrar na plataforma;
+3. Fazer o Login com sua conta cadastrada;
+4. Responder o questionário de acordo com sua prefêrencia para jogos.
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+Após completar esses passos, o nosso algoritmo irá te recomendar jogos com base em suas escolhas e você poderá montar a sua biblioteca pessoal favoritando os jogos que preferir.
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+_Obs: Caso já tenha uma conta cadastrada em nosso site, não é necessário efetuar o cadastro novamente._
+
 
 # Documentação
 
