@@ -91,7 +91,8 @@ _"Para ver as informações de cada jogo foi super fácil porque logo que aparec
 
 Os usuários receberam o formulário do site TypeForm para acrescentar suas opiniões e o que gostariam como acrescentos para a Match Game, todos os comentários serão estudados e considerados para futuras melhorias.
 
-![Captura de tela 2023-11-19 163506](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/a566409e-1e60-4015-9185-e6cac2a8185f)
+![Captura de tela 2023-11-19 165909](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/990782d8-b57e-4695-985d-7c366c2563f3)
+
 
 _Imagem 1: Printscreen da página de respostas do formulário Match Game na plataforma TypeForm._
 
