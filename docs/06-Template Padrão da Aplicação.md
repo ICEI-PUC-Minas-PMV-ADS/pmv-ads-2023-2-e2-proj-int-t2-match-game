@@ -7,7 +7,6 @@ O template criado está disponível no site GitHub e é composto pelos seguintes
 - Área de login;
 - Área de cadastro de nova senha;
 - Perfil de usuário;
-- Área de upload de foto de perfil;
 - Jogos recomendados pelo sistema;
 - Jogos favoritados pelo usuário.
 
@@ -72,12 +71,6 @@ A página apresentará os dados do usuário e sua foto de perfil escolhida.
 
 _Desenvolvido por Luana Pina_
 
-## Área de Upload de Foto de Perfil
-Área onde o usuário terá a possibilidade de escolher uma foto para colocar em seu perfil de usuário.
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/67f23f4b-4a23-44bf-8287-73dd0b181982)
-
-_Desenvolvido por Tayane Milagres_
 
 ## Wireframes 
 A criação de todos os wireframes e telas de fidelidade foram criadas na plataforma figma. Confira a [Match Game](https://www.figma.com/file/75Oet8utr6LtMAOQ8aPNNx/Projeto---Match-Game?type=design&node-id=0%3A1&mode=design&t=XA0ong2Voeh7TOHs-1). 
