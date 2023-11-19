@@ -103,5 +103,5 @@ Atualmente o Match Game atende 86% de acessibilidade pela inspeção do navegado
 
 ![Captura de tela 2023-11-19 164703](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/6ff4dcea-4ee0-4618-8f56-c72dc440799a)
 
-_Imagem 1: Printscreen da porcentagem de acessibilidade pela extensão LightHouse._
+_Imagem 2: Printscreen da porcentagem de acessibilidade pela extensão LightHouse._
 
