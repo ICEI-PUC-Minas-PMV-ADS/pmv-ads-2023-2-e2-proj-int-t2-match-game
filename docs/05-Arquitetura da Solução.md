@@ -40,4 +40,4 @@ _Modelo Físico_
 
 ## Hospedagem
 
-A Hospedagem foi feita pelo Azure, ferramenta disponibilizada pela Microsoft.
+A Hospedagem foi feita pelo Azure, plataforma disponibilizada pela Microsoft.
