@@ -22,11 +22,10 @@ Será realizado o seguinte roteiro:
 - Eles tentam adicionar o jogo aos favoritos.
 - Avaliam se o processo é intuitivo e eficaz.
 
-**4. Personalizar o perfil**
+**4. Alterar a senha**
 
 - Os participantes acessam a página de perfil.
-- Tentam alterar a imagem do perfil.
-- Tentam alterar o nome e o tema do perfil.
+- Tentam alterar a senha do perfil.
 - Avaliam se as opções de personalização são de fácil utilização e possíveis de serem realizadas.
 
 **5. Receber recomendações de jogos**
