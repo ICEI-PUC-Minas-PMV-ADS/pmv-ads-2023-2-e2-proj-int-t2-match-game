@@ -69,7 +69,7 @@ _Desenvolvido por Tayane Milagres_
 ## Perfil de Usuário
 A página apresentará os dados do usuário e sua foto de perfil escolhida.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/2e3d9e42-c383-412a-9b8d-47bf6fe5ca1d)
+![Meu Perfil - Alta Fidelidade](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107009327/39132d38-ca10-4a1d-9c1e-3fff647f6e92)
 
 _Desenvolvido por Luana Pina_
 
