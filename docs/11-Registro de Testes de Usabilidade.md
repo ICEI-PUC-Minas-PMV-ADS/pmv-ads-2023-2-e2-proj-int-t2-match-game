@@ -8,6 +8,7 @@ Após realizar os testes de usabilidade, coletamos um relatório a partir das an
 
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/75e87992-b7d6-4c3c-9057-0724cfcef384
+
 _Video 1: Identificação de problemas na interface e no design do site pelo desktop._
 
 #### Relato do usuário 1: 
@@ -20,12 +21,14 @@ _"A página fornece informações claras sobre o propósito do projeto. No entan
 
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/8f206716-f898-474c-80fe-766c01093d8d
+
 _Video 2: Identificação de problemas na interface e no design do site pelo celular._
 
 
 ### 2. Criação e/ou acesso da conta
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/b5c07b3b-70b8-4174-b31a-9f81d32d6e22
+
 _Video 3: Criação e/ou acesso da conta pelo desktop._
 
 #### Relato do usuário 3: 
@@ -33,6 +36,7 @@ _"Achei muito fácil me cadastrar no site porque tinha varios botões falando pa
 <br><br>
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/ba96ad67-7126-4fc7-97e2-6bd3117248c0
+
 _Video 4: Criação e/ou acesso da conta pelo celular._
 
 #### Relato do usuário 4 (acesso mobile): 
@@ -43,6 +47,7 @@ Não consigo preencher, digitando, a data de meu nascimento (o que faz, portanto
 ### 3. Favoritar Jogos
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/f828b6a0-f566-4a67-97f5-3452b64f08fe
+
 _Video 5: Favoritar Jogos pelo desktop._
   
 #### Relato do usuário 5:
@@ -52,6 +57,7 @@ _"Foi tranquilo para favoritar os jogos, o desenho de coração dos jogos é o m
 ### 4. Alterar senha
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/fbe20947-f0d9-464f-b9d8-4e90dd052762
+
 _Video 6:  Alterar senha pelo celular._
 
 #### Relato do usuário 6:
@@ -62,6 +68,7 @@ _Video 6:  Alterar senha pelo celular._
 ### 5. Receber recomendações de jogos
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/eeab3f49-b2e3-4b6f-820e-745ba05a6b45
+
 _Video 6:  Receber recomendações de jogos pelo desktop._
 
 #### Relato do usuário 7:
@@ -71,6 +78,7 @@ _"Foi super de boa conseguir minha recomendação dos jogos, o site é bem diret
 ### 6. Visualizar informações sobre jogos selecionados dos recomendados
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/3a1ebe39-ada0-423d-a026-6413ae80fec5
+
 _Video 7:  Receber recomendações de jogos pelo desktop._
 
 #### Relato do usuário 8:
