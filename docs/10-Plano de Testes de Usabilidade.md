@@ -34,13 +34,7 @@ Será realizado o seguinte roteiro:
 - Os participantes selecionam a opção de receber recomendações com base em seus jogos favoritados.
 - Avaliam a qualidade das recomendações fornecidas.
 
-**6. Recomendar jogos para outros usuários**
-
-- Os participantes encontram uma opção para recomendar jogos a outros usuários.
-- Tentam recomendar um jogo a um usuário fictício.
-- Avaliam a facilidade e eficácia desse processo.
-
-**7. Visualizar informações sobre jogos selecionados e recomendados**
+**6. Visualizar informações sobre jogos selecionados no recomendados**
 
 - Os participantes exploram as páginas de informações dos jogos selecionados e recomendados.
 - Verificam se todas as informações relevantes estão disponíveis e de fácil acesso.
