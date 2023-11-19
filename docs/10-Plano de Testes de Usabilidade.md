@@ -70,5 +70,9 @@ O teste de usabilidade será remotamente e realizado através de prints de tela 
 
 Após concluir as tarefas, os participantes compartilharão o feedback sobre a usabilidade da plataforma, destacando problemas e sugerindo melhorias. Os resultados deste teste serão usados para aprimorar a experiência do usuário na plataforma Match Game.
 
+# Acessibilidade
+
+Consideraremos a extensão LightHouse para que a plataforma Match Game atinja o mínimo de 60% de acessibilidade. 
+
 
 
