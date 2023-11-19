@@ -13,17 +13,16 @@ _Video 1: Identificação de problemas na interface e no design do site pelo des
 
 #### Relato do usuário 1: 
 _"A página inicial possui uma interface bonita e informativa. Achei as informações muito precisas, proporcionando uma compreensão imediata do propósito do site."_
-<br>
-
-#### Relato do usuário 2 (acesso mobile): 
-_"A página fornece informações claras sobre o propósito do projeto. No entanto, observei algumas questões na aba de navegação, onde os botões para acessar outras páginas apresentaram dificuldades. Experimentei problemas ao clicar nos links pois necessariamente precisa selecionar a palavra e não o icone."_
-<br>
+<br><br>
 
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/8f206716-f898-474c-80fe-766c01093d8d
 
 _Video 2: Identificação de problemas na interface e no design do site pelo celular._
 
+#### Relato do usuário 2 (acesso mobile): 
+_"A página fornece informações claras sobre o propósito do projeto. No entanto, observei algumas questões na aba de navegação, onde os botões para acessar outras páginas apresentaram dificuldades. Experimentei problemas ao clicar nos links pois necessariamente precisa selecionar a palavra e não o icone."_
+<br>
 
 ### 2. Criação e/ou acesso da conta
 
