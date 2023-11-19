@@ -70,10 +70,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-01| A aplicação deve ser responsiva permitindo a visualização em diferentes dispositivos | ALTA | 
 |RNF-02| A aplicação deve ser compatível com os principais navegadores presentes no mercado (Google Chrome, Firefox, Microsoft Edge) |  MÉDIA | 
-|RNF-03| A aplicação deve ser implementada com HTML semântico | ALTA|
-|RNF-04| A aplicação deve possuir no mínimo 60% de acessibilidade de acordo com a plataforma Lighthouse | MÉDIA |
-|RNF-05| A aplicação deve ser hospedada na nuvem | ALTA |
-|RNF-06| A aplicação deve conter bom nível de contraste entre os elementos | MÉDIA |
+|RNF-03| A aplicação deve ser implementada com HTML semântico | ALTA |
+|RNF-04| A aplicação deve ser hospedada na nuvem | ALTA |
+|RNF-05| A aplicação deve conter bom nível de contraste entre os elementos | MÉDIA |
 
 ## Restrições
 
