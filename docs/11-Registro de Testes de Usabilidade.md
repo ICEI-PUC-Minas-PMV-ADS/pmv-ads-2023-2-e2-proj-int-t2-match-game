@@ -23,7 +23,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-ga
 _"Foi tranquilo para favoritar os jogos, o desenho de coração dos jogos é o mesmo que tem na shopee e na shein para a gente favoritar os produtos, então fui de cara nele por lembrar disso, para achar a página que tinha salvado eles depois foi fácil porque no topo do site estava escrito "Favoritos" e tinha o desenho do mesmo coração que eu tinha clicado, então eu cliquei lá e depois para tirar alguns jogos da lista eu fui no mesmo botão de coração porque dessa vez ele estava colorido por dentro então deduzi que se clicasse lá ele sairia da lista e deu certo."_
 
 
-### 4. Personalizar o perfil
+### 4. Alterar senha
 (Preencher) 
 <br>
 
