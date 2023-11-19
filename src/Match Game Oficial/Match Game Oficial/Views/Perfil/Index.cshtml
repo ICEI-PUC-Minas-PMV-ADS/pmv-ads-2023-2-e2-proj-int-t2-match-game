@@ -29,7 +29,7 @@
 
                 // Criar elementos HTML com os dados recebidos, incluindo a foto
                 var profileDetails = `
-                    <h1>MEU PERFIL</h1>
+                    <h1 class="meu-perfil-title">MEU PERFIL</h1>
                         <p>Confira abaixo todas as informações do seu perfil e personalize-o.</p>
 
                         <div class="box">
@@ -46,24 +46,30 @@
 
                             <div class="box-info">
                                 <h3>INFORMAÇÕES PESSOAIS:</h3>
-                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                <div class="form-group">
-                                            <h4>Email</h4>
-                                            <p>${data.email}</p>
+                                <div class="box-info-email">
+                                    <h4>Email</h4>
+                                    <div class="form-control-perfil">
+                                        <p>${data.email}</p>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                       <h4>Data de Nascimento</h4>
+                                <div class="box-info-email">
+                                    <h4>Data de Nascimento</h4>
+                                    <div class="form-control-perfil">
                                         <p>${data.data_Nascimento}</p>
+                                    </div>
                                 </div>
-                               
-                                <a asp-area="" asp-controller="Esqsenha" asp-action="SolicitarEmail">
-                                    <button type="button" class="alterar-senha btn-green btn btn-primary">ALTERAR SENHA</button>
+
+
+                                <a href="/esqsenha/solicitaremail">
+                                    <button class="alterar-senha btn-green btn btn-primary">ALTERAR SENHA</button>
                                 </a>
-                                <a asp-area="" asp-controller="JogosRecomendados" asp-action="Index">
-                                    <button type="button" class="minhas-recomendacoes btn btn-primary">MINHAS RECOMENDAÇÕES</button>
+
+                                <a href="/JogosRecomendados/Index">
+                                    <button class="minhas-recomendacoes btn btn-primary">MINHAS RECOMENDAÇÕES</button>
                                 </a>
-                                <a asp-area="" asp-controller="Recomendados" asp-action="Index">
-                                    <button type="button" class="preferencias btn btn-primary">ALTERAR PREFERÊNCIAS</button>
+
+                                <a href="/Recomendados/Index">
+                                    <button class="preferencias btn btn-primary">ALTERAR PREFERÊNCIAS</button>
                                 </a>
                             </div>
 

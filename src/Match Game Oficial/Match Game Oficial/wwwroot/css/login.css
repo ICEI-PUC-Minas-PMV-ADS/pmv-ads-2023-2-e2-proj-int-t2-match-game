@@ -49,7 +49,7 @@ p, label {
     color: #8E8E8E;
     padding: 10px;
     border: 1px solid #6014EC;
-    border-radius: 15px
+    border-radius: 15px;
 }
 
 .form-group {
@@ -106,25 +106,51 @@ p, label {
     padding: 30px 20px;
 }
 
+.meu-perfil-title {
+    font-size: 2.5em;
+}
+
 
 .box {
     display: flex;
     align-items: center;
     margin-top: 50px;
-    gap: 50px;
+    gap: 100px;
 }
 
 .box-info {
-    width: 50%;
+    width: 60%;
 }
 
 .box-info h3 {
-    font-size: 1.3em;
+    font-size: 1.6em;
     text-align: left;
+    margin-bottom: 40px;
+}
+
+.box-info h4 {
+    font-size: 1.3em !important;
+    text-align: left;
+    color: #000;
+}
+
+.box-info p {
+    text-align: left;
+    margin: 0px;
+}
+
+.form-control-perfil {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #8E8E8E;
+    padding: 10px;
+    border: 1px solid #6014EC;
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 .alterar-senha {
-    margin: 40px 0 15px 0;
+    margin: 0 0 15px;
 }
 
 .minhas-recomendacoes {
@@ -136,7 +162,7 @@ p, label {
 }
 
 .box-foto {
-    width: 50%;
+    width: 40%;
 }
 
 .foto img {
@@ -167,6 +193,7 @@ p, label {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
+        gap: 50px;
     }
 
     .box-foto {
@@ -177,8 +204,12 @@ p, label {
         width: 100%;
     }
 
+    .box-info h3 {
+    margin-bottom: 30px;
+    }
+
     .alterar-senha {
-        margin: 30px 0 15px 0;
+        margin: 10px 0 15px 0;
     }
 
     .preferencias {
