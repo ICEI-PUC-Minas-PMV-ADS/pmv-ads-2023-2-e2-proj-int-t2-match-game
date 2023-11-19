@@ -26,7 +26,7 @@ Será realizado o seguinte roteiro:
 
 - Os participantes acessam a página de perfil.
 - Tentam alterar a senha do perfil.
-- Avaliam se as opções de personalização são de fácil utilização e possíveis de serem realizadas.
+- Avaliam se a opção de modificação é de fácil utilização e possível de ser realizada.
 
 **5. Receber recomendações de jogos**
 
