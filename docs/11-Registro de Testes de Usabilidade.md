@@ -59,7 +59,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-ga
 
 _Video 6:  Alterar senha pelo celular._
 
-#### Relato do usuário 6:
+#### Relato do usuário 6 (acesso mobile):
 "_O código de alterar senha chegou com sucesso ao meu email e não tive dificuldade para realizar esse feito no site._
 
 <br>
