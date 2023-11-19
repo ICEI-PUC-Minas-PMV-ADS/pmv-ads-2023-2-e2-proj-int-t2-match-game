@@ -17,39 +17,40 @@ Obs: A responsividade segue o padrão do CSS puro e Bootstrap.
 
 
 ## Tela Inicial
-A tela irá apresentar vários jogos de categorias diferentes para que o usuário escolha quais são mais compativeis com o seu gosto pessoal para jogos.
+A tela irá apresentar o objetivo da aplicação.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/95138d57-6332-49b6-acd7-c7d034b88265)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/95a77797-1c0d-4c26-b230-a1aa8d3d4c1a)
+
 
 _Desenvolvido por Luana Pina_
 
 ## Área de Cadastro
 A área de cadastro apresenta campos para que o usuário possa cadastrar a sua conta no sistema do Match Game.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/b80c9e5f-a79d-40db-8b5f-b62897530d1a)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/ab3cbb8d-4a71-4514-b4d8-fe2ccb6bb22f)
 
 _Desenvolvido por Luana Pina_
 
 ## Área de Login
 A área de login apresenta campos para que o usuário insira seus dados cadastrados e realize o login.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/6fed33a6-1d85-426c-a022-023e86ee202b)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/18c0148d-196e-4864-bbaa-5d34e9b8d213)
 
 _Desenvolvido por Luana Pina_
 
 ## Área de Alteração de Senha
 Área onde o usuário poderá definir uma nova senha para a sua conta caso necessário.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/3a7a716c-0a06-432f-b758-d03195c6f683)
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/e7de4b7d-c96a-408b-b307-efcd535c7916)
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/c2cd19ce-945a-4431-b626-72df65fe277a)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/c1a32a80-b8ba-4e58-a42b-4d68cc948d5b)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/2781971e-af79-4961-9daf-4c46666d042d)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/eb62eadd-18b6-4da1-a112-75bc0c162e8f)
 
 _Desenvolvido por Bruna Santos_
 
 ## Página de Jogos Recomendados pelo Sistema
 A página apresentará jogos recomendados pelo sistema de acordo com as escolhas feitas pelo usuário na tela inicial.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/ece2d635-97d2-41ba-8918-484e6a690d18)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/b9f96afb-3643-4164-a737-74a823b9ced5)
 
 
 _Desenvolvido por Tayane Milagres_
@@ -59,7 +60,8 @@ _Desenvolvido por Tayane Milagres_
 ## Pagina de Jogos Favoritados pelo Usuário
 A página apresentará os jogos que o usuário salvou como "Favorito".
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/457a8ffc-8606-4a0f-b654-278fc47d85c9)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/2d2db875-ce06-4bb9-8f8d-c614953d5e10)
+
 
 
 _Desenvolvido por Tayane Milagres_
@@ -67,7 +69,7 @@ _Desenvolvido por Tayane Milagres_
 ## Perfil de Usuário
 A página apresentará os dados do usuário e sua foto de perfil escolhida.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/4c6fdaff-fe7f-425e-865d-7faeccbfcdab)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/2e3d9e42-c383-412a-9b8d-47bf6fe5ca1d)
 
 _Desenvolvido por Luana Pina_
 
