@@ -114,4 +114,19 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-ga
 _Video 9: Teste de visualização de informações a respeito do jogo funcionando corretamente com os demais jogos._
 
 
+<br><br>
 
+| **Caso de Teste** 	| **CT-07 – Lista de favoritos do usuário** 	|
+|:---:	|:---:	|
+| **Usuário**  	| A lista de favoritos do usuário foi visualizada com sucesso.	 |
+| **Quantidade de erros**  	| 0 |
+| **Avaliação:**  	| O teste de visualização dos favoritados foi realizado com sucesso.    |
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107646150/2179d442-736e-45b8-94a2-ba67eb9cd0b2
+
+_Video 10: Teste de visualização de lista de favoritos do usuário._
+
+
+<br><br>
