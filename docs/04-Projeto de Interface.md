@@ -96,13 +96,6 @@ A tela "Meu Perfil" disponibilizará para o usuário logado no sistema todas as 
 _Wireframe - Meu Perfil_
 
 
-## Alterar Foto de Perfil
-
-A tela "Alterar Foto de Perfil" deverá permitir que os usuários realizem a personalização do seu perfil, através da alteração da foto principal.
-
-![Alterar Foto de Perfil](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/107009327/4478ebcb-0e47-47ae-bf86-e3733f6f2c8e)
-
-_Wireframe - Alterar Foto de Perfil_
 
 ## Protótipo Interativo dos Wireframes
 Para que você tenha acesso ao Protótipo Interativo dos Wireframes, [clique aqui](https://www.figma.com/proto/75Oet8utr6LtMAOQ8aPNNx/Projeto---Match-Game?page-id=0%3A1&type=design&node-id=3-2&viewport=409%2C201%2C0.49&t=dPI6DGMF6dNX7FDT-1&scaling=scale-down&starting-point-node-id=3%3A2&show-proto-sidebar=1&mode=design)
