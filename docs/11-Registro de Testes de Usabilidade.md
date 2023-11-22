@@ -114,6 +114,10 @@ Os relatos dos usuários, especialmente aqueles que acessaram a plataforma por m
 
 Sabemos que é crucial priorizar a resolução dos problemas identificados na navegação mobile para garantir uma experiência fluida e eficaz para todos os usuários, independentemente do dispositivo utilizado, então criamos a solução para que todos os botões da header fossem clicáveis e adicionamos a tag alt para descrição das imagens, melhorando a acessibilidade para os nossos usuários e atinjimos os 95% de acessilidade, conforme estipulado pela ferramenta LightHouse.
 
+## Requisitos não funcionais
+
+Nossa aplicação foi desenvolvida seguindo a abordagem "mobile first", priorizando a responsividade em todas as páginas como um requisito não funcional essencial. Compartilhamos o link de hospedagem na nuvem Azure com oito usuários para testes em diferentes navegadores padrão, incluindo Google Chrome, Internet Explorer, Firefox, Safari, entre outros. O objetivo era certificar que a aplicação fluísse corretamente em todos esses ambientes. Além disso, buscamos adotar o HTML semântico na construção de todas as páginas, garantindo não apenas a funcionalidade, mas também a clareza e a acessibilidade do código. 
+
 ## Feedback dos usuários
 
 A coleta contínua de feedback dos usuários é fundamental para manter a relevância e eficácia da plataforma. Estabelecemos o TypeForm como canal eficiente para receber e analisar feedbacks que proporcionará informações valiosas para futuras melhorias.
