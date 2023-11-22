@@ -106,7 +106,7 @@ Atualmente o Match Game atende 95% de acessibilidade pela inspeção do navegado
 
 _Imagem 2: Printscreen da porcentagem de acessibilidade pela extensão LightHouse._
 
-## Conclusões e Recomendações para Aprimorar a Usabilidade da Plataforma Match Game
+## Conclusões e recomendações
 
 Após a análise abrangente da usabilidade da plataforma Match Game, observamos uma experiência geral positiva por parte dos usuários, destacando a interface informativa e a facilidade de interação em determinados aspectos. No entanto, identificamos desafios significativos, principalmente relacionados à navegação em dispositivos móveis e ao processo de cadastro.
 
