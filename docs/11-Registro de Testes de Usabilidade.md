@@ -114,6 +114,6 @@ Os relatos dos usuários, especialmente aqueles que acessaram a plataforma por m
 
 Sabemos que é crucial priorizar a resolução dos problemas identificados na navegação mobile para garantir uma experiência fluida e eficaz para todos os usuários, independentemente do dispositivo utilizado, então criamos a solução para que todos os botões da header fossem clicáveis e adicionamos a tag alt para descrição das imagens, melhorando a acessibilidade para os nossos usuários e atinjimos os 95% de acessilidade, conforme estipulado pela ferramenta LightHouse.
 
-# Feedback dos usuários:
+## Feedback dos usuários
 
 A coleta contínua de feedback dos usuários é fundamental para manter a relevância e eficácia da plataforma. Estabelecemos o TypeForm como canal eficiente para receber e analisar feedbacks que proporcionará informações valiosas para futuras melhorias.
