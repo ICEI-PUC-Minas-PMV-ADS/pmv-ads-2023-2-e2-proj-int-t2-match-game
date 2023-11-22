@@ -106,3 +106,14 @@ Atualmente o Match Game atende 95% de acessibilidade pela inspeção do navegado
 
 _Imagem 2: Printscreen da porcentagem de acessibilidade pela extensão LightHouse._
 
+## Conclusões e Recomendações para Aprimorar a Usabilidade da Plataforma Match Game
+
+Após a análise abrangente da usabilidade da plataforma Match Game, observamos uma experiência geral positiva por parte dos usuários, destacando a interface informativa e a facilidade de interação em determinados aspectos. No entanto, identificamos desafios significativos, principalmente relacionados à navegação em dispositivos móveis e ao processo de cadastro.
+
+Os relatos dos usuários, especialmente aqueles que acessaram a plataforma por meio de dispositivos móveis, evidenciaram dificuldades na navegação, com problemas notáveis ao clicar em links e botões. O cadastro mobile também apresentou obstáculos, com destaque para a complexidade do preenchimento do campo "Data de Nascimento". Essa dificuldade pode impactar negativamente a experiência do usuário, criando barreiras para o registro de novos usuários, buscaremos uma maneira de melhorar a experiência do site nesse sentido.
+
+Sabemos que é crucial priorizar a resolução dos problemas identificados na navegação mobile para garantir uma experiência fluida e eficaz para todos os usuários, independentemente do dispositivo utilizado, então criamos a solução para que todos os botões da header fossem clicáveis e adicionamos a tag alt para descrição das imagens, melhorando a acessibilidade para os nossos usuários e atinjimos os 95% de acessilidade, conforme estipulado pela ferramenta LightHouse.
+
+# Feedback Contínuo dos Usuários:
+
+A coleta contínua de feedback dos usuários é fundamental para manter a relevância e eficácia da plataforma. Estabelecemos o TypeForm como canal eficiente para receber e analisar feedbacks que proporcionará insights valiosos para futuras melhorias.
