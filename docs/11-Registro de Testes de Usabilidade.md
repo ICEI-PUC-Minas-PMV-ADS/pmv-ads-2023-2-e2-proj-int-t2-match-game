@@ -121,3 +121,56 @@ Nossa aplicação foi desenvolvida seguindo a abordagem "mobile first", prioriza
 ## Feedback dos usuários
 
 A coleta contínua de feedback dos usuários é fundamental para manter a relevância e eficácia da plataforma. Estabelecemos o TypeForm como canal eficiente para receber e analisar feedbacks que proporcionará informações valiosas para futuras melhorias.
+
+<br><br>
+
+# Relatório de Testes de Usabilidade - Match Game
+
+**Atendimento aos Requisitos Funcionais e Não Funcionais**
+
+*Requisitos Funcionais*
+
+1. **Identificação de problemas na interface e no design do site:**
+   - Funcionamento corrigido: Usuários detectaram questões na interface e no design do site, conforme previsto no Plano de Testes de Usabilidade.
+   - Feedback Atualizado: "Apesar de a página comunicar de maneira clara o propósito do projeto, identificamos e solucionamos problemas na aba de navegação. Anteriormente, os botões para acessar outras páginas apresentavam desafios, demandando a seleção da palavra em vez do ícone ao clicar nos links. Essas questões foram abordadas e corrigidas."
+
+2. **Criação e/ou acesso da conta:**
+   - Funcionamento: O processo de criação e acesso à conta foi avaliado pelos usuários.
+   - Relato do Usuário 3: "Achei fácil me cadastrar no site e fazer o login."
+
+3. **Favoritar Jogos:**
+   - Funcionamento: Os usuários conseguiram favoritar jogos conforme esperado.
+   - Relato do Usuário 5: "Foi tranquilo para favoritar os jogos, o desenho de coração dos jogos é intuitivo."
+
+4. **Alterar senha:**
+   - Funcionamento: Usuários conseguiram alterar a senha sem dificuldades.
+   - Relato do Usuário 6: "O código de alterar senha chegou com sucesso ao meu email e não tive dificuldade."
+
+5. **Receber recomendações de jogos:**
+   - Funcionamento: Usuários receberam recomendações de jogos de acordo com suas preferências.
+   - Relato do Usuário 7: "Foi super de boa conseguir minha recomendação dos jogos."
+
+6. **Visualizar informações sobre jogos selecionados dos recomendados:**
+   - Funcionamento: Usuários conseguiram visualizar informações detalhadas sobre jogos recomendados.
+   - Relato do Usuário 8: "Para ver as informações de cada jogo foi super fácil."
+
+*Requisitos Não Funcionais*
+
+1. **Acessibilidade:**
+   - Funcionamento: A plataforma atingiu 95% de acessibilidade pelo LightHouse, conforme planejado.
+   - Imagem 2: Porcentagem de acessibilidade pela extensão LightHouse.
+
+2. **Responsividade:**
+   - Funcionamento: A abordagem "mobile first" foi seguida, priorizando a responsividade em todas as páginas.
+   - Conclusões e Recomendações: Identificamos desafios na navegação mobile e implementamos soluções para melhorar a experiência.
+
+**Conclusões e Recomendações**
+
+Após a análise dos testes de usabilidade, observamos que a plataforma Match Game atendeu satisfatoriamente aos requisitos funcionais, proporcionando uma experiência positiva para a maioria dos usuários. No entanto, identificamos áreas de melhoria, especialmente em relação à navegação em dispositivos móveis e ao processo de cadastro.
+
+Recomendamos a implementação de melhorias específicas, como tornar os botões da header clicáveis em dispositivos móveis e aprimorar a usabilidade do campo "Data de Nascimento" no cadastro mobile. Essas recomendações visam garantir uma experiência mais fluida e eficaz para todos os usuários.
+
+Além disso, o feedback contínuo dos usuários por meio do TypeForm é crucial para aprimorar a plataforma. Continuaremos a coletar e analisar esses feedbacks para orientar futuras melhorias e garantir a relevância e eficácia contínuas da Match Game.
+
+Agradecemos pela colaboração dos usuários e reiteramos nosso compromisso em proporcionar uma experiência excepcional na Match Game.
+
