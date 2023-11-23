@@ -1,4 +1,4 @@
-# Relatório de Testes de Software
+# Registro de Testes de Software
 
 
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
