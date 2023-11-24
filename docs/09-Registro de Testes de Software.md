@@ -130,3 +130,21 @@ _Video 10: Teste de visualização de lista de favoritos do usuário._
 
 
 <br><br>
+
+
+# Relatório de Testes de Software
+
+## Atualizações de Correção
+
+| Número do Teste | Caso de Teste | Atualização Realizada |
+|------------------|---------------|------------------------|
+| 001              | CT-01 – Cadastrar perfil | Adicionado aviso de erro para dados incorretos durante o cadastro. Agora, o usuário receberá uma mensagem de erro caso os dados inseridos estejam incorretos, e o cadastro não prosseguirá se não existir um endereço de e-mail válido. |
+| 002              | CT-02 – Efetuar login | Adicionado feedback de erro durante o login. Agora, ao inserir dados incorretos, o usuário receberá uma mensagem de erro e não haverá reload da página sem um retorno para o usuário. Além disso, corrigido o acesso de usuários cadastrados na plataforma, mesmo sem um e-mail válido. |
+| 006              | CT-06 – Informações sobre os jogos recomendados | Não foi possível corrigir o erro de links quebrados. O problema está relacionado ao endpoint "website" da API rawg.io. Alguns jogos podem ser muito antigos ou ter informações ausentes, resultando em erro ao acessar o link. Estamos trabalhando para encontrar uma solução ou alternativa para lidar com esse tipo de situação. |
+
+
+CT-1: Adicionado aviso de erro para dados incorretos durante o cadastro. 
+![Ct1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/a5a6bccc-75c9-4df2-9222-59bc57390a4e)
+<br><br>
+CT-2: Adicionado feedback de erro durante o login. 
+![CT2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/114627827/655b19e4-375e-4dc9-9b7a-422b5cf2cd24)
