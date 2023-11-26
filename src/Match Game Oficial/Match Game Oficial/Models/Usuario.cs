@@ -15,6 +15,7 @@ namespace Match_Game_Oficial.Models
         [Required(ErrorMessage = "Insira o dado corretamente!")]
         public string Senha { get; set; }
 
+        [EmailAddress]
         [Required(ErrorMessage = "Insira o dado corretamente!")]
         public string Email { get; set; }
 
