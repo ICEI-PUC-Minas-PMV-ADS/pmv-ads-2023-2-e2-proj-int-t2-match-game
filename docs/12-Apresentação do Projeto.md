@@ -15,17 +15,11 @@ Match Game
 
 ## Identidade Visual (Marca, Design)
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/assets/127251265/1b05b1c5-d4e2-484b-b074-4d59abcdee46)
 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
+
 
 ## Conjunto de Slides (Estrutura)
-
-Os slides do Match Game tem o propósito de apresentar o projeto, assim como seus requisitos funcionais e não funcionais e as tecnologias utilizadas para seu desenvolvimento.
-
 Para acessar a apresentação em slides, basta clicar nos links abaixo.
   
 [Apresentação da solução - Match Game.pptx](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-match-game/files/13537148/Apresentacao.da.solucao.-.Match.Game.pptx)
