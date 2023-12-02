@@ -40,7 +40,7 @@ Para utilizar o Match Game basta seguir as instruções abaixo:
 
 Após completar esses passos, o nosso algoritmo irá te recomendar jogos com base em suas escolhas e você poderá montar a sua biblioteca pessoal favoritando os jogos que preferir.
 
-_Obs: Caso já tenha uma conta cadastrada em nosso site, não é necessário efetuar o cadastro novamente._
+>Obs: Caso já tenha uma conta cadastrada em nosso site, não é necessário efetuar o cadastro novamente.
 
 
 # Documentação
