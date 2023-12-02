@@ -16,4 +16,6 @@ Para acessar a apresentação em slides, basta clicar nos links abaixo.
 
 _Caso o arquivo .pptx não funcione, basta abrir o link abaixo da apresentação em formato de pdf._
 
+>A apresentação de slides tem o propósito de apresentar o projeto, assim como seus requisitos funcionais e não funcionais e as tecnologias utilizadas para o seu desenvolvimento.
+
 
