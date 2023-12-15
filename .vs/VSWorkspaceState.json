@@ -4,8 +4,8 @@
     "\\src",
     "\\src\\Match Game Oficial",
     "\\src\\Match Game Oficial\\Match Game Oficial",
-    "\\src\\Match Game Oficial\\Match Game Oficial\\Models"
+    "\\src\\Match Game Oficial\\Match Game Oficial\\Controllers"
   ],
-  "SelectedNode": "\\src\\Match Game Oficial\\Match Game Oficial\\Models\\Usuario.cs",
+  "SelectedNode": "\\src\\Match Game Oficial\\Match Game Oficial\\Controllers\\UsuariosController.cs",
   "PreviewInSolutionExplorer": false
 }

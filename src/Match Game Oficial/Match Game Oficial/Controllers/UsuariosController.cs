@@ -27,13 +27,7 @@ namespace Match_Game_Oficial.Controllers
 
         }
 
-        // GET: Usuarios
-        public async Task<IActionResult> Index()
-        {
-              return _context.Usuarios != null ? 
-                          View(await _context.Usuarios.ToListAsync()) :
-                          Problem("Entity set 'DataContext.Usuarios'  is null.");
-        }
+       
         //Onde Criamos a view Login
         public IActionResult login()
                 {

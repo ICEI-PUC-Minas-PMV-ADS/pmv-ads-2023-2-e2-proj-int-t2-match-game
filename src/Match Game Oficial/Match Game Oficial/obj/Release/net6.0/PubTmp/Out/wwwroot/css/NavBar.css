@@ -28,11 +28,11 @@ body {
 }
 
 .navbar-brand {
-    padding: 0px;
-    padding-left: -1px;
+    padding: 2px;
+    padding-left: 20px;
 }
 
-.logo {
+svg {
     height: 11vh;
 }
 
@@ -44,8 +44,12 @@ body {
 
 .navbar {
     background: linear-gradient(90deg, rgba(53,50,202,1) 0%, rgba(39,37,131,1) 93%) !important;
+ 
 }
 
+.navbar-toggler pe-3 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+}
 
 .navIcon {
     padding-left: 0% !important;
@@ -71,6 +75,7 @@ body {
 .nav-link {
     padding-top: 0%;
     font-family: 'Jost';
+    text-align: center;
 }
 
 li > .logout {
@@ -86,8 +91,11 @@ li > .logout {
     flex-direction: column;
 }
 
-
-
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Footer */
 .footer {
